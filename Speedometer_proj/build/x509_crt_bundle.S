@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/mmich/Desktop/Speedometer_proj/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

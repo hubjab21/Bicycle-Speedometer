@@ -318,7 +318,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_main_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\mmich\.espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\Users\mmich\esp-idf\components\bootloader\subproject -BC:\Users\mmich\Desktop\Speedometer_proj\build\bootloader
+  command = C:\Users\mmich\.espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\Users\mmich\esp-idf\components\bootloader\subproject -BC:\Users\mmich\Desktop\Git_repo_for_speedometer\Bicycle-Speedometer_MM\Speedometer_proj\build\bootloader
   description = Re-running CMake...
   generator = 1
 

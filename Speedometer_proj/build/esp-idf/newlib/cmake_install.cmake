@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/mmich/Desktop/Speedometer_proj/build/esp-idf/newlib/port/cmake_install.cmake")
+  include("C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/esp-idf/newlib/port/cmake_install.cmake")
 endif()
 

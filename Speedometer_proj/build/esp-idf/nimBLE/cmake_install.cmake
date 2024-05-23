@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/mmich/Desktop/Speedometer_proj/components/nimBLE
+# Install script for directory: C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
