@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/mmich/esp-idf/**",
+                "C:/Users/mmich/.vscode/**",
+                "C:/Users/mmich/esp-idf/components/freertos/**",
+                "C:/Users/mmich/esp-idf/components/nvs_flash/include",
+                "C:/Users/mmich/esp-idf/components/esp_event/include",
+                "C:/Users/mmich/esp-idf/components/linux/include",
+                "C:/Users/mmich/esp-idf/components/esp_common/include",
+                "${workspaceFolder}/components/nimBLE/include",
+                "C:/Users/mmich/esp-idf/components/driver/gpio/include",
+                "C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gatt/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}
