@@ -13,6 +13,7 @@
 #include "esp_system.h"
 #include "esp_task_wdt.h" 
 #include "nimBLE.h"
+#include "driver/timer.h"
 
 #define ADC_UNIT ADC_UNIT_1
 #define ADC_CHANNEL ADC_CHANNEL_4  // GPIO32
@@ -20,7 +21,29 @@
 #define ADC_BIT_WIDTH ADC_BITWIDTH_12
 #define ADC_READ_LEN 16
 #define TAG "ADC_CONTINUOUS"
-#define ADC_THRESHOLD 2300
+#define ADC_THRESHOLD 2500
+
+// Timer configuration
+#define TIMER_DIVIDER         80           // Hardware timer clock divider
+#define TIMER_SCALE           (TIMER_BASE_CLK / TIMER_DIVIDER)  // convert counter value to seconds
+#define TIMER_INTERVAL_SEC    (1.0)        // Sample test interval for the timer
+#define TEST_WITH_RELOAD      1            // Testing will be done with auto reload
+
+static void init_timer() {
+    timer_config_t config = {
+        .divider = TIMER_DIVIDER,
+        .counter_dir = TIMER_COUNT_UP,
+        .counter_en = TIMER_PAUSE,
+        .alarm_en = TIMER_ALARM_DIS,
+        .auto_reload = TEST_WITH_RELOAD,
+    };
+
+    // Initialize the timer
+    timer_init(TIMER_GROUP_0, TIMER_0, &config);
+
+    // Start the timer
+    timer_start(TIMER_GROUP_0, TIMER_0);
+}
 
 void continuous_adc_init(adc_continuous_handle_t *handle) {
     adc_continuous_handle_cfg_t adc_config = {
@@ -55,30 +78,33 @@ bool IRAM_ATTR adc_conversion_done_cb(adc_continuous_handle_t handle, const adc_
 }
 
 void threshold_task(void *arg) {
-    TickType_t last_tick = 0;
+    uint64_t last_time = 0;
+    
     while (1) {
         // Wait indefinitely for the notification
         ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
 
-        // Get the current tick count
-        TickType_t current_tick = xTaskGetTickCount();
+        // Get the current timer value in microseconds
+        uint64_t current_time;
+        timer_get_counter_value(TIMER_GROUP_0, TIMER_0, &current_time);
         
-        if (last_tick != 0) {
-            // Calculate the time difference in milliseconds
-            TickType_t time_difference = (current_tick - last_tick) * portTICK_PERIOD_MS;
-            ESP_LOGI(TAG, "Time between threshold crossings: %lu ms", time_difference);
-            sensor_data = (uint32_t)time_difference;
+        if (last_time != 0) {
+            // Calculate the time difference in microseconds
+            uint64_t time_difference = current_time - last_time;
+            ESP_LOGI(TAG, "Time between threshold crossings: %llu us", time_difference);
+            sensor_data = (uint32_t)(time_difference / 1000); // Convert to milliseconds
         }
         
-        // Update the last tick count
-        last_tick = current_tick;
+        // Update the last time value
+        last_time = current_time;
 
         // Delay to prevent multiple logs for the same event
-        vTaskDelay(pdMS_TO_TICKS(50));
+        vTaskDelay(pdMS_TO_TICKS(10));
     }
 }
 
 void sensor_func(void){
+    init_timer();
     adc_continuous_handle_t adc_handle;
     continuous_adc_init(&adc_handle);
 
@@ -98,7 +124,7 @@ void sensor_func(void){
     ESP_LOGI(TAG, "ADC continuous mode started");
 
     xTaskCreate(threshold_task, "threshold_task", 2048, NULL, 10, &threshold_task_handle);
-
+                    
     while (1) {
         ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
 
@@ -123,7 +149,7 @@ void sensor_func(void){
                         ESP_LOGW(TAG, "Invalid data [Channel: %"PRIu32", Value: %"PRIu32"]", chan_num, data);
                     }
                 }
-                vTaskDelay(pdMS_TO_TICKS(100)); // Delay to avoid flooding the log
+                vTaskDelay(pdMS_TO_TICKS(10)); // Delay to avoid flooding the log
             } else if (ret == ESP_ERR_TIMEOUT) {
                 break; // Exit the inner loop if no data is available
             }

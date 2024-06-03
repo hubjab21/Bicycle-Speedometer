@@ -1,164 +1,39 @@
-ѱ�����m[0m
-[0;32mI�ets Jul 29 2019 12:21:46
-
-rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
-configsip: 0, SPIWP:0xee
-clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
-mode:DIO, clock div:2
-load:0x3fff0030,len:7172
-load:0x40078000,len:15540
-load:0x40080400,len:4
-ho 8 tail 4 room 4
-load:0x40080404,len:3904
-entry 0x40080640
-[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
-[0;32mI (31) boot: compile time Jun  3 2024 15:19:52[0m
-[0;32mI (31) boot: Multicore bootloader[0m
-[0;32mI (35) boot: chip revision: v3.0[0m
-[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
-[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
-[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
-[0;32mI (53) boot: Enabling RNG early entropy source...[0m
-[0;32mI (58) boot: Partition Table:[0m
-[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
-[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
-[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
-[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
-[0;32mI (92) boot: End of partition table[0m
-[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b41ch (111644) map[0m
-[0;32mI (142) esp_image: segment 1: paddr=0002b444 vaddr=3ffbdb60 size=04bb8h ( 19384) load[0m
-[0;32mI (150) esp_image: segment 2: paddr=00030004 vaddr=40080000 size=00014h (    20) load[0m
-[0;32mI (150) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=5bf24h (376612) map[0m
-[0;32mI (286) esp_image: segment 4: paddr=0008bf4c vaddr=40080014 size=1a004h (106500) load[0m
-[0;32mI (341) boot: Loaded app from partition at offset 0x10000[0m
-[0;32mI (341) boot: Disabling RNG early entropy source...[0m
-[0;32mI (352) cpu_start: Multicore app[0m
-[0;32mI (361) cpu_start: Pro cpu start user code[0m
-[0;32mI (361) cpu_start: cpu freq: 160000000 Hz[0m
-[0;32mI (361) cpu_start: Application information:[0m
-[0;32mI (364) cpu_start: Project name:     Speedometer[0m
-[0;32mI (370) cpu_start: App version:      cdb2ade-dirty[0m
-[0;32mI (375) cpu_start: Compile time:     Jun  3 2024 18:47:38[0m
-[0;32mI (381) cpu_start: ELF file SHA256:  d542d7745...[0m
-[0;32mI (386) cpu_start: ESP-IDF:          v5.2.1[0m
-[0;32mI (391) cpu_start: Min chip rev:     v0.0[0m
-[0;32mI (396) cpu_start: Max chip rev:     v3.99 [0m
-[0;32mI (401) cpu_start: Chip rev:         v3.0[0m
-[0;32mI (406) heap_init: Initializing. RAM available for dynamic allocation:[0m
-[0;32mI (413) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
-[0;32mI (419) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
-[0;32mI (425) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
-[0;32mI (431) heap_init: At 3FFC5520 len 0001AAE0 (106 KiB): DRAM[0m
-[0;32mI (437) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
-[0;32mI (444) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
-[0;32mI (450) heap_init: At 4009A018 len 00005FE8 (23 KiB): IRAM[0m
-[0;32mI (458) spi_flash: detected chip: generic[0m
-[0;32mI (461) spi_flash: flash io: dio[0m
-[0;33mW (465) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
-[0;32mI (479) coexist: coex firmware version: 77cd7f8[0m
-[0;32mI (484) main_task: Started on CPU0[0m
-[0;32mI (494) main_task: Calling app_main()[0m
-[0;32mI (514) BTDM_INIT: BT controller compile version [0f0c5a2][0m
-[0;32mI (524) BTDM_INIT: Bluetooth MAC: 7c:87:ce:2d:5b:0e[0m
-[0;32mI (524) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
-[0;32mI (854) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
-[0;32mI (854) ADC_CONTINUOUS: ADC continuous mode started[0m
-[0;32mI (884) NimBLE: Failed to restore IRKs from store; status=8
-[0m
-[0;32mI (4154) ADC_CONTINUOUS: Time between threshold crossings: 800 ms[0m
-[0;32mI (4254) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (4264) ADC_CONTINUOUS: Time between threshold crossings: 10 ms[0m
-[0;32mI (4454) ADC_CONTINUOUS: Time between threshold crossings: 190 ms[0m
-[0;32mI (6454) ADC_CONTINUOUS: Time between threshold crossings: 2000 ms[0m
-[0;32mI (6554) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (11454) ADC_CONTINUOUS: Time between threshold crossings: 4900 ms[0m
-[0;32mI (11554) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (14154) ADC_CONTINUOUS: Time between threshold crossings: 2600 ms[0m
-[0;32mI (17554) ADC_CONTINUOUS: Time between threshold crossings: 3400 ms[0m
-[0;32mI (17654) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (18454) ADC_CONTINUOUS: Time between threshold crossings: 800 ms[0m
-[0;32mI (19554) ADC_CONTINUOUS: Time between threshold crossings: 1100 ms[0m
-[0;32mI (19854) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
-[0;32mI (21854) ADC_CONTINUOUS: Time between threshold crossings: 2000 ms[0m
-[0;32mI (22154) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
-[0;32mI (23054) ADC_CONTINUOUS: Time between threshold crossings: 900 ms[0m
-[0;32mI (23154) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (23654) ADC_CONTINUOUS: Time between threshold crossings: 500 ms[0m
-[0;32mI (24554) ADC_CONTINUOUS: Time between threshold crossings: 900 ms[0m
-[0;32mI (24954) ADC_CONTINUOUS: Time between threshold crossings: 400 ms[0m
-[0;32mI (25654) ADC_CONTINUOUS: Time between threshold crossings: 700 ms[0m
-[0;32mI (25954) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
-[0;32mI (28354) ADC_CONTINUOUS: Time between threshold crossings: 2400 ms[0m
-[0;32mI (28754) ADC_CONTINUOUS: Time between threshold crossings: 400 ms[0m
-[0;32mI (29054) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
-[0;32mI (29954) ADC_CONTINUOUS: Time between threshold crossings: 900 ms[0m
-[0;32mI (31654) ADC_CONTINUOUS: Time between threshold crossings: 1700 ms[0m
-[0;32mI (31754) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (31854) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (33154) ADC_CONTINUOUS: Time between threshold crossings: 1300 ms[0m
-[0;32mI (33654) ADC_CONTINUOUS: Time between threshold crossings: 500 ms[0m
-[0;32mI (34754) ADC_CONTINUOUS: Time between threshold crossings: 1100 ms[0m
-[0;32mI (34854) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (35654) ADC_CONTINUOUS: Time between threshold crossings: 800 ms[0m
-[0;32mI (36354) ADC_CONTINUOUS: Time between threshold crossings: 700 ms[0m
-[0;32mI (37054) ADC_CONTINUOUS: Time between threshold crossings: 700 ms[0m
-[0;32mI (37554) ADC_CONTINUOUS: Time between threshold crossings: 500 ms[0m
-[0;32mI (37954) ADC_CONTINUOUS: Time between threshold crossings: 400 ms[0m
-[0;32mI (40154) ADC_CONTINUOUS: Time between threshold crossings: 2200 ms[0m
-[0;32mI (40454) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
-[0;32mI (40854) ADC_CONTINUOUS: Time between threshold crossings: 400 ms[0m
-[0;32mI (40954) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (41054) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (41254) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
-[0;32mI (41554) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
-[0;32mI (42054) ADC_CONTINUOUS: Time between threshold crossings: 500 ms[0m
-[0;32mI (43254) ADC_CONTINUOUS: Time between threshold crossings: 1200 ms[0m
-[0;32mI (43554) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
-[0;32mI (44354) ADC_CONTINUOUS: Time between threshold crossings: 800 ms[0m
-[0;32mI (46954) ADC_CONTINUOUS: Time between threshold crossings: 2600 ms[0m
-[0;32mI (47354) ADC_CONTINUOUS: Time between threshold crossings: 400 ms[0m
-[0;32mI (48154) ADC_CONTINUOUS: Time between threshold crossings: 800 ms[0m
-[0;32mI (48654) ADC_CONTINUOUS: Time between threshold crossings: 500 ms[0m
-[0;32mI (49354) ADC_CONTINUOUS: Time between threshold crossings: 700 ms[0m
-[0;32mI (49554) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
-[0;32mI (49954) ADC_CONTINUOUS: Time between threshold crossings: 400 ms[0m
-[0;32mI (54254) ADC_CONTINUOUS: Time between threshold crossings: 4300 ms[0m
-[0;32mI (55554) ADC_CONTINUOUS: Time between threshold crossings: 1300 ms[0m
-[0;32mI (57754) ADC_CONTINUOUS: Time between threshold crossings: 2200 ms[0m
-[0;32mI (59454) ADC_CONTINUOUS: Time between threshold crossings: 1700 ms[0m
-[0;32mI (61254) ADC_CONTINUOUS: Time between threshold crossings: 1800 ms[0m
-[0;32mI (61554) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
-[0;32mI (61654) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (61754) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (64154) ADC_CONTINUOUS: Time between threshold crossings: 2400 ms[0m
-[0;32mI (69654) ADC_CONTINUOUS: Time between threshold crossings: 5500 ms[0m
-[0;32mI (72854) ADC_CONTINUOUS: Time between threshold crossings: 3200 ms[0m
-[0;32mI (72954) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (73854) ADC_CONTINUOUS: Time between threshold crossings: 900 ms[0m
-[0;32mI (75454) ADC_CONTINUOUS: Time between threshold crossings: 1600 ms[0m
-[0;32mI (78354) ADC_CONTINUOUS: Time between threshold crossings: 2900 ms[0m
-[0;32mI (78854) ADC_CONTINUOUS: Time between threshold crossings: 500 ms[0m
-[0;32mI (80554) ADC_CONTINUOUS: Time between threshold crossings: 1700 ms[0m
-[0;32mI (81054) ADC_CONTINUOUS: Time between threshold crossings: 500 ms[0m
-[0;32mI (81254) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
-[0;32mI (81954) ADC_CONTINUOUS: Time between threshold crossings: 700 ms[0m
-[0;32mI (84054) ADC_CONTINUOUS: Time between threshold crossings: 2100 ms[0m
-[0;32mI (84954) ADC_CONTINUOUS: Time between threshold crossings: 900 ms[0m
-[0;32mI (85954) ADC_CONTINUOUS: Time between threshold crossings: 1000 ms[0m
-[0;32mI (86554) ADC_CONTINUOUS: Time between threshold crossings: 600 ms[0m
-[0;32mI (86754) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
-[0;32mI (87254) ADC_CONTINUOUS: Time between threshold crossings: 500 ms[0m
-[0;32mI (87554) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
-[0;32mI (89154) ADC_CONTINUOUS: Time between threshold crossings: 1600 ms[0m
-[0;32mI (90754) ADC_CONTINUOUS: Time between threshold crossings: 1600 ms[0m
-[0;32mI (91154) ADC_CONTINUOUS: Time between threshold crossings: 400 ms[0m
-[0;32mI (91254) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (91854) ADC_CONTINUOUS: Time between threshold crossings: 600 ms[0m
-[0;32mI (92154) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
-[0;32mI (92254) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (93254) ADC_CONTINUOUS: Time between threshold crossings: 1000 ms[0m
-[0;32mI (93354) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
-[0;32mI (96254) ADC_CONTINUOUS: Time between threshold crossings: 2900 ms[0m
-[0;32mI (97154) ADC_CONTINUOUS: Time between threshold crossings: 900 ms[0m
-[0;32mI (99254) ADC_CONTINUOUS: Time between threshold crossings: 2100 ms[0m
-[0;32mI (99554) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "Speedometer" version: f679cdc-dirty
+-- Adding linker script C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: adc_sensor app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nimBLE nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor C:/Users/mmich/esp-idf/components/app_trace C:/Users/mmich/esp-idf/components/app_update C:/Users/mmich/esp-idf/components/bootloader C:/Users/mmich/esp-idf/components/bootloader_support C:/Users/mmich/esp-idf/components/bt C:/Users/mmich/esp-idf/components/cmock C:/Users/mmich/esp-idf/components/console C:/Users/mmich/esp-idf/components/cxx C:/Users/mmich/esp-idf/components/driver C:/Users/mmich/esp-idf/components/efuse C:/Users/mmich/esp-idf/components/esp-tls C:/Users/mmich/esp-idf/components/esp_adc C:/Users/mmich/esp-idf/components/esp_app_format C:/Users/mmich/esp-idf/components/esp_bootloader_format C:/Users/mmich/esp-idf/components/esp_coex C:/Users/mmich/esp-idf/components/esp_common C:/Users/mmich/esp-idf/components/esp_eth C:/Users/mmich/esp-idf/components/esp_event C:/Users/mmich/esp-idf/components/esp_gdbstub C:/Users/mmich/esp-idf/components/esp_hid C:/Users/mmich/esp-idf/components/esp_http_client C:/Users/mmich/esp-idf/components/esp_http_server C:/Users/mmich/esp-idf/components/esp_https_ota C:/Users/mmich/esp-idf/components/esp_https_server C:/Users/mmich/esp-idf/components/esp_hw_support C:/Users/mmich/esp-idf/components/esp_lcd C:/Users/mmich/esp-idf/components/esp_local_ctrl C:/Users/mmich/esp-idf/components/esp_mm C:/Users/mmich/esp-idf/components/esp_netif C:/Users/mmich/esp-idf/components/esp_netif_stack C:/Users/mmich/esp-idf/components/esp_partition C:/Users/mmich/esp-idf/components/esp_phy C:/Users/mmich/esp-idf/components/esp_pm C:/Users/mmich/esp-idf/components/esp_psram C:/Users/mmich/esp-idf/components/esp_ringbuf C:/Users/mmich/esp-idf/components/esp_rom C:/Users/mmich/esp-idf/components/esp_system C:/Users/mmich/esp-idf/components/esp_timer C:/Users/mmich/esp-idf/components/esp_wifi C:/Users/mmich/esp-idf/components/espcoredump C:/Users/mmich/esp-idf/components/esptool_py C:/Users/mmich/esp-idf/components/fatfs C:/Users/mmich/esp-idf/components/freertos C:/Users/mmich/esp-idf/components/hal C:/Users/mmich/esp-idf/components/heap C:/Users/mmich/esp-idf/components/http_parser C:/Users/mmich/esp-idf/components/idf_test C:/Users/mmich/esp-idf/components/ieee802154 C:/Users/mmich/esp-idf/components/json C:/Users/mmich/esp-idf/components/log C:/Users/mmich/esp-idf/components/lwip C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main C:/Users/mmich/esp-idf/components/mbedtls C:/Users/mmich/esp-idf/components/mqtt C:/Users/mmich/esp-idf/components/newlib C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE C:/Users/mmich/esp-idf/components/nvs_flash C:/Users/mmich/esp-idf/components/nvs_sec_provider C:/Users/mmich/esp-idf/components/openthread C:/Users/mmich/esp-idf/components/partition_table C:/Users/mmich/esp-idf/components/perfmon C:/Users/mmich/esp-idf/components/protobuf-c C:/Users/mmich/esp-idf/components/protocomm C:/Users/mmich/esp-idf/components/pthread C:/Users/mmich/esp-idf/components/sdmmc C:/Users/mmich/esp-idf/components/soc C:/Users/mmich/esp-idf/components/spi_flash C:/Users/mmich/esp-idf/components/spiffs C:/Users/mmich/esp-idf/components/tcp_transport C:/Users/mmich/esp-idf/components/ulp C:/Users/mmich/esp-idf/components/unity C:/Users/mmich/esp-idf/components/usb C:/Users/mmich/esp-idf/components/vfs C:/Users/mmich/esp-idf/components/wear_levelling C:/Users/mmich/esp-idf/components/wifi_provisioning C:/Users/mmich/esp-idf/components/wpa_supplicant C:/Users/mmich/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build
+[0/1] Re-running CMake...
+[1/13] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\mmich\Desktop\Git_repo_for_speedometer\Bicycle-Speedometer_MM\Speedometer_proj\build\bootloader\esp-idf\esptool_py && C:\Users\mmich\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/mmich/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/11] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[3/11] Linking C static library esp-idf\esp_app_format\libesp_app_format.a
+[4/11] Building C object esp-idf/adc_sensor/CMakeFiles/__idf_adc_sensor.dir/adc_sensor.c.obj
+[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Speedometer.c.obj
+[6/11] Linking C static library esp-idf\adc_sensor\libadc_sensor.a
+[7/11] Linking C static library esp-idf\main\libmain.a
+[8/11] Generating ld/sections.ld
+[9/11] Linking CXX executable Speedometer.elf
+[10/11] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/Speedometer.bin
+[11/11] cmd.exe /C "cd /D C:\Users\mmich\Desktop\Git_repo_for_speedometer\Bicycle-Speedometer_MM\Speedometer_proj\build\esp-idf\esptool_py && C:\Users\mmich\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/mmich/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/partition_table/partition-table.bin C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/Speedometer.bin"
+Speedometer.bin binary size 0x95f80 bytes. Smallest app partition is 0x100000 bytes. 0x6a080 bytes (41%) free.
