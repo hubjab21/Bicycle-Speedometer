@@ -422,3 +422,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/esp-idf/nimBLE/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/esp-idf/adc_sensor/cmake_install.cmake")
+endif()
+

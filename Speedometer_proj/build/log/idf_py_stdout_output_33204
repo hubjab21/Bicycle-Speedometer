@@ -1,0 +1,966 @@
+XV�m[0m
+[0;32mI ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  3 2024 15:19:52[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b45ch (111708) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002b484 vaddr=3ffbdb60 size=04b94h ( 19348) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=5bf3ch (376636) map[0m
+[0;32mI (279) esp_image: segment 3: paddr=0008bf64 vaddr=3ffc26f4 size=00024h (    36) load[0m
+[0;32mI (280) esp_image: segment 4: paddr=0008bf90 vaddr=40080000 size=1a018h (106520) load[0m
+[0;32mI (340) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (340) boot: Disabling RNG early entropy source...[0m
+[0;32mI (351) cpu_start: Multicore app[0m
+[0;32mI (360) cpu_start: Pro cpu start user code[0m
+[0;32mI (360) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (360) cpu_start: Application information:[0m
+[0;32mI (363) cpu_start: Project name:     Speedometer[0m
+[0;32mI (369) cpu_start: App version:      cdb2ade-dirty[0m
+[0;32mI (374) cpu_start: Compile time:     Jun  3 2024 18:47:38[0m
+[0;32mI (380) cpu_start: ELF file SHA256:  cb1b8d209...[0m
+[0;32mI (386) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (390) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (395) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (400) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (405) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (412) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (418) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (424) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (430) heap_init: At 3FFC5520 len 0001AAE0 (106 KiB): DRAM[0m
+[0;32mI (436) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (443) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (449) heap_init: At 4009A018 len 00005FE8 (23 KiB): IRAM[0m
+[0;32mI (457) spi_flash: detected chip: generic[0m
+[0;32mI (460) spi_flash: flash io: dio[0m
+[0;33mW (464) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (478) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (483) main_task: Started on CPU0[0m
+[0;32mI (493) main_task: Calling app_main()[0m
+[0;32mI (513) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (523) BTDM_INIT: Bluetooth MAC: 7c:87:ce:2d:5b:0e[0m
+[0;32mI (523) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (843) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (853) ADC_CONTINUOUS: ADC continuous mode started[0m
+[0;32mI (853) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (853) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (863) ADC_CONTINUOUS: Channel: 4, Value: 2068[0m
+[0;32mI (863) ADC_CONTINUOUS: Channel: 4, Value: 1776[0m
+[0;32mI (873) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (873) ADC_CONTINUOUS: Channel: 4, Value: 2037[0m
+[0;32mI (873) ADC_CONTINUOUS: Time between threshold crossings: 20 ms[0m
+[0;32mI (883) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (893) ADC_CONTINUOUS: Channel: 4, Value: 2027[0m
+[0;32mI (873) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (1003) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (1003) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (1003) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (1003) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (1013) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (1013) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (1023) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (1023) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (1133) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (1133) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (1133) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (1133) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (1143) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (1143) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (1153) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (1153) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (1263) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (1263) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (1263) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (1263) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (1273) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (1273) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (1283) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (1283) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (1393) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (1393) ADC_CONTINUOUS: Channel: 4, Value: 2032[0m
+[0;32mI (1393) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (1393) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (1403) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (1403) ADC_CONTINUOUS: Channel: 4, Value: 1998[0m
+[0;32mI (1413) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (1413) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (1423) ADC_CONTINUOUS: Time between threshold crossings: 550 ms[0m
+[0;32mI (1523) ADC_CONTINUOUS: Channel: 4, Value: 2008[0m
+[0;32mI (1523) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (1523) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (1523) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (1533) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (1533) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (1543) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (1543) ADC_CONTINUOUS: Channel: 4, Value: 2027[0m
+[0;32mI (1653) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (1653) ADC_CONTINUOUS: Channel: 4, Value: 2026[0m
+[0;32mI (1653) ADC_CONTINUOUS: Channel: 4, Value: 1990[0m
+[0;32mI (1653) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (1663) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (1663) ADC_CONTINUOUS: Time between threshold crossings: 240 ms[0m
+[0;32mI (1663) ADC_CONTINUOUS: Channel: 4, Value: 2028[0m
+[0;32mI (1673) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (1683) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (1783) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (1783) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (1783) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (1783) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (1793) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (1793) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (1803) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (1803) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (1913) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (1913) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (1913) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (1913) ADC_CONTINUOUS: Channel: 4, Value: 2004[0m
+[0;32mI (1923) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (1923) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (1933) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (1933) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (2043) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (2043) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (2043) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (2043) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (2053) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (2053) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (2063) ADC_CONTINUOUS: Channel: 4, Value: 1943[0m
+[0;32mI (2063) ADC_CONTINUOUS: Channel: 4, Value: 2004[0m
+[0;32mI (2073) ADC_CONTINUOUS: Time between threshold crossings: 410 ms[0m
+[0;32mI (2173) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (2173) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (2173) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (2173) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (2183) ADC_CONTINUOUS: Channel: 4, Value: 2249[0m
+[0;32mI (2183) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (2193) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (2193) ADC_CONTINUOUS: Channel: 4, Value: 2032[0m
+[0;32mI (2303) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (2303) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (2303) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (2303) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (2313) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (2313) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (2323) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (2323) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (2433) ADC_CONTINUOUS: Channel: 4, Value: 2035[0m
+[0;32mI (2433) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (2433) ADC_CONTINUOUS: Channel: 4, Value: 1988[0m
+[0;32mI (2433) ADC_CONTINUOUS: Channel: 4, Value: 2295[0m
+[0;32mI (2443) ADC_CONTINUOUS: Channel: 4, Value: 2036[0m
+[0;32mI (2443) ADC_CONTINUOUS: Time between threshold crossings: 370 ms[0m
+[0;32mI (2443) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (2453) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (2463) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (2563) ADC_CONTINUOUS: Channel: 4, Value: 1963[0m
+[0;32mI (2563) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (2563) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (2563) ADC_CONTINUOUS: Time between threshold crossings: 120 ms[0m
+[0;32mI (2563) ADC_CONTINUOUS: Channel: 4, Value: 2030[0m
+[0;32mI (2573) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (2583) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (2583) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (2593) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (2693) ADC_CONTINUOUS: Channel: 4, Value: 2004[0m
+[0;32mI (2693) ADC_CONTINUOUS: Channel: 4, Value: 1915[0m
+[0;32mI (2693) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (2693) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (2693) ADC_CONTINUOUS: Time between threshold crossings: 130 ms[0m
+[0;32mI (2703) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (2713) ADC_CONTINUOUS: Channel: 4, Value: 2004[0m
+[0;32mI (2713) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (2723) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (2823) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (2823) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (2823) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (2823) ADC_CONTINUOUS: Channel: 4, Value: 2027[0m
+[0;32mI (2833) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (2833) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (2843) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (2843) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (2953) ADC_CONTINUOUS: Channel: 4, Value: 1994[0m
+[0;32mI (2953) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (2953) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (2953) ADC_CONTINUOUS: Time between threshold crossings: 260 ms[0m
+[0;32mI (2953) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (2963) ADC_CONTINUOUS: Channel: 4, Value: 2020[0m
+[0;32mI (2973) ADC_CONTINUOUS: Channel: 4, Value: 2339[0m
+[0;32mI (2973) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (2983) ADC_CONTINUOUS: Channel: 4, Value: 1989[0m
+[0;32mI (3083) ADC_CONTINUOUS: Channel: 4, Value: 2035[0m
+[0;32mI (3083) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (3083) ADC_CONTINUOUS: Time between threshold crossings: 130 ms[0m
+[0;32mI (3083) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (3093) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (3093) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (3103) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (3103) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (3113) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (3213) ADC_CONTINUOUS: Channel: 4, Value: 1956[0m
+[0;32mI (3213) ADC_CONTINUOUS: Channel: 4, Value: 2035[0m
+[0;32mI (3213) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (3213) ADC_CONTINUOUS: Time between threshold crossings: 130 ms[0m
+[0;32mI (3213) ADC_CONTINUOUS: Channel: 4, Value: 2004[0m
+[0;32mI (3223) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (3233) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (3233) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (3243) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (3343) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (3343) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (3343) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (3343) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (3353) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (3353) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (3363) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (3363) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (3473) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (3473) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (3473) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (3473) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (3483) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (3483) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (3493) ADC_CONTINUOUS: Channel: 4, Value: 1991[0m
+[0;32mI (3493) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (3503) ADC_CONTINUOUS: Time between threshold crossings: 290 ms[0m
+[0;32mI (3603) ADC_CONTINUOUS: Channel: 4, Value: 2029[0m
+[0;32mI (3603) ADC_CONTINUOUS: Channel: 4, Value: 2025[0m
+[0;32mI (3603) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (3603) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (3613) ADC_CONTINUOUS: Channel: 4, Value: 1994[0m
+[0;32mI (3613) ADC_CONTINUOUS: Channel: 4, Value: 2020[0m
+[0;32mI (3623) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (3623) ADC_CONTINUOUS: Time between threshold crossings: 120 ms[0m
+[0;32mI (3623) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (3733) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (3733) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (3733) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (3733) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (3743) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (3743) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (3753) ADC_CONTINUOUS: Channel: 4, Value: 2008[0m
+[0;32mI (3753) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (3863) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (3863) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (3863) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (3863) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (3873) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (3873) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (3883) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (3883) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (3993) ADC_CONTINUOUS: Channel: 4, Value: 1994[0m
+[0;32mI (3993) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (3993) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (3993) ADC_CONTINUOUS: Time between threshold crossings: 370 ms[0m
+[0;32mI (3993) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (4003) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (4013) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (4013) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (4023) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (4123) ADC_CONTINUOUS: Channel: 4, Value: 1991[0m
+[0;32mI (4123) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (4123) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (4123) ADC_CONTINUOUS: Time between threshold crossings: 130 ms[0m
+[0;32mI (4123) ADC_CONTINUOUS: Channel: 4, Value: 2004[0m
+[0;32mI (4133) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (4143) ADC_CONTINUOUS: Channel: 4, Value: 2004[0m
+[0;32mI (4143) ADC_CONTINUOUS: Channel: 4, Value: 2083[0m
+[0;32mI (4153) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (4253) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (4253) ADC_CONTINUOUS: Channel: 4, Value: 1999[0m
+[0;32mI (4253) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (4253) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (4263) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (4263) ADC_CONTINUOUS: Time between threshold crossings: 140 ms[0m
+[0;32mI (4263) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (4273) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (4283) ADC_CONTINUOUS: Channel: 4, Value: 2053[0m
+[0;32mI (4383) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (4383) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (4383) ADC_CONTINUOUS: Channel: 4, Value: 2004[0m
+[0;32mI (4383) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (4393) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (4393) ADC_CONTINUOUS: Channel: 4, Value: 1999[0m
+[0;32mI (4403) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (4403) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (4403) ADC_CONTINUOUS: Time between threshold crossings: 140 ms[0m
+[0;32mI (4513) ADC_CONTINUOUS: Channel: 4, Value: 1999[0m
+[0;32mI (4513) ADC_CONTINUOUS: Channel: 4, Value: 1987[0m
+[0;32mI (4513) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (4513) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (4513) ADC_CONTINUOUS: Time between threshold crossings: 110 ms[0m
+[0;32mI (4523) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (4533) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (4533) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (4543) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (4643) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (4643) ADC_CONTINUOUS: Channel: 4, Value: 2031[0m
+[0;32mI (4643) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (4643) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (4653) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (4653) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (4663) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (4663) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (4773) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (4773) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (4773) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (4773) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (4783) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (4783) ADC_CONTINUOUS: Channel: 4, Value: 2029[0m
+[0;32mI (4793) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (4793) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (4903) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (4903) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (4903) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (4903) ADC_CONTINUOUS: Channel: 4, Value: 2020[0m
+[0;32mI (4913) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (4913) ADC_CONTINUOUS: Channel: 4, Value: 2413[0m
+[0;32mI (4923) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (4923) ADC_CONTINUOUS: Channel: 4, Value: 2020[0m
+[0;32mI (5033) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (5033) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (5033) ADC_CONTINUOUS: Channel: 4, Value: 2032[0m
+[0;32mI (5033) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (5043) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (5043) ADC_CONTINUOUS: Channel: 4, Value: 2041[0m
+[0;32mI (5053) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (5053) ADC_CONTINUOUS: Channel: 4, Value: 2027[0m
+[0;32mI (5163) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (5163) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (5163) ADC_CONTINUOUS: Channel: 4, Value: 2004[0m
+[0;32mI (5163) ADC_CONTINUOUS: Channel: 4, Value: 1984[0m
+[0;32mI (5173) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (5173) ADC_CONTINUOUS: Channel: 4, Value: 2026[0m
+[0;32mI (5173) ADC_CONTINUOUS: Time between threshold crossings: 660 ms[0m
+[0;32mI (5183) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (5193) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (5293) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (5293) ADC_CONTINUOUS: Channel: 4, Value: 2227[0m
+[0;32mI (5293) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (5293) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (5303) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (5303) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (5313) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (5313) ADC_CONTINUOUS: Channel: 4, Value: 2004[0m
+[0;32mI (5423) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (5423) ADC_CONTINUOUS: Channel: 4, Value: 2027[0m
+[0;32mI (5423) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (5423) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (5433) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (5433) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (5443) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (5443) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (5553) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (5553) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (5553) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (5553) ADC_CONTINUOUS: Channel: 4, Value: 2026[0m
+[0;32mI (5563) ADC_CONTINUOUS: Channel: 4, Value: 2127[0m
+[0;32mI (5563) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (5573) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (5573) ADC_CONTINUOUS: Channel: 4, Value: 1875[0m
+[0;32mI (5683) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (5683) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (5683) ADC_CONTINUOUS: Time between threshold crossings: 510 ms[0m
+[0;32mI (5683) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (5693) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (5693) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (5703) ADC_CONTINUOUS: Channel: 4, Value: 1935[0m
+[0;32mI (5703) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (5713) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (5713) ADC_CONTINUOUS: Time between threshold crossings: 30 ms[0m
+[0;32mI (5813) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (5813) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (5813) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (5813) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (5823) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (5823) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (5833) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (5833) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (5943) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (5943) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (5943) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (5943) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (5953) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (5953) ADC_CONTINUOUS: Channel: 4, Value: 2008[0m
+[0;32mI (5963) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (5963) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (6073) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (6073) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (6073) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (6073) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (6083) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (6083) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (6093) ADC_CONTINUOUS: Channel: 4, Value: 2047[0m
+[0;32mI (6093) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (6203) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (6203) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (6203) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (6203) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (6213) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (6213) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (6223) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (6223) ADC_CONTINUOUS: Channel: 4, Value: 2066[0m
+[0;32mI (6333) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (6333) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (6333) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (6333) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (6343) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (6343) ADC_CONTINUOUS: Channel: 4, Value: 1993[0m
+[0;32mI (6353) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (6353) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (6363) ADC_CONTINUOUS: Time between threshold crossings: 650 ms[0m
+[0;32mI (6463) ADC_CONTINUOUS: Channel: 4, Value: 1957[0m
+[0;32mI (6463) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (6463) ADC_CONTINUOUS: Channel: 4, Value: 2027[0m
+[0;32mI (6463) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
+[0;32mI (6463) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (6473) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (6483) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (6483) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (6493) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (6593) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (6593) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (6593) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (6593) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (6603) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (6603) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (6613) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (6613) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (6723) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (6723) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (6723) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (6723) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (6733) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (6733) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (6743) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (6743) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (6853) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (6853) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (6853) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (6853) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (6863) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (6863) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (6873) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (6873) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (6983) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (6983) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (6983) ADC_CONTINUOUS: Channel: 4, Value: 2117[0m
+[0;32mI (6983) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (6993) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (6993) ADC_CONTINUOUS: Channel: 4, Value: 1987[0m
+[0;32mI (7003) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (7003) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (7003) ADC_CONTINUOUS: Time between threshold crossings: 540 ms[0m
+[0;32mI (7113) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (7113) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (7113) ADC_CONTINUOUS: Channel: 4, Value: 1995[0m
+[0;32mI (7113) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (7123) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (7123) ADC_CONTINUOUS: Time between threshold crossings: 120 ms[0m
+[0;32mI (7123) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (7133) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (7143) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (7243) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (7243) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (7243) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (7243) ADC_CONTINUOUS: Channel: 4, Value: 1925[0m
+[0;32mI (7253) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (7253) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (7253) ADC_CONTINUOUS: Time between threshold crossings: 130 ms[0m
+[0;32mI (7263) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (7273) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (7373) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (7373) ADC_CONTINUOUS: Channel: 4, Value: 2008[0m
+[0;32mI (7373) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (7373) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (7383) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (7383) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (7393) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (7393) ADC_CONTINUOUS: Channel: 4, Value: 1999[0m
+[0;32mI (7503) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (7503) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (7503) ADC_CONTINUOUS: Time between threshold crossings: 250 ms[0m
+[0;32mI (7503) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (7513) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (7513) ADC_CONTINUOUS: Channel: 4, Value: 2032[0m
+[0;32mI (7523) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (7523) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (7533) ADC_CONTINUOUS: Channel: 4, Value: 2069[0m
+[0;32mI (7633) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (7633) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (7633) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (7633) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (7643) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (7643) ADC_CONTINUOUS: Channel: 4, Value: 2089[0m
+[0;32mI (7653) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (7653) ADC_CONTINUOUS: Channel: 4, Value: 2025[0m
+[0;32mI (7763) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (7763) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (7763) ADC_CONTINUOUS: Channel: 4, Value: 2026[0m
+[0;32mI (7763) ADC_CONTINUOUS: Channel: 4, Value: 1931[0m
+[0;32mI (7773) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (7773) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (7773) ADC_CONTINUOUS: Time between threshold crossings: 270 ms[0m
+[0;32mI (7783) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (7793) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (7893) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (7893) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (7893) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (7893) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (7903) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (7903) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (7913) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (7913) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (8023) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (8023) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (8023) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (8023) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (8033) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (8033) ADC_CONTINUOUS: Channel: 4, Value: 2027[0m
+[0;32mI (8043) ADC_CONTINUOUS: Channel: 4, Value: 2063[0m
+[0;32mI (8043) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (8153) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (8153) ADC_CONTINUOUS: Channel: 4, Value: 2020[0m
+[0;32mI (8153) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (8153) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (8163) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (8163) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (8173) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (8173) ADC_CONTINUOUS: Channel: 4, Value: 2030[0m
+[0;32mI (8283) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (8283) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (8283) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (8283) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (8293) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (8293) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (8303) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (8303) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (8413) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (8413) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (8413) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (8413) ADC_CONTINUOUS: Channel: 4, Value: 1929[0m
+[0;32mI (8423) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (8423) ADC_CONTINUOUS: Channel: 4, Value: 1995[0m
+[0;32mI (8423) ADC_CONTINUOUS: Time between threshold crossings: 650 ms[0m
+[0;32mI (8433) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (8443) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (8443) ADC_CONTINUOUS: Time between threshold crossings: 20 ms[0m
+[0;32mI (8543) ADC_CONTINUOUS: Channel: 4, Value: 2093[0m
+[0;32mI (8543) ADC_CONTINUOUS: Channel: 4, Value: 1995[0m
+[0;32mI (8543) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (8543) ADC_CONTINUOUS: Channel: 4, Value: 1949[0m
+[0;32mI (8543) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
+[0;32mI (8553) ADC_CONTINUOUS: Channel: 4, Value: 1999[0m
+[0;32mI (8563) ADC_CONTINUOUS: Channel: 4, Value: 2008[0m
+[0;32mI (8563) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (8563) ADC_CONTINUOUS: Time between threshold crossings: 20 ms[0m
+[0;32mI (8573) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (8683) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (8683) ADC_CONTINUOUS: Channel: 4, Value: 1923[0m
+[0;32mI (8683) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (8683) ADC_CONTINUOUS: Channel: 4, Value: 1991[0m
+[0;32mI (8683) ADC_CONTINUOUS: Time between threshold crossings: 120 ms[0m
+[0;32mI (8693) ADC_CONTINUOUS: Channel: 4, Value: 1995[0m
+[0;32mI (8703) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (8703) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (8703) ADC_CONTINUOUS: Time between threshold crossings: 20 ms[0m
+[0;32mI (8713) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (8823) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (8823) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (8823) ADC_CONTINUOUS: Channel: 4, Value: 2027[0m
+[0;32mI (8823) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (8833) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (8833) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (8843) ADC_CONTINUOUS: Channel: 4, Value: 2020[0m
+[0;32mI (8843) ADC_CONTINUOUS: Channel: 4, Value: 2031[0m
+[0;32mI (8953) ADC_CONTINUOUS: Channel: 4, Value: 2076[0m
+[0;32mI (8953) ADC_CONTINUOUS: Channel: 4, Value: 2075[0m
+[0;32mI (8953) ADC_CONTINUOUS: Channel: 4, Value: 2118[0m
+[0;32mI (8953) ADC_CONTINUOUS: Channel: 4, Value: 2064[0m
+[0;32mI (8963) ADC_CONTINUOUS: Channel: 4, Value: 2071[0m
+[0;32mI (8963) ADC_CONTINUOUS: Channel: 4, Value: 2090[0m
+[0;32mI (8973) ADC_CONTINUOUS: Channel: 4, Value: 2079[0m
+[0;32mI (8973) ADC_CONTINUOUS: Channel: 4, Value: 2075[0m
+[0;32mI (9083) ADC_CONTINUOUS: Channel: 4, Value: 2355[0m
+[0;32mI (9083) ADC_CONTINUOUS: Channel: 4, Value: 2186[0m
+[0;32mI (9083) ADC_CONTINUOUS: Channel: 4, Value: 2177[0m
+[0;32mI (9083) ADC_CONTINUOUS: Channel: 4, Value: 2177[0m
+[0;32mI (9093) ADC_CONTINUOUS: Channel: 4, Value: 2172[0m
+[0;32mI (9093) ADC_CONTINUOUS: Channel: 4, Value: 2179[0m
+[0;32mI (9103) ADC_CONTINUOUS: Channel: 4, Value: 2177[0m
+[0;32mI (9103) ADC_CONTINUOUS: Channel: 4, Value: 2181[0m
+[0;32mI (9213) ADC_CONTINUOUS: Channel: 4, Value: 2293[0m
+[0;32mI (9213) ADC_CONTINUOUS: Channel: 4, Value: 2296[0m
+[0;32mI (9213) ADC_CONTINUOUS: Channel: 4, Value: 2297[0m
+[0;32mI (9213) ADC_CONTINUOUS: Channel: 4, Value: 2288[0m
+[0;32mI (9223) ADC_CONTINUOUS: Channel: 4, Value: 2304[0m
+[0;32mI (9223) ADC_CONTINUOUS: Channel: 4, Value: 2298[0m
+[0;32mI (9233) ADC_CONTINUOUS: Channel: 4, Value: 2302[0m
+[0;32mI (9233) ADC_CONTINUOUS: Channel: 4, Value: 2289[0m
+[0;32mI (9343) ADC_CONTINUOUS: Channel: 4, Value: 2333[0m
+[0;32mI (9343) ADC_CONTINUOUS: Channel: 4, Value: 2333[0m
+[0;32mI (9343) ADC_CONTINUOUS: Channel: 4, Value: 2334[0m
+[0;32mI (9343) ADC_CONTINUOUS: Channel: 4, Value: 2337[0m
+[0;32mI (9353) ADC_CONTINUOUS: Channel: 4, Value: 2347[0m
+[0;32mI (9353) ADC_CONTINUOUS: Channel: 4, Value: 2338[0m
+[0;32mI (9363) ADC_CONTINUOUS: Channel: 4, Value: 2331[0m
+[0;32mI (9363) ADC_CONTINUOUS: Channel: 4, Value: 2340[0m
+[0;32mI (9473) ADC_CONTINUOUS: Channel: 4, Value: 2421[0m
+[0;32mI (9473) ADC_CONTINUOUS: Channel: 4, Value: 2429[0m
+[0;32mI (9473) ADC_CONTINUOUS: Channel: 4, Value: 2442[0m
+[0;32mI (9473) ADC_CONTINUOUS: Channel: 4, Value: 2427[0m
+[0;32mI (9483) ADC_CONTINUOUS: Channel: 4, Value: 2439[0m
+[0;32mI (9483) ADC_CONTINUOUS: Channel: 4, Value: 2437[0m
+[0;32mI (9493) ADC_CONTINUOUS: Channel: 4, Value: 2421[0m
+[0;32mI (9493) ADC_CONTINUOUS: Channel: 4, Value: 2424[0m
+[0;32mI (9603) ADC_CONTINUOUS: Channel: 4, Value: 2618[0m
+[0;32mI (9603) ADC_CONTINUOUS: Channel: 4, Value: 2619[0m
+[0;32mI (9603) ADC_CONTINUOUS: Channel: 4, Value: 2625[0m
+[0;32mI (9603) ADC_CONTINUOUS: Channel: 4, Value: 2608[0m
+[0;32mI (9613) ADC_CONTINUOUS: Channel: 4, Value: 2674[0m
+[0;32mI (9613) ADC_CONTINUOUS: Channel: 4, Value: 2623[0m
+[0;32mI (9623) ADC_CONTINUOUS: Channel: 4, Value: 2613[0m
+[0;32mI (9623) ADC_CONTINUOUS: Channel: 4, Value: 2615[0m
+[0;32mI (9733) ADC_CONTINUOUS: Channel: 4, Value: 2575[0m
+[0;32mI (9733) ADC_CONTINUOUS: Channel: 4, Value: 2551[0m
+[0;32mI (9733) ADC_CONTINUOUS: Channel: 4, Value: 2571[0m
+[0;32mI (9733) ADC_CONTINUOUS: Channel: 4, Value: 2559[0m
+[0;32mI (9743) ADC_CONTINUOUS: Channel: 4, Value: 2559[0m
+[0;32mI (9743) ADC_CONTINUOUS: Channel: 4, Value: 2554[0m
+[0;32mI (9753) ADC_CONTINUOUS: Channel: 4, Value: 2559[0m
+[0;32mI (9753) ADC_CONTINUOUS: Channel: 4, Value: 2559[0m
+[0;32mI (9863) ADC_CONTINUOUS: Channel: 4, Value: 2573[0m
+[0;32mI (9863) ADC_CONTINUOUS: Channel: 4, Value: 2481[0m
+[0;32mI (9863) ADC_CONTINUOUS: Channel: 4, Value: 2523[0m
+[0;32mI (9863) ADC_CONTINUOUS: Channel: 4, Value: 2533[0m
+[0;32mI (9873) ADC_CONTINUOUS: Channel: 4, Value: 2527[0m
+[0;32mI (9873) ADC_CONTINUOUS: Channel: 4, Value: 2525[0m
+[0;32mI (9883) ADC_CONTINUOUS: Channel: 4, Value: 2517[0m
+[0;32mI (9883) ADC_CONTINUOUS: Channel: 4, Value: 2518[0m
+[0;32mI (9993) ADC_CONTINUOUS: Channel: 4, Value: 1948[0m
+[0;32mI (9993) ADC_CONTINUOUS: Channel: 4, Value: 1938[0m
+[0;32mI (9993) ADC_CONTINUOUS: Channel: 4, Value: 1953[0m
+[0;32mI (9993) ADC_CONTINUOUS: Channel: 4, Value: 1965[0m
+[0;32mI (10003) ADC_CONTINUOUS: Channel: 4, Value: 1946[0m
+[0;32mI (10003) ADC_CONTINUOUS: Channel: 4, Value: 1947[0m
+[0;32mI (10013) ADC_CONTINUOUS: Channel: 4, Value: 1951[0m
+[0;32mI (10013) ADC_CONTINUOUS: Channel: 4, Value: 1954[0m
+[0;32mI (10123) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (10123) ADC_CONTINUOUS: Channel: 4, Value: 2008[0m
+[0;32mI (10123) ADC_CONTINUOUS: Time between threshold crossings: 1420 ms[0m
+[0;32mI (10123) ADC_CONTINUOUS: Channel: 4, Value: 2004[0m
+[0;32mI (10133) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (10133) ADC_CONTINUOUS: Channel: 4, Value: 1914[0m
+[0;32mI (10143) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (10143) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (10143) ADC_CONTINUOUS: Time between threshold crossings: 20 ms[0m
+[0;32mI (10153) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (10263) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (10263) ADC_CONTINUOUS: Channel: 4, Value: 1997[0m
+[0;32mI (10263) ADC_CONTINUOUS: Channel: 4, Value: 1926[0m
+[0;32mI (10263) ADC_CONTINUOUS: Channel: 4, Value: 1994[0m
+[0;32mI (10273) ADC_CONTINUOUS: Channel: 4, Value: 1989[0m
+[0;32mI (10273) ADC_CONTINUOUS: Channel: 4, Value: 1986[0m
+[0;32mI (10283) ADC_CONTINUOUS: Channel: 4, Value: 1997[0m
+[0;32mI (10283) ADC_CONTINUOUS: Channel: 4, Value: 1984[0m
+[0;32mI (10393) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (10393) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (10393) ADC_CONTINUOUS: Time between threshold crossings: 250 ms[0m
+[0;32mI (10393) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (10403) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (10403) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (10413) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (10413) ADC_CONTINUOUS: Channel: 4, Value: 1968[0m
+[0;32mI (10423) ADC_CONTINUOUS: Channel: 4, Value: 2041[0m
+[0;32mI (10423) ADC_CONTINUOUS: Time between threshold crossings: 30 ms[0m
+[0;32mI (10523) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (10523) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (10523) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (10523) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (10533) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (10533) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (10543) ADC_CONTINUOUS: Channel: 4, Value: 2028[0m
+[0;32mI (10543) ADC_CONTINUOUS: Channel: 4, Value: 2026[0m
+[0;32mI (10653) ADC_CONTINUOUS: Channel: 4, Value: 2027[0m
+[0;32mI (10653) ADC_CONTINUOUS: Channel: 4, Value: 2004[0m
+[0;32mI (10653) ADC_CONTINUOUS: Channel: 4, Value: 1994[0m
+[0;32mI (10653) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (10663) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (10663) ADC_CONTINUOUS: Time between threshold crossings: 240 ms[0m
+[0;32mI (10663) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (10673) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (10683) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (10783) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (10783) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (10783) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (10783) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (10793) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (10793) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (10803) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (10803) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (10913) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (10913) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (10913) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (10913) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (10923) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (10923) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (10933) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (10933) ADC_CONTINUOUS: Channel: 4, Value: 2024[0m
+[0;32mI (11043) ADC_CONTINUOUS: Channel: 4, Value: 1999[0m
+[0;32mI (11043) ADC_CONTINUOUS: Channel: 4, Value: 1999[0m
+[0;32mI (11043) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (11043) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (11043) ADC_CONTINUOUS: Time between threshold crossings: 380 ms[0m
+[0;32mI (11053) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (11063) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (11063) ADC_CONTINUOUS: Channel: 4, Value: 2070[0m
+[0;32mI (11073) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (11173) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (11173) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (11173) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (11173) ADC_CONTINUOUS: Channel: 4, Value: 2024[0m
+[0;32mI (11183) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (11183) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (11193) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (11193) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (11303) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (11303) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (11303) ADC_CONTINUOUS: Channel: 4, Value: 1899[0m
+[0;32mI (11303) ADC_CONTINUOUS: Channel: 4, Value: 1933[0m
+[0;32mI (11313) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (11313) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (11313) ADC_CONTINUOUS: Time between threshold crossings: 270 ms[0m
+[0;32mI (11323) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (11333) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (11433) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (11433) ADC_CONTINUOUS: Channel: 4, Value: 2020[0m
+[0;32mI (11433) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (11433) ADC_CONTINUOUS: Channel: 4, Value: 2027[0m
+[0;32mI (11443) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (11443) ADC_CONTINUOUS: Channel: 4, Value: 2008[0m
+[0;32mI (11453) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (11453) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (11563) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (11563) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (11563) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (11563) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (11573) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (11573) ADC_CONTINUOUS: Channel: 4, Value: 2026[0m
+[0;32mI (11583) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (11583) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (11693) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (11693) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (11693) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (11693) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (11703) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (11703) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (11713) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (11713) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (11823) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (11823) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (11823) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (11823) ADC_CONTINUOUS: Channel: 4, Value: 2010[0m
+[0;32mI (11833) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (11833) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (11843) ADC_CONTINUOUS: Channel: 4, Value: 1999[0m
+[0;32mI (11843) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (11853) ADC_CONTINUOUS: Time between threshold crossings: 540 ms[0m
+[0;32mI (11953) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (11953) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (11953) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (11953) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (11963) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (11963) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (11973) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (11973) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (12083) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (12083) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (12083) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (12083) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (12093) ADC_CONTINUOUS: Channel: 4, Value: 2027[0m
+[0;32mI (12093) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (12103) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (12103) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (12213) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (12213) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (12213) ADC_CONTINUOUS: Channel: 4, Value: 2006[0m
+[0;32mI (12213) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (12223) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (12223) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (12233) ADC_CONTINUOUS: Channel: 4, Value: 1983[0m
+[0;32mI (12233) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (12243) ADC_CONTINUOUS: Time between threshold crossings: 390 ms[0m
+[0;32mI (12343) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (12343) ADC_CONTINUOUS: Channel: 4, Value: 1980[0m
+[0;32mI (12343) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (12343) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (12343) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
+[0;32mI (12353) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (12363) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (12363) ADC_CONTINUOUS: Channel: 4, Value: 2033[0m
+[0;32mI (12373) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (12473) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (12473) ADC_CONTINUOUS: Channel: 4, Value: 2038[0m
+[0;32mI (12473) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (12473) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (12483) ADC_CONTINUOUS: Channel: 4, Value: 2132[0m
+[0;32mI (12483) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (12493) ADC_CONTINUOUS: Channel: 4, Value: 2054[0m
+[0;32mI (12493) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (12603) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (12603) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (12603) ADC_CONTINUOUS: Channel: 4, Value: 2099[0m
+[0;32mI (12603) ADC_CONTINUOUS: Channel: 4, Value: 2032[0m
+[0;32mI (12613) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (12613) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (12623) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (12623) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (12733) ADC_CONTINUOUS: Channel: 4, Value: 2031[0m
+[0;32mI (12733) ADC_CONTINUOUS: Channel: 4, Value: 2089[0m
+[0;32mI (12733) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (12733) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (12743) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (12743) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (12753) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (12753) ADC_CONTINUOUS: Channel: 4, Value: 2020[0m
+[0;32mI (12863) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (12863) ADC_CONTINUOUS: Channel: 4, Value: 2025[0m
+[0;32mI (12863) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (12863) ADC_CONTINUOUS: Channel: 4, Value: 2002[0m
+[0;32mI (12873) ADC_CONTINUOUS: Channel: 4, Value: 2012[0m
+[0;32mI (12873) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (12883) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (12883) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (12993) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (12993) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (12993) ADC_CONTINUOUS: Channel: 4, Value: 2035[0m
+[0;32mI (12993) ADC_CONTINUOUS: Channel: 4, Value: 2027[0m
+[0;32mI (13003) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (13003) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (13013) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (13013) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (13123) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (13123) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (13123) ADC_CONTINUOUS: Channel: 4, Value: 1996[0m
+[0;32mI (13123) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (13133) ADC_CONTINUOUS: Channel: 4, Value: 2025[0m
+[0;32mI (13133) ADC_CONTINUOUS: Time between threshold crossings: 790 ms[0m
+[0;32mI (13133) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (13143) ADC_CONTINUOUS: Channel: 4, Value: 1993[0m
+[0;32mI (13153) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (13153) ADC_CONTINUOUS: Time between threshold crossings: 20 ms[0m
+[0;32mI (13253) ADC_CONTINUOUS: Channel: 4, Value: 2020[0m
+[0;32mI (13253) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (13253) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (13253) ADC_CONTINUOUS: Channel: 4, Value: 2030[0m
+[0;32mI (13263) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (13263) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (13273) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (13273) ADC_CONTINUOUS: Channel: 4, Value: 2007[0m
+[0;32mI (13383) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (13383) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (13383) ADC_CONTINUOUS: Channel: 4, Value: 1994[0m
+[0;32mI (13383) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m
+[0;32mI (13393) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (13393) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (13393) ADC_CONTINUOUS: Time between threshold crossings: 240 ms[0m
+[0;32mI (13403) ADC_CONTINUOUS: Channel: 4, Value: 2030[0m
+[0;32mI (13413) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (13513) ADC_CONTINUOUS: Channel: 4, Value: 2126[0m
+[0;32mI (13513) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (13513) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (13513) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (13523) ADC_CONTINUOUS: Channel: 4, Value: 1996[0m
+[0;32mI (13523) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (13533) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (13533) ADC_CONTINUOUS: Time between threshold crossings: 140 ms[0m
+[0;32mI (13533) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (13643) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (13643) ADC_CONTINUOUS: Channel: 4, Value: 2005[0m
+[0;32mI (13643) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (13643) ADC_CONTINUOUS: Channel: 4, Value: 2020[0m
+[0;32mI (13653) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (13653) ADC_CONTINUOUS: Channel: 4, Value: 2016[0m
+[0;32mI (13663) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (13663) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (13773) ADC_CONTINUOUS: Channel: 4, Value: 2032[0m
+[0;32mI (13773) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (13773) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (13773) ADC_CONTINUOUS: Channel: 4, Value: 2032[0m
+[0;32mI (13783) ADC_CONTINUOUS: Channel: 4, Value: 1915[0m
+[0;32mI (13783) ADC_CONTINUOUS: Channel: 4, Value: 2081[0m
+[0;32mI (13793) ADC_CONTINUOUS: Channel: 4, Value: 2028[0m
+[0;32mI (13793) ADC_CONTINUOUS: Time between threshold crossings: 260 ms[0m
+[0;32mI (13793) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (13903) ADC_CONTINUOUS: Channel: 4, Value: 2013[0m
+[0;32mI (13903) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (13903) ADC_CONTINUOUS: Channel: 4, Value: 2070[0m
+[0;32mI (13903) ADC_CONTINUOUS: Channel: 4, Value: 1924[0m
+[0;32mI (13913) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (13913) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (13913) ADC_CONTINUOUS: Time between threshold crossings: 120 ms[0m
+[0;32mI (13923) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (13933) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (14033) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (14033) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (14033) ADC_CONTINUOUS: Channel: 4, Value: 2041[0m
+[0;32mI (14033) ADC_CONTINUOUS: Channel: 4, Value: 2085[0m
+[0;32mI (14043) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (14043) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (14053) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (14053) ADC_CONTINUOUS: Channel: 4, Value: 2025[0m
+[0;32mI (14163) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (14163) ADC_CONTINUOUS: Channel: 4, Value: 2062[0m
+[0;32mI (14163) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (14163) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (14173) ADC_CONTINUOUS: Channel: 4, Value: 2019[0m
+[0;32mI (14173) ADC_CONTINUOUS: Channel: 4, Value: 2023[0m
+[0;32mI (14183) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (14183) ADC_CONTINUOUS: Channel: 4, Value: 2014[0m
+[0;32mI (14293) ADC_CONTINUOUS: Channel: 4, Value: 2003[0m
+[0;32mI (14293) ADC_CONTINUOUS: Channel: 4, Value: 1983[0m
+[0;32mI (14293) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (14293) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (14293) ADC_CONTINUOUS: Time between threshold crossings: 380 ms[0m
+[0;32mI (14303) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (14313) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (14313) ADC_CONTINUOUS: Channel: 4, Value: 2025[0m
+[0;32mI (14323) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (14423) ADC_CONTINUOUS: Channel: 4, Value: 2032[0m
+[0;32mI (14423) ADC_CONTINUOUS: Channel: 4, Value: 2025[0m
+[0;32mI (14423) ADC_CONTINUOUS: Channel: 4, Value: 2017[0m
+[0;32mI (14423) ADC_CONTINUOUS: Channel: 4, Value: 2025[0m
+[0;32mI (14433) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (14433) ADC_CONTINUOUS: Channel: 4, Value: 2020[0m
+[0;32mI (14443) ADC_CONTINUOUS: Channel: 4, Value: 1980[0m
+[0;32mI (14443) ADC_CONTINUOUS: Channel: 4, Value: 2001[0m
+[0;32mI (14453) ADC_CONTINUOUS: Time between threshold crossings: 160 ms[0m
+[0;32mI (14553) ADC_CONTINUOUS: Channel: 4, Value: 2022[0m
+[0;32mI (14553) ADC_CONTINUOUS: Channel: 4, Value: 2009[0m
+[0;32mI (14553) ADC_CONTINUOUS: Channel: 4, Value: 2015[0m
+[0;32mI (14553) ADC_CONTINUOUS: Channel: 4, Value: 2011[0m
+[0;32mI (14563) ADC_CONTINUOUS: Channel: 4, Value: 2128[0m
+[0;32mI (14563) ADC_CONTINUOUS: Channel: 4, Value: 2021[0m
+[0;32mI (14573) ADC_CONTINUOUS: Channel: 4, Value: 2018[0m
+[0;32mI (14573) ADC_CONTINUOUS: Channel: 4, Value: 2000[0m

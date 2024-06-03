@@ -4,6 +4,7 @@ void ble_app_on_sync(void);
 void host_task(void *param);
 void Init_nimBLE_Sequence(void);
 void init_ble_with_boot(void *param);
+extern uint32_t sensor_data;
 // extern struct ble_gap_adv_params adv_params;
 // extern uint8_t ble_addr_type; 
 // extern int ble_gap_event(struct ble_gap_event *event, void *arg);

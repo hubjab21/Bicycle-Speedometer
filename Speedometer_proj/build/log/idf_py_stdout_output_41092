@@ -1,0 +1,142 @@
+e�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jun  3 2024 15:19:52[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b43ch (111676) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002b464 vaddr=3ffbdb60 size=04bb4h ( 19380) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=5bf1ch (376604) map[0m
+[0;32mI (279) esp_image: segment 3: paddr=0008bf44 vaddr=3ffc2714 size=00004h (     4) load[0m
+[0;32mI (279) esp_image: segment 4: paddr=0008bf50 vaddr=40080000 size=1a018h (106520) load[0m
+[0;32mI (339) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (339) boot: Disabling RNG early entropy source...[0m
+[0;32mI (351) cpu_start: Multicore app[0m
+[0;32mI (359) cpu_start: Pro cpu start user code[0m
+[0;32mI (360) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (360) cpu_start: Application information:[0m
+[0;32mI (363) cpu_start: Project name:     Speedometer[0m
+[0;32mI (368) cpu_start: App version:      cdb2ade-dirty[0m
+[0;32mI (373) cpu_start: Compile time:     Jun  3 2024 18:47:38[0m
+[0;32mI (379) cpu_start: ELF file SHA256:  68d21f816...[0m
+[0;32mI (385) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (390) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (394) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (399) cpu_start: Chip rev:         v1.1[0m
+[0;32mI (404) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (411) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (417) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (423) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (429) heap_init: At 3FFC5518 len 0001AAE8 (106 KiB): DRAM[0m
+[0;32mI (436) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (442) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (448) heap_init: At 4009A018 len 00005FE8 (23 KiB): IRAM[0m
+[0;32mI (456) spi_flash: detected chip: generic[0m
+[0;32mI (459) spi_flash: flash io: dio[0m
+[0;33mW (463) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (477) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (482) main_task: Started on CPU0[0m
+[0;32mI (492) main_task: Calling app_main()[0m
+[0;32mI (502) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (502) BTDM_INIT: Bluetooth MAC: 08:f9:e0:e2:1a:8e[0m
+[0;32mI (512) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (842) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (842) ADC_CONTINUOUS: ADC continuous mode started[0m
+[0;32mI (872) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (6132) BOOT BUTTON:: Button Pressed FOR 3 SECOND
+[0m
+[0;32mI (6132) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (6132) NimBLE: disc_mode=2[0m
+[0;32mI (6132) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (6142) NimBLE: 
+[0m
+[0;32mI (13662) GAP: BLE GAP EVENT CONNECT OK![0m
+[0;32mI (13752) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (13752) NimBLE: disc_mode=2[0m
+[0;32mI (13752) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (13752) NimBLE: 
+[0m
+[0;32mI (19362) ADC_CONTINUOUS: Time between threshold crossings: 2100 ms[0m
+[0;32mI (19962) ADC_CONTINUOUS: Time between threshold crossings: 600 ms[0m
+[0;32mI (21662) ADC_CONTINUOUS: Time between threshold crossings: 1700 ms[0m
+[0;32mI (22862) ADC_CONTINUOUS: Time between threshold crossings: 1200 ms[0m
+[0;32mI (23462) ADC_CONTINUOUS: Time between threshold crossings: 600 ms[0m
+[0;32mI (24562) ADC_CONTINUOUS: Time between threshold crossings: 1100 ms[0m
+[0;32mI (25762) ADC_CONTINUOUS: Time between threshold crossings: 1200 ms[0m
+[0;32mI (26262) ADC_CONTINUOUS: Time between threshold crossings: 500 ms[0m
+[0;32mI (26562) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (27162) ADC_CONTINUOUS: Time between threshold crossings: 600 ms[0m
+[0;32mI (28662) ADC_CONTINUOUS: Time between threshold crossings: 1500 ms[0m
+[0;32mI (29562) ADC_CONTINUOUS: Time between threshold crossings: 900 ms[0m
+[0;32mI (30862) ADC_CONTINUOUS: Time between threshold crossings: 1300 ms[0m
+[0;32mI (31162) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (31462) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (31762) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (32562) ADC_CONTINUOUS: Time between threshold crossings: 800 ms[0m
+[0;32mI (32862) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (33162) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (33262) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
+[0;32mI (33562) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (33762) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (34062) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (34362) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (34662) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (34762) ADC_CONTINUOUS: Time between threshold crossings: 100 ms[0m
+[0;32mI (34962) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (35262) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (35462) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (35762) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (36062) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (36362) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (36562) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (36862) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (37162) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (37462) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (37662) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (37962) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (38262) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (38462) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (38762) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (38962) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (39262) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (39462) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (39662) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (39672) ADC_CONTINUOUS: Time between threshold crossings: 10 ms[0m
+[0;32mI (39962) ADC_CONTINUOUS: Time between threshold crossings: 290 ms[0m
+[0;32mI (40162) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (40462) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (40762) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (40962) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (41162) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (41462) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (41662) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (41862) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (42162) ADC_CONTINUOUS: Time between threshold crossings: 300 ms[0m
+[0;32mI (42562) ADC_CONTINUOUS: Time between threshold crossings: 400 ms[0m
+[0;32mI (42762) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (42962) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (43662) ADC_CONTINUOUS: Time between threshold crossings: 700 ms[0m
+[0;32mI (43862) ADC_CONTINUOUS: Time between threshold crossings: 200 ms[0m
+[0;32mI (46562) ADC_CONTINUOUS: Time between threshold crossings: 2700 ms[0m
+[0;32mI (48262) ADC_CONTINUOUS: Time between threshold crossings: 1700 ms[0m

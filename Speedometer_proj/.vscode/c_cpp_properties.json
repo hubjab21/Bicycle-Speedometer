@@ -22,7 +22,8 @@
                 "C:/Users/mmich/esp-idf/components/esp_adc/deprecated/include",
                 "C:/Users/mmich/esp-idf/components/linux/include",
                 "C:/Users/mmich/esp-idf/components/linux/include",
-                "C:/Users/mmich/esp-idf/components/mqtt/esp-mqtt/host_test/mocks/include"
+                "C:/Users/mmich/esp-idf/components/mqtt/esp-mqtt/host_test/mocks/include",
+                "${workspaceFolder}/components/adc_sensor/include"
             ],
             "defines": [
                 "_DEBUG",

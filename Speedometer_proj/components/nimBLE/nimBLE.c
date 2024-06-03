@@ -19,7 +19,7 @@ char *TAG = "BLE_Speedometer";
 uint8_t ble_addr_type; 
 struct ble_gap_adv_params adv_params;
 bool status = false; 
-
+uint32_t sensor_data;
 static int device_write(uint16_t conn_handle, uint16_t attr_handle, 
                         struct ble_gatt_access_ctxt *ctxt, void *arg){
     char *data = (char *)ctxt->om->om_data;
@@ -48,7 +48,9 @@ static int device_write(uint16_t conn_handle, uint16_t attr_handle,
 
 static int device_read (uint16_t conn_handle, uint16_t attr_handle, 
                         struct ble_gatt_access_ctxt *ctxt, void *arg){
-    os_mbuf_append(ctxt->om, "Data placeholder", strlen("Data placeholder"));
+    uint32_t *data = (uint32_t*)arg;
+
+    os_mbuf_append(ctxt->om, (void*)data, sizeof(uint32_t));
     return 0; 
 }
 
@@ -56,7 +58,8 @@ static int device_read (uint16_t conn_handle, uint16_t attr_handle,
 struct ble_gatt_chr_def gatt_char_defs[] = {
     {.uuid = BLE_UUID16_DECLARE(0xFEF4),
      .flags = BLE_GATT_CHR_F_READ,
-     .access_cb = device_read},
+     .access_cb = device_read,
+     .arg = &sensor_data},
     {.uuid = BLE_UUID16_DECLARE(0xDEAD),
      .flags = BLE_GATT_CHR_F_WRITE,
      .access_cb = device_write},

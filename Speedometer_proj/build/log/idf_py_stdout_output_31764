@@ -1,0 +1,1027 @@
+[1/13] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\mmich\Desktop\Git_repo_for_speedometer\Bicycle-Speedometer_MM\Speedometer_proj\build\bootloader\esp-idf\esptool_py && C:\Users\mmich\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/mmich/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/11] Building C object esp-idf/adc_sensor/CMakeFiles/__idf_adc_sensor.dir/adc_sensor.c.obj
+FAILED: esp-idf/adc_sensor/CMakeFiles/__idf_adc_sensor.dir/adc_sensor.c.obj 
+ccache C:\Users\mmich\.espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.1\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/config -IC:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/include -IC:/Users/mmich/esp-idf/components/newlib/platform_include -IC:/Users/mmich/esp-idf/components/freertos/config/include -IC:/Users/mmich/esp-idf/components/freertos/config/include/freertos -IC:/Users/mmich/esp-idf/components/freertos/config/xtensa/include -IC:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Users/mmich/esp-idf/components/freertos/esp_additions/include -IC:/Users/mmich/esp-idf/components/esp_hw_support/include -IC:/Users/mmich/esp-idf/components/esp_hw_support/include/soc -IC:/Users/mmich/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/mmich/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/mmich/esp-idf/components/heap/include -IC:/Users/mmich/esp-idf/components/log/include -IC:/Users/mmich/esp-idf/components/soc/include -IC:/Users/mmich/esp-idf/components/soc/esp32 -IC:/Users/mmich/esp-idf/components/soc/esp32/include -IC:/Users/mmich/esp-idf/components/hal/platform_port/include -IC:/Users/mmich/esp-idf/components/hal/esp32/include -IC:/Users/mmich/esp-idf/components/hal/include -IC:/Users/mmich/esp-idf/components/esp_rom/include -IC:/Users/mmich/esp-idf/components/esp_rom/include/esp32 -IC:/Users/mmich/esp-idf/components/esp_rom/esp32 -IC:/Users/mmich/esp-idf/components/esp_common/include -IC:/Users/mmich/esp-idf/components/esp_system/include -IC:/Users/mmich/esp-idf/components/esp_system/port/soc -IC:/Users/mmich/esp-idf/components/esp_system/port/include/private -IC:/Users/mmich/esp-idf/components/xtensa/esp32/include -IC:/Users/mmich/esp-idf/components/xtensa/include -IC:/Users/mmich/esp-idf/components/xtensa/deprecated_include -IC:/Users/mmich/esp-idf/components/lwip/include -IC:/Users/mmich/esp-idf/components/lwip/include/apps -IC:/Users/mmich/esp-idf/components/lwip/include/apps/sntp -IC:/Users/mmich/esp-idf/components/lwip/lwip/src/include -IC:/Users/mmich/esp-idf/components/lwip/port/include -IC:/Users/mmich/esp-idf/components/lwip/port/freertos/include -IC:/Users/mmich/esp-idf/components/lwip/port/esp32xx/include -IC:/Users/mmich/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/Users/mmich/esp-idf/components/lwip/port/esp32xx/include/sys -IC:/Users/mmich/esp-idf/components/esp_event/include -IC:/Users/mmich/esp-idf/components/nvs_flash/include -IC:/Users/mmich/esp-idf/components/spi_flash/include -IC:/Users/mmich/esp-idf/components/esp_partition/include -IC:/Users/mmich/esp-idf/components/bt/include/esp32/include -IC:/Users/mmich/esp-idf/components/bt/common/osi/include -IC:/Users/mmich/esp-idf/components/bt/common/api/include/api -IC:/Users/mmich/esp-idf/components/bt/common/btc/profile/esp/blufi/include -IC:/Users/mmich/esp-idf/components/bt/common/btc/profile/esp/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ans/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/bas/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/dis/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gap/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gatt/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/hr/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/htp/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ias/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ipss/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/lls/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/prox/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/cts/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/tps/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/hid/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/sps/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/util/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/ram/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/config/include -IC:/Users/mmich/esp-idf/components/bt/porting/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/porting/nimble/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/port/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/transport/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/esp-hci/include -IC:/Users/mmich/esp-idf/components/esp_timer/include -IC:/Users/mmich/esp-idf/components/esp_wifi/include -IC:/Users/mmich/esp-idf/components/esp_wifi/wifi_apps/include -IC:/Users/mmich/esp-idf/components/esp_phy/include -IC:/Users/mmich/esp-idf/components/esp_phy/esp32/include -IC:/Users/mmich/esp-idf/components/esp_netif/include -IC:/Users/mmich/esp-idf/components/driver/include -IC:/Users/mmich/esp-idf/components/driver/deprecated -IC:/Users/mmich/esp-idf/components/driver/analog_comparator/include -IC:/Users/mmich/esp-idf/components/driver/dac/include -IC:/Users/mmich/esp-idf/components/driver/gpio/include -IC:/Users/mmich/esp-idf/components/driver/gptimer/include -IC:/Users/mmich/esp-idf/components/driver/i2c/include -IC:/Users/mmich/esp-idf/components/driver/i2s/include -IC:/Users/mmich/esp-idf/components/driver/ledc/include -IC:/Users/mmich/esp-idf/components/driver/mcpwm/include -IC:/Users/mmich/esp-idf/components/driver/parlio/include -IC:/Users/mmich/esp-idf/components/driver/pcnt/include -IC:/Users/mmich/esp-idf/components/driver/rmt/include -IC:/Users/mmich/esp-idf/components/driver/sdio_slave/include -IC:/Users/mmich/esp-idf/components/driver/sdmmc/include -IC:/Users/mmich/esp-idf/components/driver/sigma_delta/include -IC:/Users/mmich/esp-idf/components/driver/spi/include -IC:/Users/mmich/esp-idf/components/driver/temperature_sensor/include -IC:/Users/mmich/esp-idf/components/driver/touch_sensor/include -IC:/Users/mmich/esp-idf/components/driver/twai/include -IC:/Users/mmich/esp-idf/components/driver/uart/include -IC:/Users/mmich/esp-idf/components/driver/usb_serial_jtag/include -IC:/Users/mmich/esp-idf/components/driver/touch_sensor/esp32/include -IC:/Users/mmich/esp-idf/components/esp_pm/include -IC:/Users/mmich/esp-idf/components/esp_ringbuf/include -IC:/Users/mmich/esp-idf/components/esp_adc/include -IC:/Users/mmich/esp-idf/components/esp_adc/interface -IC:/Users/mmich/esp-idf/components/esp_adc/esp32/include -IC:/Users/mmich/esp-idf/components/esp_adc/deprecated/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj=. -fmacro-prefix-map=C:/Users/mmich/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/adc_sensor/CMakeFiles/__idf_adc_sensor.dir/adc_sensor.c.obj -MF esp-idf\adc_sensor\CMakeFiles\__idf_adc_sensor.dir\adc_sensor.c.obj.d -o esp-idf/adc_sensor/CMakeFiles/__idf_adc_sensor.dir/adc_sensor.c.obj -c C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/adc_sensor.c
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/adc_sensor.c:15:10: fatal error: nimBLE.h: No such file or directory
+   15 | #include "nimBLE.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+[3/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Speedometer.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/Speedometer.c.obj 
+ccache C:\Users\mmich\.espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.1\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/config -IC:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main -IC:/Users/mmich/esp-idf/components/newlib/platform_include -IC:/Users/mmich/esp-idf/components/freertos/config/include -IC:/Users/mmich/esp-idf/components/freertos/config/include/freertos -IC:/Users/mmich/esp-idf/components/freertos/config/xtensa/include -IC:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Users/mmich/esp-idf/components/freertos/esp_additions/include -IC:/Users/mmich/esp-idf/components/esp_hw_support/include -IC:/Users/mmich/esp-idf/components/esp_hw_support/include/soc -IC:/Users/mmich/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/mmich/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/mmich/esp-idf/components/heap/include -IC:/Users/mmich/esp-idf/components/log/include -IC:/Users/mmich/esp-idf/components/soc/include -IC:/Users/mmich/esp-idf/components/soc/esp32 -IC:/Users/mmich/esp-idf/components/soc/esp32/include -IC:/Users/mmich/esp-idf/components/hal/platform_port/include -IC:/Users/mmich/esp-idf/components/hal/esp32/include -IC:/Users/mmich/esp-idf/components/hal/include -IC:/Users/mmich/esp-idf/components/esp_rom/include -IC:/Users/mmich/esp-idf/components/esp_rom/include/esp32 -IC:/Users/mmich/esp-idf/components/esp_rom/esp32 -IC:/Users/mmich/esp-idf/components/esp_common/include -IC:/Users/mmich/esp-idf/components/esp_system/include -IC:/Users/mmich/esp-idf/components/esp_system/port/soc -IC:/Users/mmich/esp-idf/components/esp_system/port/include/private -IC:/Users/mmich/esp-idf/components/xtensa/esp32/include -IC:/Users/mmich/esp-idf/components/xtensa/include -IC:/Users/mmich/esp-idf/components/xtensa/deprecated_include -IC:/Users/mmich/esp-idf/components/lwip/include -IC:/Users/mmich/esp-idf/components/lwip/include/apps -IC:/Users/mmich/esp-idf/components/lwip/include/apps/sntp -IC:/Users/mmich/esp-idf/components/lwip/lwip/src/include -IC:/Users/mmich/esp-idf/components/lwip/port/include -IC:/Users/mmich/esp-idf/components/lwip/port/freertos/include -IC:/Users/mmich/esp-idf/components/lwip/port/esp32xx/include -IC:/Users/mmich/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/Users/mmich/esp-idf/components/lwip/port/esp32xx/include/sys -IC:/Users/mmich/esp-idf/components/esp_ringbuf/include -IC:/Users/mmich/esp-idf/components/efuse/include -IC:/Users/mmich/esp-idf/components/efuse/esp32/include -IC:/Users/mmich/esp-idf/components/esp_mm/include -IC:/Users/mmich/esp-idf/components/driver/include -IC:/Users/mmich/esp-idf/components/driver/deprecated -IC:/Users/mmich/esp-idf/components/driver/analog_comparator/include -IC:/Users/mmich/esp-idf/components/driver/dac/include -IC:/Users/mmich/esp-idf/components/driver/gpio/include -IC:/Users/mmich/esp-idf/components/driver/gptimer/include -IC:/Users/mmich/esp-idf/components/driver/i2c/include -IC:/Users/mmich/esp-idf/components/driver/i2s/include -IC:/Users/mmich/esp-idf/components/driver/ledc/include -IC:/Users/mmich/esp-idf/components/driver/mcpwm/include -IC:/Users/mmich/esp-idf/components/driver/parlio/include -IC:/Users/mmich/esp-idf/components/driver/pcnt/include -IC:/Users/mmich/esp-idf/components/driver/rmt/include -IC:/Users/mmich/esp-idf/components/driver/sdio_slave/include -IC:/Users/mmich/esp-idf/components/driver/sdmmc/include -IC:/Users/mmich/esp-idf/components/driver/sigma_delta/include -IC:/Users/mmich/esp-idf/components/driver/spi/include -IC:/Users/mmich/esp-idf/components/driver/temperature_sensor/include -IC:/Users/mmich/esp-idf/components/driver/touch_sensor/include -IC:/Users/mmich/esp-idf/components/driver/twai/include -IC:/Users/mmich/esp-idf/components/driver/uart/include -IC:/Users/mmich/esp-idf/components/driver/usb_serial_jtag/include -IC:/Users/mmich/esp-idf/components/driver/touch_sensor/esp32/include -IC:/Users/mmich/esp-idf/components/esp_pm/include -IC:/Users/mmich/esp-idf/components/mbedtls/port/include -IC:/Users/mmich/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/mmich/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/mmich/esp-idf/components/mbedtls/esp_crt_bundle/include -IC:/Users/mmich/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Users/mmich/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Users/mmich/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Users/mmich/esp-idf/components/esp_bootloader_format/include -IC:/Users/mmich/esp-idf/components/esp_app_format/include -IC:/Users/mmich/esp-idf/components/bootloader_support/include -IC:/Users/mmich/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/Users/mmich/esp-idf/components/esp_partition/include -IC:/Users/mmich/esp-idf/components/app_update/include -IC:/Users/mmich/esp-idf/components/spi_flash/include -IC:/Users/mmich/esp-idf/components/pthread/include -IC:/Users/mmich/esp-idf/components/esp_timer/include -IC:/Users/mmich/esp-idf/components/app_trace/include -IC:/Users/mmich/esp-idf/components/esp_event/include -IC:/Users/mmich/esp-idf/components/nvs_flash/include -IC:/Users/mmich/esp-idf/components/esp_phy/include -IC:/Users/mmich/esp-idf/components/esp_phy/esp32/include -IC:/Users/mmich/esp-idf/components/vfs/include -IC:/Users/mmich/esp-idf/components/esp_netif/include -IC:/Users/mmich/esp-idf/components/wpa_supplicant/include -IC:/Users/mmich/esp-idf/components/wpa_supplicant/port/include -IC:/Users/mmich/esp-idf/components/wpa_supplicant/esp_supplicant/include -IC:/Users/mmich/esp-idf/components/esp_coex/include -IC:/Users/mmich/esp-idf/components/esp_wifi/include -IC:/Users/mmich/esp-idf/components/esp_wifi/wifi_apps/include -IC:/Users/mmich/esp-idf/components/bt/include/esp32/include -IC:/Users/mmich/esp-idf/components/bt/common/osi/include -IC:/Users/mmich/esp-idf/components/bt/common/api/include/api -IC:/Users/mmich/esp-idf/components/bt/common/btc/profile/esp/blufi/include -IC:/Users/mmich/esp-idf/components/bt/common/btc/profile/esp/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ans/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/bas/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/dis/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gap/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gatt/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/hr/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/htp/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ias/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ipss/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/lls/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/prox/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/cts/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/tps/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/hid/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/sps/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/util/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/ram/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/config/include -IC:/Users/mmich/esp-idf/components/bt/porting/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/porting/nimble/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/port/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/transport/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/esp-hci/include -IC:/Users/mmich/esp-idf/components/unity/include -IC:/Users/mmich/esp-idf/components/unity/unity/src -IC:/Users/mmich/esp-idf/components/cmock/CMock/src -IC:/Users/mmich/esp-idf/components/console -IC:/Users/mmich/esp-idf/components/http_parser -IC:/Users/mmich/esp-idf/components/esp-tls -IC:/Users/mmich/esp-idf/components/esp-tls/esp-tls-crypto -IC:/Users/mmich/esp-idf/components/esp_adc/include -IC:/Users/mmich/esp-idf/components/esp_adc/interface -IC:/Users/mmich/esp-idf/components/esp_adc/esp32/include -IC:/Users/mmich/esp-idf/components/esp_adc/deprecated/include -IC:/Users/mmich/esp-idf/components/esp_eth/include -IC:/Users/mmich/esp-idf/components/esp_gdbstub/include -IC:/Users/mmich/esp-idf/components/esp_hid/include -IC:/Users/mmich/esp-idf/components/tcp_transport/include -IC:/Users/mmich/esp-idf/components/esp_http_client/include -IC:/Users/mmich/esp-idf/components/esp_http_server/include -IC:/Users/mmich/esp-idf/components/esp_https_ota/include -IC:/Users/mmich/esp-idf/components/esp_psram/include -IC:/Users/mmich/esp-idf/components/esp_lcd/include -IC:/Users/mmich/esp-idf/components/esp_lcd/interface -IC:/Users/mmich/esp-idf/components/protobuf-c/protobuf-c -IC:/Users/mmich/esp-idf/components/protocomm/include/common -IC:/Users/mmich/esp-idf/components/protocomm/include/security -IC:/Users/mmich/esp-idf/components/protocomm/include/transports -IC:/Users/mmich/esp-idf/components/protocomm/include/crypto/srp6a -IC:/Users/mmich/esp-idf/components/esp_local_ctrl/include -IC:/Users/mmich/esp-idf/components/espcoredump/include -IC:/Users/mmich/esp-idf/components/espcoredump/include/port/xtensa -IC:/Users/mmich/esp-idf/components/wear_levelling/include -IC:/Users/mmich/esp-idf/components/sdmmc/include -IC:/Users/mmich/esp-idf/components/fatfs/diskio -IC:/Users/mmich/esp-idf/components/fatfs/src -IC:/Users/mmich/esp-idf/components/fatfs/vfs -IC:/Users/mmich/esp-idf/components/idf_test/include -IC:/Users/mmich/esp-idf/components/idf_test/include/esp32 -IC:/Users/mmich/esp-idf/components/ieee802154/include -IC:/Users/mmich/esp-idf/components/json/cJSON -IC:/Users/mmich/esp-idf/components/mqtt/esp-mqtt/include -IC:/Users/mmich/esp-idf/components/nvs_sec_provider/include -IC:/Users/mmich/esp-idf/components/perfmon/include -IC:/Users/mmich/esp-idf/components/spiffs/include -IC:/Users/mmich/esp-idf/components/wifi_provisioning/include -IC:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/include -IC:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj=. -fmacro-prefix-map=C:/Users/mmich/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/Speedometer.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\Speedometer.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/Speedometer.c.obj -c C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c
+In file included from C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:7:
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/include/nimBLE.h:8:24: warning: 'struct ble_gatt_access_ctxt' declared inside parameter list will not be visible outside of this definition or declaration
+    8 |                 struct ble_gatt_access_ctxt *ctxt, void *arg)
+      |                        ^~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/include/nimBLE.h: In function 'device_read':
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/include/nimBLE.h:10:24: warning: 'struct ble_gatt_access_ctxt' declared inside parameter list will not be visible outside of this definition or declaration
+   10 |                 struct ble_gatt_access_ctxt *ctxt, void *arg)
+      |                        ^~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:10,
+                 from C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:15,
+                 from C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:8:
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/gpio_num.h:16:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'typedef'
+   16 | typedef enum {
+      | ^~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/gpio_num.h:58:3: error: expected declaration specifiers before 'gpio_num_t'
+   58 | } gpio_num_t;
+      |   ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:20:3: error: storage class specified for parameter 'gpio_port_t'
+   20 | } gpio_port_t;
+      |   ^~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:88:3: error: storage class specified for parameter 'gpio_int_type_t'
+   88 | } gpio_int_type_t;
+      |   ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:104:3: error: storage class specified for parameter 'gpio_mode_t'
+  104 | } gpio_mode_t;
+      |   ^~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:109:3: error: storage class specified for parameter 'gpio_pullup_t'
+  109 | } gpio_pullup_t;
+      |   ^~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:114:3: error: storage class specified for parameter 'gpio_pulldown_t'
+  114 | } gpio_pulldown_t;
+      |   ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:121:3: error: storage class specified for parameter 'gpio_pull_mode_t'
+  121 | } gpio_pull_mode_t;
+      |   ^~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:130:3: error: storage class specified for parameter 'gpio_drive_cap_t'
+  130 | } gpio_drive_cap_t;
+      |   ^~~~~~~~~~~~~~~~
+In file included from C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:10,
+                 from C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:17:
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:19:35: error: storage class specified for parameter 'esp_etm_channel_handle_t'
+   19 | typedef struct esp_etm_channel_t *esp_etm_channel_handle_t;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:24:33: error: storage class specified for parameter 'esp_etm_event_handle_t'
+   24 | typedef struct esp_etm_event_t *esp_etm_event_handle_t;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:29:32: error: storage class specified for parameter 'esp_etm_task_handle_t'
+   29 | typedef struct esp_etm_task_t *esp_etm_task_handle_t;
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:36:3: error: storage class specified for parameter 'esp_etm_channel_config_t'
+   36 | } esp_etm_channel_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:52:37: error: type defaults to 'int' in declaration of 'esp_etm_channel_config_t' [-Werror=implicit-int]
+   52 | esp_err_t esp_etm_new_channel(const esp_etm_channel_config_t *config, esp_etm_channel_handle_t *ret_chan);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:52:62: error: expected ';', ',' or ')' before '*' token
+   52 | esp_err_t esp_etm_new_channel(const esp_etm_channel_config_t *config, esp_etm_channel_handle_t *ret_chan);
+      |                                                              ^
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:63:31: error: expected declaration specifiers or '...' before 'esp_etm_channel_handle_t'
+   63 | esp_err_t esp_etm_del_channel(esp_etm_channel_handle_t chan);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:77:34: error: expected declaration specifiers or '...' before 'esp_etm_channel_handle_t'
+   77 | esp_err_t esp_etm_channel_enable(esp_etm_channel_handle_t chan);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:91:35: error: expected declaration specifiers or '...' before 'esp_etm_channel_handle_t'
+   91 | esp_err_t esp_etm_channel_disable(esp_etm_channel_handle_t chan);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:106:35: error: expected declaration specifiers or '...' before 'esp_etm_channel_handle_t'
+  106 | esp_err_t esp_etm_channel_connect(esp_etm_channel_handle_t chan, esp_etm_event_handle_t event, esp_etm_task_handle_t task);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:106:66: error: expected declaration specifiers or '...' before 'esp_etm_event_handle_t'
+  106 | esp_err_t esp_etm_channel_connect(esp_etm_channel_handle_t chan, esp_etm_event_handle_t event, esp_etm_task_handle_t task);
+      |                                                                  ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:106:96: error: expected declaration specifiers or '...' before 'esp_etm_task_handle_t'
+  106 | esp_err_t esp_etm_channel_connect(esp_etm_channel_handle_t chan, esp_etm_event_handle_t event, esp_etm_task_handle_t task);
+      |                                                                                                ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:119:29: error: expected declaration specifiers or '...' before 'esp_etm_event_handle_t'
+  119 | esp_err_t esp_etm_del_event(esp_etm_event_handle_t event);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_hw_support/include/esp_etm.h:132:28: error: expected declaration specifiers or '...' before 'esp_etm_task_handle_t'
+  132 | esp_err_t esp_etm_del_task(esp_etm_task_handle_t task);
+      |                            ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:23:3: error: storage class specified for parameter 'gpio_etm_event_edge_t'
+   23 | } gpio_etm_event_edge_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:29:5: error: expected specifier-qualifier-list before 'gpio_etm_event_edge_t'
+   29 |     gpio_etm_event_edge_t edge; /*!< Which kind of edge can trigger the ETM event module */
+      |     ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:30:3: error: storage class specified for parameter 'gpio_etm_event_config_t'
+   30 | } gpio_etm_event_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:47:36: error: type defaults to 'int' in declaration of 'gpio_etm_event_config_t' [-Werror=implicit-int]
+   47 | esp_err_t gpio_new_etm_event(const gpio_etm_event_config_t *config, esp_etm_event_handle_t *ret_event);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:47:60: error: expected ';', ',' or ')' before '*' token
+   47 | esp_err_t gpio_new_etm_event(const gpio_etm_event_config_t *config, esp_etm_event_handle_t *ret_event);
+      |                                                            ^
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:62:36: error: expected declaration specifiers or '...' before 'esp_etm_event_handle_t'
+   62 | esp_err_t gpio_etm_event_bind_gpio(esp_etm_event_handle_t event, int gpio_num);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:71:3: error: storage class specified for parameter 'gpio_etm_task_action_t'
+   71 | } gpio_etm_task_action_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:77:5: error: expected specifier-qualifier-list before 'gpio_etm_task_action_t'
+   77 |     gpio_etm_task_action_t action; /*!< Which action to take by the ETM task module */
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:78:3: error: storage class specified for parameter 'gpio_etm_task_config_t'
+   78 | } gpio_etm_task_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:96:35: error: type defaults to 'int' in declaration of 'gpio_etm_task_config_t' [-Werror=implicit-int]
+   96 | esp_err_t gpio_new_etm_task(const gpio_etm_task_config_t *config, esp_etm_task_handle_t *ret_task);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:96:58: error: expected ';', ',' or ')' before '*' token
+   96 | esp_err_t gpio_new_etm_task(const gpio_etm_task_config_t *config, esp_etm_task_handle_t *ret_task);
+      |                                                          ^
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:112:34: error: expected declaration specifiers or '...' before 'esp_etm_task_handle_t'
+  112 | esp_err_t gpio_etm_task_add_gpio(esp_etm_task_handle_t task, int gpio_num);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:128:33: error: expected declaration specifiers or '...' before 'esp_etm_task_handle_t'
+  128 | esp_err_t gpio_etm_task_rm_gpio(esp_etm_task_handle_t task, int gpio_num);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:34:23: error: storage class specified for parameter 'gpio_isr_handle_t'
+   34 | typedef intr_handle_t gpio_isr_handle_t;
+      |                       ^~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:41:16: error: storage class specified for parameter 'gpio_isr_t'
+   41 | typedef void (*gpio_isr_t)(void *arg);
+      |                ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:48:5: error: expected specifier-qualifier-list before 'gpio_mode_t'
+   48 |     gpio_mode_t mode;               /*!< GPIO mode: set input/output mode                     */
+      |     ^~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:55:3: error: storage class specified for parameter 'gpio_config_t'
+   55 | } gpio_config_t;
+      |   ^~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:69:29: error: type defaults to 'int' in declaration of 'gpio_config_t' [-Werror=implicit-int]
+   69 | esp_err_t gpio_config(const gpio_config_t *pGPIOConfig);
+      |                             ^~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:69:43: error: expected ';', ',' or ')' before '*' token
+   69 | esp_err_t gpio_config(const gpio_config_t *pGPIOConfig);
+      |                                           ^
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:82:26: error: unknown type name 'gpio_num_t'
+   82 | esp_err_t gpio_reset_pin(gpio_num_t gpio_num);
+      |                          ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:95:30: error: unknown type name 'gpio_num_t'
+   95 | esp_err_t gpio_set_intr_type(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                              ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:95:51: error: expected declaration specifiers or '...' before 'gpio_int_type_t'
+   95 | esp_err_t gpio_set_intr_type(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                                                   ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:112:28: error: unknown type name 'gpio_num_t'
+  112 | esp_err_t gpio_intr_enable(gpio_num_t gpio_num);
+      |                            ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:126:29: error: unknown type name 'gpio_num_t'
+  126 | esp_err_t gpio_intr_disable(gpio_num_t gpio_num);
+      |                             ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:141:26: error: unknown type name 'gpio_num_t'
+  141 | esp_err_t gpio_set_level(gpio_num_t gpio_num, uint32_t level);
+      |                          ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:155:20: error: unknown type name 'gpio_num_t'
+  155 | int gpio_get_level(gpio_num_t gpio_num);
+      |                    ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:170:30: error: unknown type name 'gpio_num_t'
+  170 | esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                              ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:170:51: error: expected declaration specifiers or '...' before 'gpio_mode_t'
+  170 | esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                                                   ^~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:185:30: error: unknown type name 'gpio_num_t'
+  185 | esp_err_t gpio_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                              ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:185:51: error: expected declaration specifiers or '...' before 'gpio_pull_mode_t'
+  185 | esp_err_t gpio_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                                                   ^~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:198:30: error: unknown type name 'gpio_num_t'
+  198 | esp_err_t gpio_wakeup_enable(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                              ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:198:51: error: expected declaration specifiers or '...' before 'gpio_int_type_t'
+  198 | esp_err_t gpio_wakeup_enable(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                                                   ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:209:31: error: unknown type name 'gpio_num_t'
+  209 | esp_err_t gpio_wakeup_disable(gpio_num_t gpio_num);
+      |                               ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:235:82: error: expected declaration specifiers or '...' before 'gpio_isr_handle_t'
+  235 | esp_err_t gpio_isr_register(void (*fn)(void *), void *arg, int intr_alloc_flags, gpio_isr_handle_t *handle);
+      |                                                                                  ^~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:246:26: error: unknown type name 'gpio_num_t'
+  246 | esp_err_t gpio_pullup_en(gpio_num_t gpio_num);
+      |                          ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:257:27: error: unknown type name 'gpio_num_t'
+  257 | esp_err_t gpio_pullup_dis(gpio_num_t gpio_num);
+      |                           ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:268:28: error: unknown type name 'gpio_num_t'
+  268 | esp_err_t gpio_pulldown_en(gpio_num_t gpio_num);
+      |                            ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:279:29: error: unknown type name 'gpio_num_t'
+  279 | esp_err_t gpio_pulldown_dis(gpio_num_t gpio_num);
+      |                             ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:327:32: error: unknown type name 'gpio_num_t'
+  327 | esp_err_t gpio_isr_handler_add(gpio_num_t gpio_num, gpio_isr_t isr_handler, void *args);
+      |                                ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:327:53: error: expected declaration specifiers or '...' before 'gpio_isr_t'
+  327 | esp_err_t gpio_isr_handler_add(gpio_num_t gpio_num, gpio_isr_t isr_handler, void *args);
+      |                                                     ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:339:35: error: unknown type name 'gpio_num_t'
+  339 | esp_err_t gpio_isr_handler_remove(gpio_num_t gpio_num);
+      |                                   ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:351:37: error: unknown type name 'gpio_num_t'
+  351 | esp_err_t gpio_set_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t strength);
+      |                                     ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:351:58: error: expected declaration specifiers or '...' before 'gpio_drive_cap_t'
+  351 | esp_err_t gpio_set_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t strength);
+      |                                                          ^~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:363:37: error: unknown type name 'gpio_num_t'
+  363 | esp_err_t gpio_get_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t *strength);
+      |                                     ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:363:58: error: expected declaration specifiers or '...' before 'gpio_drive_cap_t'
+  363 | esp_err_t gpio_get_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t *strength);
+      |                                                          ^~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:390:24: error: unknown type name 'gpio_num_t'
+  390 | esp_err_t gpio_hold_en(gpio_num_t gpio_num);
+      |                        ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:409:25: error: unknown type name 'gpio_num_t'
+  409 | esp_err_t gpio_hold_dis(gpio_num_t gpio_num);
+      |                         ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:477:29: error: unknown type name 'gpio_num_t'
+  477 | esp_err_t gpio_sleep_sel_en(gpio_num_t gpio_num);
+      |                             ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:486:30: error: unknown type name 'gpio_num_t'
+  486 | esp_err_t gpio_sleep_sel_dis(gpio_num_t gpio_num);
+      |                              ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:500:36: error: unknown type name 'gpio_num_t'
+  500 | esp_err_t gpio_sleep_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                                    ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:500:57: error: expected declaration specifiers or '...' before 'gpio_mode_t'
+  500 | esp_err_t gpio_sleep_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                                                         ^~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:514:36: error: unknown type name 'gpio_num_t'
+  514 | esp_err_t gpio_sleep_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                                    ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:514:57: error: expected declaration specifiers or '...' before 'gpio_pull_mode_t'
+  514 | esp_err_t gpio_sleep_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                                                         ^~~~~~~~~~~~~~~~
+In file included from C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:12,
+                 from C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:13,
+                 from C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:9:
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:58:3: error: storage class specified for parameter 'soc_root_clk_t'
+   58 | } soc_root_clk_t;
+      |   ^~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:70:3: error: storage class specified for parameter 'soc_cpu_clk_src_t'
+   70 | } soc_cpu_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:81:3: error: storage class specified for parameter 'soc_rtc_slow_clk_src_t'
+   81 | } soc_rtc_slow_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:92:3: error: storage class specified for parameter 'soc_rtc_fast_clk_src_t'
+   92 | } soc_rtc_fast_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:119:3: error: storage class specified for parameter 'soc_module_clk_t'
+  119 | } soc_module_clk_t;
+      |   ^~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:129:3: error: storage class specified for parameter 'soc_periph_systimer_clk_src_t'
+  129 | } soc_periph_systimer_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:153:3: error: storage class specified for parameter 'soc_periph_gptimer_clk_src_t'
+  153 | } soc_periph_gptimer_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:161:3: error: storage class specified for parameter 'soc_periph_tg_clk_src_legacy_t'
+  161 | } soc_periph_tg_clk_src_legacy_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:176:3: error: storage class specified for parameter 'soc_periph_lcd_clk_src_t'
+  176 | } soc_periph_lcd_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:192:3: error: storage class specified for parameter 'soc_periph_rmt_clk_src_t'
+  192 | } soc_periph_rmt_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:201:3: error: storage class specified for parameter 'soc_periph_rmt_clk_src_legacy_t'
+  201 | } soc_periph_rmt_clk_src_legacy_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:212:3: error: storage class specified for parameter 'soc_periph_uart_clk_src_legacy_t'
+  212 | } soc_periph_uart_clk_src_legacy_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:227:3: error: storage class specified for parameter 'soc_periph_mcpwm_timer_clk_src_t'
+  227 | } soc_periph_mcpwm_timer_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:240:3: error: storage class specified for parameter 'soc_periph_mcpwm_capture_clk_src_t'
+  240 | } soc_periph_mcpwm_capture_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:253:3: error: storage class specified for parameter 'soc_periph_mcpwm_carrier_clk_src_t'
+  253 | } soc_periph_mcpwm_carrier_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:269:3: error: storage class specified for parameter 'soc_periph_i2s_clk_src_t'
+  269 | } soc_periph_i2s_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:284:3: error: storage class specified for parameter 'soc_periph_i2c_clk_src_t'
+  284 | } soc_periph_i2c_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:299:3: error: storage class specified for parameter 'soc_periph_spi_clk_src_t'
+  299 | } soc_periph_spi_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:314:3: error: storage class specified for parameter 'soc_periph_sdm_clk_src_t'
+  314 | } soc_periph_sdm_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:331:3: error: storage class specified for parameter 'soc_periph_dac_digi_clk_src_t'
+  331 | } soc_periph_dac_digi_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:345:3: error: storage class specified for parameter 'soc_periph_dac_cosine_clk_src_t'
+  345 | } soc_periph_dac_cosine_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:360:3: error: storage class specified for parameter 'soc_periph_twai_clk_src_t'
+  360 | } soc_periph_twai_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:378:3: error: storage class specified for parameter 'soc_periph_adc_digi_clk_src_t'
+  378 | } soc_periph_adc_digi_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:391:3: error: storage class specified for parameter 'soc_periph_adc_rtc_clk_src_t'
+  391 | } soc_periph_adc_rtc_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:407:3: error: storage class specified for parameter 'soc_periph_mwdt_clk_src_t'
+  407 | } soc_periph_mwdt_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:426:3: error: storage class specified for parameter 'soc_periph_ledc_clk_src_legacy_t'
+  426 | } soc_periph_ledc_clk_src_legacy_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:442:3: error: storage class specified for parameter 'soc_periph_sdmmc_clk_src_t'
+  442 | } soc_periph_sdmmc_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:456:3: error: storage class specified for parameter 'soc_clkout_sig_id_t'
+  456 | } soc_clkout_sig_id_t;
+      |   ^~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:25:3: error: storage class specified for parameter 'adc_unit_t'
+   25 | } adc_unit_t;
+      |   ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:41:3: error: storage class specified for parameter 'adc_channel_t'
+   41 | } adc_channel_t;
+      |   ^~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:52:3: error: storage class specified for parameter 'adc_atten_t'
+   52 | } adc_atten_t;
+      |   ^~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:61:3: error: storage class specified for parameter 'adc_bitwidth_t'
+   61 | } adc_bitwidth_t;
+      |   ^~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:67:3: error: storage class specified for parameter 'adc_ulp_mode_t'
+   67 | } adc_ulp_mode_t;
+      |   ^~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:77:3: error: storage class specified for parameter 'adc_digi_convert_mode_t'
+   77 | } adc_digi_convert_mode_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:85:3: error: storage class specified for parameter 'adc_digi_output_format_t'
+   85 | } adc_digi_output_format_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:91:42: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'adc_oneshot_clk_src_t'
+   91 | typedef soc_periph_adc_rtc_clk_src_t     adc_oneshot_clk_src_t;     ///< Clock source type of oneshot mode which uses RTC controller
+      |                                          ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:92:42: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'adc_continuous_clk_src_t'
+   92 | typedef soc_periph_adc_digi_clk_src_t    adc_continuous_clk_src_t;  ///< Clock source type of continuous mode which uses digital controller
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:106:3: error: storage class specified for parameter 'adc_digi_pattern_config_t'
+  106 | } adc_digi_pattern_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:114:3: error: storage class specified for parameter 'adc_digi_iir_filter_t'
+  114 | } adc_digi_iir_filter_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:125:3: error: storage class specified for parameter 'adc_digi_iir_filter_coeff_t'
+  125 | } adc_digi_iir_filter_coeff_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:136:3: error: storage class specified for parameter 'adc_monitor_id_t'
+  136 | } adc_monitor_id_t;
+      |   ^~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:144:3: error: storage class specified for parameter 'adc_monitor_mode_t'
+  144 | } adc_monitor_mode_t;
+      |   ^~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/adc_types.h:172:3: error: storage class specified for parameter 'adc_digi_output_data_t'
+  172 | } adc_digi_output_data_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:47:38: error: storage class specified for parameter 'adc_continuous_handle_t'
+   47 | typedef struct adc_continuous_ctx_t *adc_continuous_handle_t;
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:58:3: error: storage class specified for parameter 'adc_continuous_handle_cfg_t'
+   58 | } adc_continuous_handle_cfg_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:65:5: error: expected specifier-qualifier-list before 'adc_digi_pattern_config_t'
+   65 |     adc_digi_pattern_config_t *adc_pattern; ///< List of configs for each ADC channel that will be used
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:69:3: error: storage class specified for parameter 'adc_continuous_config_t'
+   69 | } adc_continuous_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:78:3: error: storage class specified for parameter 'adc_continuous_evt_data_t'
+   78 | } adc_continuous_evt_data_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:89:43: error: expected declaration specifiers or '...' before 'adc_continuous_handle_t'
+   89 | typedef bool (*adc_continuous_callback_t)(adc_continuous_handle_t handle, const adc_continuous_evt_data_t *edata, void *user_data);
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:89:81: error: type defaults to 'int' in declaration of 'adc_continuous_evt_data_t' [-Werror=implicit-int]
+   89 | typedef bool (*adc_continuous_callback_t)(adc_continuous_handle_t handle, const adc_continuous_evt_data_t *edata, void *user_data);
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:89:107: error: expected ';', ',' or ')' before '*' token
+   89 | typedef bool (*adc_continuous_callback_t)(adc_continuous_handle_t handle, const adc_continuous_evt_data_t *edata, void *user_data);
+      |                                                                                                           ^
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:99:5: error: unknown type name 'adc_continuous_callback_t'
+   99 |     adc_continuous_callback_t on_conv_done;    ///< Event callback, invoked when one conversion frame is done. See the subsection `Driver Backgrounds` in this header file to learn about the `conversion frame` concept.
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:100:5: error: unknown type name 'adc_continuous_callback_t'
+  100 |     adc_continuous_callback_t on_pool_ovf;     ///< Event callback, invoked when the internal pool is full.
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:101:3: error: storage class specified for parameter 'adc_continuous_evt_cbs_t'
+  101 | } adc_continuous_evt_cbs_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:115:43: error: type defaults to 'int' in declaration of 'adc_continuous_handle_cfg_t' [-Werror=implicit-int]
+  115 | esp_err_t adc_continuous_new_handle(const adc_continuous_handle_cfg_t *hdl_config, adc_continuous_handle_t *ret_handle);
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:115:71: error: expected ';', ',' or ')' before '*' token
+  115 | esp_err_t adc_continuous_new_handle(const adc_continuous_handle_cfg_t *hdl_config, adc_continuous_handle_t *ret_handle);
+      |                                                                       ^
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:128:33: error: expected declaration specifiers or '...' before 'adc_continuous_handle_t'
+  128 | esp_err_t adc_continuous_config(adc_continuous_handle_t handle, const adc_continuous_config_t *config);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:128:71: error: type defaults to 'int' in declaration of 'adc_continuous_config_t' [-Werror=implicit-int]
+  128 | esp_err_t adc_continuous_config(adc_continuous_handle_t handle, const adc_continuous_config_t *config);
+      |                                                                       ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:128:95: error: expected ';', ',' or ')' before '*' token
+  128 | esp_err_t adc_continuous_config(adc_continuous_handle_t handle, const adc_continuous_config_t *config);
+      |                                                                                               ^
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:148:51: error: expected declaration specifiers or '...' before 'adc_continuous_handle_t'
+  148 | esp_err_t adc_continuous_register_event_callbacks(adc_continuous_handle_t handle, const adc_continuous_evt_cbs_t *cbs, void *user_data);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:148:89: error: type defaults to 'int' in declaration of 'adc_continuous_evt_cbs_t' [-Werror=implicit-int]
+  148 | esp_err_t adc_continuous_register_event_callbacks(adc_continuous_handle_t handle, const adc_continuous_evt_cbs_t *cbs, void *user_data);
+      |                                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:148:114: error: expected ';', ',' or ')' before '*' token
+  148 | esp_err_t adc_continuous_register_event_callbacks(adc_continuous_handle_t handle, const adc_continuous_evt_cbs_t *cbs, void *user_data);
+      |                                                                                                                  ^
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:159:32: error: expected declaration specifiers or '...' before 'adc_continuous_handle_t'
+  159 | esp_err_t adc_continuous_start(adc_continuous_handle_t handle);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:176:31: error: expected declaration specifiers or '...' before 'adc_continuous_handle_t'
+  176 | esp_err_t adc_continuous_read(adc_continuous_handle_t handle, uint8_t *buf, uint32_t length_max, uint32_t *out_length, uint32_t timeout_ms);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:187:31: error: expected declaration specifiers or '...' before 'adc_continuous_handle_t'
+  187 | esp_err_t adc_continuous_stop(adc_continuous_handle_t handle);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:198:33: error: expected declaration specifiers or '...' before 'adc_continuous_handle_t'
+  198 | esp_err_t adc_continuous_deinit(adc_continuous_handle_t handle);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:212:37: error: expected declaration specifiers or '...' before 'adc_continuous_handle_t'
+  212 | esp_err_t adc_continuous_flush_pool(adc_continuous_handle_t handle);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:226:52: error: expected declaration specifiers or '...' before 'adc_unit_t'
+  226 | esp_err_t adc_continuous_io_to_channel(int io_num, adc_unit_t * const unit_id, adc_channel_t * const channel);
+      |                                                    ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:226:80: error: expected declaration specifiers or '...' before 'adc_channel_t'
+  226 | esp_err_t adc_continuous_io_to_channel(int io_num, adc_unit_t * const unit_id, adc_channel_t * const channel);
+      |                                                                                ^~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:239:40: error: expected declaration specifiers or '...' before 'adc_unit_t'
+  239 | esp_err_t adc_continuous_channel_to_io(adc_unit_t unit_id, adc_channel_t channel, int * const io_num);
+      |                                        ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:239:60: error: expected declaration specifiers or '...' before 'adc_channel_t'
+  239 | esp_err_t adc_continuous_channel_to_io(adc_unit_t unit_id, adc_channel_t channel, int * const io_num);
+      |                                                            ^~~~~~~~~~~~~
+In file included from C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_cali_scheme.h:11,
+                 from C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:10:
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_cali.h:20:35: error: storage class specified for parameter 'adc_cali_handle_t'
+   20 | typedef struct adc_cali_scheme_t *adc_cali_handle_t;
+      |                                   ^~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_cali.h:28:3: error: storage class specified for parameter 'adc_cali_scheme_ver_t'
+   28 | } adc_cali_scheme_ver_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_cali.h:40:33: error: expected declaration specifiers or '...' before 'adc_cali_scheme_ver_t'
+   40 | esp_err_t adc_cali_check_scheme(adc_cali_scheme_ver_t *scheme_mask);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_cali.h:54:35: error: expected declaration specifiers or '...' before 'adc_cali_handle_t'
+   54 | esp_err_t adc_cali_raw_to_voltage(adc_cali_handle_t handle, int raw, int *voltage);
+      |                                   ^~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_cali_scheme.h:69:3: error: storage class specified for parameter 'adc_cali_line_fitting_efuse_val_t'
+   69 | } adc_cali_line_fitting_efuse_val_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_cali_scheme.h:72:5: error: expected specifier-qualifier-list before 'adc_unit_t'
+   72 |     adc_unit_t unit_id;         ///< ADC unit
+      |     ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_cali_scheme.h:84:3: error: storage class specified for parameter 'adc_cali_line_fitting_config_t'
+   84 | } adc_cali_line_fitting_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_cali_scheme.h:101:53: error: type defaults to 'int' in declaration of 'adc_cali_line_fitting_config_t' [-Werror=implicit-int]
+  101 | esp_err_t adc_cali_create_scheme_line_fitting(const adc_cali_line_fitting_config_t *config, adc_cali_handle_t *ret_handle);
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_cali_scheme.h:101:84: error: expected ';', ',' or ')' before '*' token
+  101 | esp_err_t adc_cali_create_scheme_line_fitting(const adc_cali_line_fitting_config_t *config, adc_cali_handle_t *ret_handle);
+      |                                                                                    ^
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_cali_scheme.h:112:47: error: expected declaration specifiers or '...' before 'adc_cali_handle_t'
+  112 | esp_err_t adc_cali_delete_scheme_line_fitting(adc_cali_handle_t handle);
+      |                                               ^~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_adc/include/esp_adc/adc_cali_scheme.h:128:52: error: expected declaration specifiers or '...' before 'adc_cali_line_fitting_efuse_val_t'
+  128 | esp_err_t adc_cali_scheme_line_fitting_check_efuse(adc_cali_line_fitting_efuse_val_t *cali_val);
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/mmich/esp-idf/components/log/include/esp_log.h:12,
+                 from C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:11:
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:315:3: error: storage class specified for parameter 'imaxdiv_t'
+  315 | } imaxdiv_t;
+      |   ^~~~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:323:18: error: storage class specified for parameter 'imaxabs'
+  323 | extern intmax_t  imaxabs(intmax_t);
+      |                  ^~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:324:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'imaxdiv'
+  324 | extern imaxdiv_t imaxdiv(intmax_t __numer, intmax_t __denomer);
+      |                  ^~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:325:18: error: storage class specified for parameter 'strtoimax'
+  325 | extern intmax_t  strtoimax(const char *__restrict, char **__restrict, int);
+      |                  ^~~~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:326:18: error: storage class specified for parameter '_strtoimax_r'
+  326 | extern intmax_t  _strtoimax_r(struct _reent *, const char *__restrict, char **__restrict, int);
+      |                  ^~~~~~~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:327:18: error: storage class specified for parameter 'strtoumax'
+  327 | extern uintmax_t strtoumax(const char *__restrict, char **__restrict, int);
+      |                  ^~~~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:328:18: error: storage class specified for parameter '_strtoumax_r'
+  328 | extern uintmax_t _strtoumax_r(struct _reent *, const char *__restrict, char **__restrict, int);
+      |                  ^~~~~~~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:329:18: error: storage class specified for parameter 'wcstoimax'
+  329 | extern intmax_t  wcstoimax(const wchar_t *__restrict, wchar_t **__restrict, int);
+      |                  ^~~~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:330:18: error: storage class specified for parameter '_wcstoimax_r'
+  330 | extern intmax_t  _wcstoimax_r(struct _reent *, const wchar_t *__restrict, wchar_t **__restrict, int);
+      |                  ^~~~~~~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:331:18: error: storage class specified for parameter 'wcstoumax'
+  331 | extern uintmax_t wcstoumax(const wchar_t *__restrict, wchar_t **__restrict, int);
+      |                  ^~~~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:332:18: error: storage class specified for parameter '_wcstoumax_r'
+  332 | extern uintmax_t _wcstoumax_r(struct _reent *, const wchar_t *__restrict, wchar_t **__restrict, int);
+      |                  ^~~~~~~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:335:18: error: storage class specified for parameter 'strtoimax_l'
+  335 | extern intmax_t  strtoimax_l(const char *__restrict, char **_restrict, int, locale_t);
+      |                  ^~~~~~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:336:18: error: storage class specified for parameter 'strtoumax_l'
+  336 | extern uintmax_t strtoumax_l(const char *__restrict, char **_restrict, int, locale_t);
+      |                  ^~~~~~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:337:18: error: storage class specified for parameter 'wcstoimax_l'
+  337 | extern intmax_t  wcstoimax_l(const wchar_t *__restrict, wchar_t **_restrict, int, locale_t);
+      |                  ^~~~~~~~~~~
+C:/Users/mmich/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:338:18: error: storage class specified for parameter 'wcstoumax_l'
+  338 | extern uintmax_t wcstoumax_l(const wchar_t *__restrict, wchar_t **_restrict, int, locale_t);
+      |                  ^~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/log/include/esp_log.h:31:3: error: storage class specified for parameter 'esp_log_level_t'
+   31 | } esp_log_level_t;
+      |   ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/log/include/esp_log.h:33:15: error: storage class specified for parameter 'vprintf_like_t'
+   33 | typedef int (*vprintf_like_t)(const char *, va_list);
+      |               ^~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/log/include/esp_log.h:42:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'esp_log_default_level'
+   42 | extern esp_log_level_t esp_log_default_level;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/log/include/esp_log.h:87:41: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   87 | void esp_log_level_set(const char* tag, esp_log_level_t level);
+      |                                         ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/log/include/esp_log.h:97:1: error: expected declaration specifiers before 'esp_log_level_t'
+   97 | esp_log_level_t esp_log_level_get(const char* tag);
+      | ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/log/include/esp_log.h:113:1: error: expected declaration specifiers before 'vprintf_like_t'
+  113 | vprintf_like_t esp_log_set_vprintf(vprintf_like_t func);
+      | ^~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/log/include/esp_log.h:162:20: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+  162 | void esp_log_write(esp_log_level_t level, const char* tag, const char* format, ...) __attribute__ ((format (printf, 3, 4)));
+      |                    ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/log/include/esp_log.h:171:21: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+  171 | void esp_log_writev(esp_log_level_t level, const char* tag, const char* format, va_list args);
+      |                     ^~~~~~~~~~~~~~~
+In file included from C:/Users/mmich/esp-idf/components/log/include/esp_log.h:175:
+C:/Users/mmich/esp-idf/components/log/include/esp_log_internal.h:11:90: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   11 | void esp_log_buffer_hex_internal(const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t level);
+      |                                                                                          ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/log/include/esp_log_internal.h:12:91: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   12 | void esp_log_buffer_char_internal(const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t level);
+      |                                                                                           ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/log/include/esp_log_internal.h:13:95: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   13 | void esp_log_buffer_hexdump_internal( const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t log_level);
+      |                                                                                               ^~~~~~~~~~~~~~~
+In file included from C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:14:
+C:/Users/mmich/esp-idf/components/esp_system/include/esp_task_wdt.h:25:3: error: storage class specified for parameter 'esp_task_wdt_config_t'
+   25 | } esp_task_wdt_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_system/include/esp_task_wdt.h:30:45: error: storage class specified for parameter 'esp_task_wdt_user_handle_t'
+   30 | typedef struct esp_task_wdt_user_handle_s * esp_task_wdt_user_handle_t;
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_system/include/esp_task_wdt.h:47:35: error: type defaults to 'int' in declaration of 'esp_task_wdt_config_t' [-Werror=implicit-int]
+   47 | esp_err_t esp_task_wdt_init(const esp_task_wdt_config_t *config);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_system/include/esp_task_wdt.h:47:57: error: expected ';', ',' or ')' before '*' token
+   47 | esp_err_t esp_task_wdt_init(const esp_task_wdt_config_t *config);
+      |                                                         ^
+C:/Users/mmich/esp-idf/components/esp_system/include/esp_task_wdt.h:63:42: error: type defaults to 'int' in declaration of 'esp_task_wdt_config_t' [-Werror=implicit-int]
+   63 | esp_err_t esp_task_wdt_reconfigure(const esp_task_wdt_config_t *config);
+      |                                          ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_system/include/esp_task_wdt.h:63:64: error: expected ';', ',' or ')' before '*' token
+   63 | esp_err_t esp_task_wdt_reconfigure(const esp_task_wdt_config_t *config);
+      |                                                                ^
+C:/Users/mmich/esp-idf/components/esp_system/include/esp_task_wdt.h:105:56: error: expected declaration specifiers or '...' before 'esp_task_wdt_user_handle_t'
+  105 | esp_err_t esp_task_wdt_add_user(const char *user_name, esp_task_wdt_user_handle_t *user_handle_ret);
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_system/include/esp_task_wdt.h:131:35: error: expected declaration specifiers or '...' before 'esp_task_wdt_user_handle_t'
+  131 | esp_err_t esp_task_wdt_reset_user(esp_task_wdt_user_handle_t user_handle);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_system/include/esp_task_wdt.h:157:36: error: expected declaration specifiers or '...' before 'esp_task_wdt_user_handle_t'
+  157 | esp_err_t esp_task_wdt_delete_user(esp_task_wdt_user_handle_t user_handle);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_system/include/esp_task_wdt.h:180:1: warning: 'weak' attribute ignored [-Wattributes]
+  180 | void __attribute__((weak)) esp_task_wdt_isr_user_handler(void);
+      | ^~~~
+C:/Users/mmich/esp-idf/components/esp_system/include/esp_task_wdt.h:182:16: error: storage class specified for parameter 'task_wdt_msg_handler'
+  182 | typedef void (*task_wdt_msg_handler)(void *opaque, const char *msg);
+      |                ^~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/esp_system/include/esp_task_wdt.h:205:46: error: expected declaration specifiers or '...' before 'task_wdt_msg_handler'
+  205 | esp_err_t esp_task_wdt_print_triggered_tasks(task_wdt_msg_handler msg_handler, void *opaque, int *cpus_fail);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:15:
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/include/adc_sensor.h:4:26: error: expected declaration specifiers or '...' before 'adc_continuous_handle_t'
+    4 | void continuous_adc_init(adc_continuous_handle_t *handle);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:80:21: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   80 | void app_main(void) {
+      |                     ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/include/nimBLE.h:7:5: error: old-style parameter declarations in prototyped function definition
+    7 | int device_read (uint16_t conn_handle, uint16_t attr_handle,
+      |     ^~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:140: error: expected '{' at end of input
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:140: error: control reaches end of non-void function [-Werror=return-type]
+cc1.exe: some warnings being treated as errors
+[4/11] Building C object esp-idf/nimBLE/CMakeFiles/__idf_nimBLE.dir/nimBLE.c.obj
+FAILED: esp-idf/nimBLE/CMakeFiles/__idf_nimBLE.dir/nimBLE.c.obj 
+ccache C:\Users\mmich\.espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.1\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/config -IC:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/include -IC:/Users/mmich/esp-idf/components/newlib/platform_include -IC:/Users/mmich/esp-idf/components/freertos/config/include -IC:/Users/mmich/esp-idf/components/freertos/config/include/freertos -IC:/Users/mmich/esp-idf/components/freertos/config/xtensa/include -IC:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Users/mmich/esp-idf/components/freertos/esp_additions/include -IC:/Users/mmich/esp-idf/components/esp_hw_support/include -IC:/Users/mmich/esp-idf/components/esp_hw_support/include/soc -IC:/Users/mmich/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/mmich/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/mmich/esp-idf/components/heap/include -IC:/Users/mmich/esp-idf/components/log/include -IC:/Users/mmich/esp-idf/components/soc/include -IC:/Users/mmich/esp-idf/components/soc/esp32 -IC:/Users/mmich/esp-idf/components/soc/esp32/include -IC:/Users/mmich/esp-idf/components/hal/platform_port/include -IC:/Users/mmich/esp-idf/components/hal/esp32/include -IC:/Users/mmich/esp-idf/components/hal/include -IC:/Users/mmich/esp-idf/components/esp_rom/include -IC:/Users/mmich/esp-idf/components/esp_rom/include/esp32 -IC:/Users/mmich/esp-idf/components/esp_rom/esp32 -IC:/Users/mmich/esp-idf/components/esp_common/include -IC:/Users/mmich/esp-idf/components/esp_system/include -IC:/Users/mmich/esp-idf/components/esp_system/port/soc -IC:/Users/mmich/esp-idf/components/esp_system/port/include/private -IC:/Users/mmich/esp-idf/components/xtensa/esp32/include -IC:/Users/mmich/esp-idf/components/xtensa/include -IC:/Users/mmich/esp-idf/components/xtensa/deprecated_include -IC:/Users/mmich/esp-idf/components/lwip/include -IC:/Users/mmich/esp-idf/components/lwip/include/apps -IC:/Users/mmich/esp-idf/components/lwip/include/apps/sntp -IC:/Users/mmich/esp-idf/components/lwip/lwip/src/include -IC:/Users/mmich/esp-idf/components/lwip/port/include -IC:/Users/mmich/esp-idf/components/lwip/port/freertos/include -IC:/Users/mmich/esp-idf/components/lwip/port/esp32xx/include -IC:/Users/mmich/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/Users/mmich/esp-idf/components/lwip/port/esp32xx/include/sys -IC:/Users/mmich/esp-idf/components/esp_event/include -IC:/Users/mmich/esp-idf/components/nvs_flash/include -IC:/Users/mmich/esp-idf/components/spi_flash/include -IC:/Users/mmich/esp-idf/components/esp_partition/include -IC:/Users/mmich/esp-idf/components/bt/include/esp32/include -IC:/Users/mmich/esp-idf/components/bt/common/osi/include -IC:/Users/mmich/esp-idf/components/bt/common/api/include/api -IC:/Users/mmich/esp-idf/components/bt/common/btc/profile/esp/blufi/include -IC:/Users/mmich/esp-idf/components/bt/common/btc/profile/esp/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ans/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/bas/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/dis/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gap/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gatt/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/hr/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/htp/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ias/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ipss/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/lls/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/prox/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/cts/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/tps/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/hid/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/sps/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/util/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/ram/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/config/include -IC:/Users/mmich/esp-idf/components/bt/porting/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/porting/nimble/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/port/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/transport/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include -IC:/Users/mmich/esp-idf/components/bt/host/nimble/esp-hci/include -IC:/Users/mmich/esp-idf/components/esp_timer/include -IC:/Users/mmich/esp-idf/components/esp_wifi/include -IC:/Users/mmich/esp-idf/components/esp_wifi/wifi_apps/include -IC:/Users/mmich/esp-idf/components/esp_phy/include -IC:/Users/mmich/esp-idf/components/esp_phy/esp32/include -IC:/Users/mmich/esp-idf/components/esp_netif/include -IC:/Users/mmich/esp-idf/components/driver/include -IC:/Users/mmich/esp-idf/components/driver/deprecated -IC:/Users/mmich/esp-idf/components/driver/analog_comparator/include -IC:/Users/mmich/esp-idf/components/driver/dac/include -IC:/Users/mmich/esp-idf/components/driver/gpio/include -IC:/Users/mmich/esp-idf/components/driver/gptimer/include -IC:/Users/mmich/esp-idf/components/driver/i2c/include -IC:/Users/mmich/esp-idf/components/driver/i2s/include -IC:/Users/mmich/esp-idf/components/driver/ledc/include -IC:/Users/mmich/esp-idf/components/driver/mcpwm/include -IC:/Users/mmich/esp-idf/components/driver/parlio/include -IC:/Users/mmich/esp-idf/components/driver/pcnt/include -IC:/Users/mmich/esp-idf/components/driver/rmt/include -IC:/Users/mmich/esp-idf/components/driver/sdio_slave/include -IC:/Users/mmich/esp-idf/components/driver/sdmmc/include -IC:/Users/mmich/esp-idf/components/driver/sigma_delta/include -IC:/Users/mmich/esp-idf/components/driver/spi/include -IC:/Users/mmich/esp-idf/components/driver/temperature_sensor/include -IC:/Users/mmich/esp-idf/components/driver/touch_sensor/include -IC:/Users/mmich/esp-idf/components/driver/twai/include -IC:/Users/mmich/esp-idf/components/driver/uart/include -IC:/Users/mmich/esp-idf/components/driver/usb_serial_jtag/include -IC:/Users/mmich/esp-idf/components/driver/touch_sensor/esp32/include -IC:/Users/mmich/esp-idf/components/esp_pm/include -IC:/Users/mmich/esp-idf/components/esp_ringbuf/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj=. -fmacro-prefix-map=C:/Users/mmich/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/nimBLE/CMakeFiles/__idf_nimBLE.dir/nimBLE.c.obj -MF esp-idf\nimBLE\CMakeFiles\__idf_nimBLE.dir\nimBLE.c.obj.d -o esp-idf/nimBLE/CMakeFiles/__idf_nimBLE.dir/nimBLE.c.obj -c C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c
+In file included from C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:10,
+                 from C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:15,
+                 from C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:16:
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/gpio_num.h: In function 'device_read':
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/gpio_num.h:16:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'typedef'
+   16 | typedef enum {
+      | ^~~~~~~
+C:/Users/mmich/esp-idf/components/soc/esp32/include/soc/gpio_num.h:58:3: error: expected declaration specifiers before 'gpio_num_t'
+   58 | } gpio_num_t;
+      |   ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:20:3: error: storage class specified for parameter 'gpio_port_t'
+   20 | } gpio_port_t;
+      |   ^~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:88:3: error: storage class specified for parameter 'gpio_int_type_t'
+   88 | } gpio_int_type_t;
+      |   ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:104:3: error: storage class specified for parameter 'gpio_mode_t'
+  104 | } gpio_mode_t;
+      |   ^~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:109:3: error: storage class specified for parameter 'gpio_pullup_t'
+  109 | } gpio_pullup_t;
+      |   ^~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:114:3: error: storage class specified for parameter 'gpio_pulldown_t'
+  114 | } gpio_pulldown_t;
+      |   ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:121:3: error: storage class specified for parameter 'gpio_pull_mode_t'
+  121 | } gpio_pull_mode_t;
+      |   ^~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/hal/include/hal/gpio_types.h:130:3: error: storage class specified for parameter 'gpio_drive_cap_t'
+  130 | } gpio_drive_cap_t;
+      |   ^~~~~~~~~~~~~~~~
+In file included from C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:17:
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:23:3: error: storage class specified for parameter 'gpio_etm_event_edge_t'
+   23 | } gpio_etm_event_edge_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:29:5: error: expected specifier-qualifier-list before 'gpio_etm_event_edge_t'
+   29 |     gpio_etm_event_edge_t edge; /*!< Which kind of edge can trigger the ETM event module */
+      |     ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:30:3: error: storage class specified for parameter 'gpio_etm_event_config_t'
+   30 | } gpio_etm_event_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:47:36: error: type defaults to 'int' in declaration of 'gpio_etm_event_config_t' [-Werror=implicit-int]
+   47 | esp_err_t gpio_new_etm_event(const gpio_etm_event_config_t *config, esp_etm_event_handle_t *ret_event);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:47:60: error: expected ';', ',' or ')' before '*' token
+   47 | esp_err_t gpio_new_etm_event(const gpio_etm_event_config_t *config, esp_etm_event_handle_t *ret_event);
+      |                                                            ^
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:71:3: error: storage class specified for parameter 'gpio_etm_task_action_t'
+   71 | } gpio_etm_task_action_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:77:5: error: expected specifier-qualifier-list before 'gpio_etm_task_action_t'
+   77 |     gpio_etm_task_action_t action; /*!< Which action to take by the ETM task module */
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:78:3: error: storage class specified for parameter 'gpio_etm_task_config_t'
+   78 | } gpio_etm_task_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:96:35: error: type defaults to 'int' in declaration of 'gpio_etm_task_config_t' [-Werror=implicit-int]
+   96 | esp_err_t gpio_new_etm_task(const gpio_etm_task_config_t *config, esp_etm_task_handle_t *ret_task);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:96:58: error: expected ';', ',' or ')' before '*' token
+   96 | esp_err_t gpio_new_etm_task(const gpio_etm_task_config_t *config, esp_etm_task_handle_t *ret_task);
+      |                                                          ^
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:34:23: error: storage class specified for parameter 'gpio_isr_handle_t'
+   34 | typedef intr_handle_t gpio_isr_handle_t;
+      |                       ^~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:41:16: error: storage class specified for parameter 'gpio_isr_t'
+   41 | typedef void (*gpio_isr_t)(void *arg);
+      |                ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:48:5: error: expected specifier-qualifier-list before 'gpio_mode_t'
+   48 |     gpio_mode_t mode;               /*!< GPIO mode: set input/output mode                     */
+      |     ^~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:55:3: error: storage class specified for parameter 'gpio_config_t'
+   55 | } gpio_config_t;
+      |   ^~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:69:29: error: type defaults to 'int' in declaration of 'gpio_config_t' [-Werror=implicit-int]
+   69 | esp_err_t gpio_config(const gpio_config_t *pGPIOConfig);
+      |                             ^~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:69:43: error: expected ';', ',' or ')' before '*' token
+   69 | esp_err_t gpio_config(const gpio_config_t *pGPIOConfig);
+      |                                           ^
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:82:26: error: unknown type name 'gpio_num_t'
+   82 | esp_err_t gpio_reset_pin(gpio_num_t gpio_num);
+      |                          ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:95:30: error: unknown type name 'gpio_num_t'
+   95 | esp_err_t gpio_set_intr_type(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                              ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:95:51: error: expected declaration specifiers or '...' before 'gpio_int_type_t'
+   95 | esp_err_t gpio_set_intr_type(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                                                   ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:112:28: error: unknown type name 'gpio_num_t'
+  112 | esp_err_t gpio_intr_enable(gpio_num_t gpio_num);
+      |                            ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:126:29: error: unknown type name 'gpio_num_t'
+  126 | esp_err_t gpio_intr_disable(gpio_num_t gpio_num);
+      |                             ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:141:26: error: unknown type name 'gpio_num_t'
+  141 | esp_err_t gpio_set_level(gpio_num_t gpio_num, uint32_t level);
+      |                          ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:155:20: error: unknown type name 'gpio_num_t'
+  155 | int gpio_get_level(gpio_num_t gpio_num);
+      |                    ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:170:30: error: unknown type name 'gpio_num_t'
+  170 | esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                              ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:170:51: error: expected declaration specifiers or '...' before 'gpio_mode_t'
+  170 | esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                                                   ^~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:185:30: error: unknown type name 'gpio_num_t'
+  185 | esp_err_t gpio_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                              ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:185:51: error: expected declaration specifiers or '...' before 'gpio_pull_mode_t'
+  185 | esp_err_t gpio_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                                                   ^~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:198:30: error: unknown type name 'gpio_num_t'
+  198 | esp_err_t gpio_wakeup_enable(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                              ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:198:51: error: expected declaration specifiers or '...' before 'gpio_int_type_t'
+  198 | esp_err_t gpio_wakeup_enable(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                                                   ^~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:209:31: error: unknown type name 'gpio_num_t'
+  209 | esp_err_t gpio_wakeup_disable(gpio_num_t gpio_num);
+      |                               ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:235:82: error: expected declaration specifiers or '...' before 'gpio_isr_handle_t'
+  235 | esp_err_t gpio_isr_register(void (*fn)(void *), void *arg, int intr_alloc_flags, gpio_isr_handle_t *handle);
+      |                                                                                  ^~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:246:26: error: unknown type name 'gpio_num_t'
+  246 | esp_err_t gpio_pullup_en(gpio_num_t gpio_num);
+      |                          ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:257:27: error: unknown type name 'gpio_num_t'
+  257 | esp_err_t gpio_pullup_dis(gpio_num_t gpio_num);
+      |                           ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:268:28: error: unknown type name 'gpio_num_t'
+  268 | esp_err_t gpio_pulldown_en(gpio_num_t gpio_num);
+      |                            ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:279:29: error: unknown type name 'gpio_num_t'
+  279 | esp_err_t gpio_pulldown_dis(gpio_num_t gpio_num);
+      |                             ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:327:32: error: unknown type name 'gpio_num_t'
+  327 | esp_err_t gpio_isr_handler_add(gpio_num_t gpio_num, gpio_isr_t isr_handler, void *args);
+      |                                ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:327:53: error: expected declaration specifiers or '...' before 'gpio_isr_t'
+  327 | esp_err_t gpio_isr_handler_add(gpio_num_t gpio_num, gpio_isr_t isr_handler, void *args);
+      |                                                     ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:339:35: error: unknown type name 'gpio_num_t'
+  339 | esp_err_t gpio_isr_handler_remove(gpio_num_t gpio_num);
+      |                                   ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:351:37: error: unknown type name 'gpio_num_t'
+  351 | esp_err_t gpio_set_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t strength);
+      |                                     ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:351:58: error: expected declaration specifiers or '...' before 'gpio_drive_cap_t'
+  351 | esp_err_t gpio_set_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t strength);
+      |                                                          ^~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:363:37: error: unknown type name 'gpio_num_t'
+  363 | esp_err_t gpio_get_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t *strength);
+      |                                     ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:363:58: error: expected declaration specifiers or '...' before 'gpio_drive_cap_t'
+  363 | esp_err_t gpio_get_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t *strength);
+      |                                                          ^~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:390:24: error: unknown type name 'gpio_num_t'
+  390 | esp_err_t gpio_hold_en(gpio_num_t gpio_num);
+      |                        ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:409:25: error: unknown type name 'gpio_num_t'
+  409 | esp_err_t gpio_hold_dis(gpio_num_t gpio_num);
+      |                         ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:477:29: error: unknown type name 'gpio_num_t'
+  477 | esp_err_t gpio_sleep_sel_en(gpio_num_t gpio_num);
+      |                             ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:486:30: error: unknown type name 'gpio_num_t'
+  486 | esp_err_t gpio_sleep_sel_dis(gpio_num_t gpio_num);
+      |                              ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:500:36: error: unknown type name 'gpio_num_t'
+  500 | esp_err_t gpio_sleep_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                                    ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:500:57: error: expected declaration specifiers or '...' before 'gpio_mode_t'
+  500 | esp_err_t gpio_sleep_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                                                         ^~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:514:36: error: unknown type name 'gpio_num_t'
+  514 | esp_err_t gpio_sleep_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                                    ^~~~~~~~~~
+C:/Users/mmich/esp-idf/components/driver/gpio/include/driver/gpio.h:514:57: error: expected declaration specifiers or '...' before 'gpio_pull_mode_t'
+  514 | esp_err_t gpio_sleep_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                                                         ^~~~~~~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:18:1: error: parameter 'TAG' is initialized
+   18 | char *TAG = "BLE_Speedometer";
+      | ^~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:21:1: error: parameter 'status' is initialized
+   21 | bool status = false;
+      | ^~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:24:70: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   24 |                         struct ble_gatt_access_ctxt *ctxt, void *arg){
+      |                                                                      ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:50:70: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   50 |                         struct ble_gatt_access_ctxt *ctxt, void *arg){
+      |                                                                      ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:56:8: error: parameter 'gatt_char_defs' is initialized
+   56 | struct ble_gatt_chr_def gatt_char_defs[] = {
+      |        ^~~~~~~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:56:44: error: variable-sized object may not be initialized except with an empty initializer
+   56 | struct ble_gatt_chr_def gatt_char_defs[] = {
+      |                                            ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:57:5: warning: braces around scalar initializer
+   57 |     {.uuid = BLE_UUID16_DECLARE(0xFEF4),
+      |     ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:57:5: note: (near initialization for 'gatt_char_defs')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:57:6: error: field name not in record or union initializer
+   57 |     {.uuid = BLE_UUID16_DECLARE(0xFEF4),
+      |      ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:57:6: note: (near initialization for 'gatt_char_defs')
+In file included from C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_hs_adv.h:24,
+                 from C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_gap.h:32,
+                 from C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_hs.h:33,
+                 from C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:11:
+C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:108:5: warning: initialization of 'struct ble_gatt_chr_def *' from incompatible pointer type 'ble_uuid_t *' [-Wincompatible-pointer-types]
+  108 |     ((ble_uuid_t *) (&(ble_uuid16_t) BLE_UUID16_INIT(uuid16)))
+      |     ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:57:14: note: in expansion of macro 'BLE_UUID16_DECLARE'
+   57 |     {.uuid = BLE_UUID16_DECLARE(0xFEF4),
+      |              ^~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:108:5: note: (near initialization for 'gatt_char_defs')
+  108 |     ((ble_uuid_t *) (&(ble_uuid16_t) BLE_UUID16_INIT(uuid16)))
+      |     ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:57:14: note: in expansion of macro 'BLE_UUID16_DECLARE'
+   57 |     {.uuid = BLE_UUID16_DECLARE(0xFEF4),
+      |              ^~~~~~~~~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:58:6: error: field name not in record or union initializer
+   58 |      .flags = BLE_GATT_CHR_F_READ,
+      |      ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:58:6: note: (near initialization for 'gatt_char_defs')
+In file included from C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_hs.h:34:
+C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_gatt.h:67:57: warning: excess elements in scalar initializer
+   67 | #define BLE_GATT_CHR_F_READ                             0x0002
+      |                                                         ^~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:58:15: note: in expansion of macro 'BLE_GATT_CHR_F_READ'
+   58 |      .flags = BLE_GATT_CHR_F_READ,
+      |               ^~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_gatt.h:67:57: note: (near initialization for 'gatt_char_defs')
+   67 | #define BLE_GATT_CHR_F_READ                             0x0002
+      |                                                         ^~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:58:15: note: in expansion of macro 'BLE_GATT_CHR_F_READ'
+   58 |      .flags = BLE_GATT_CHR_F_READ,
+      |               ^~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:59:6: error: field name not in record or union initializer
+   59 |      .access_cb = device_read},
+      |      ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:59:6: note: (near initialization for 'gatt_char_defs')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:59:19: warning: excess elements in scalar initializer
+   59 |      .access_cb = device_read},
+      |                   ^~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:59:19: note: (near initialization for 'gatt_char_defs')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:60:5: warning: braces around scalar initializer
+   60 |     {.uuid = BLE_UUID16_DECLARE(0xDEAD),
+      |     ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:60:5: note: (near initialization for 'gatt_char_defs')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:60:6: error: field name not in record or union initializer
+   60 |     {.uuid = BLE_UUID16_DECLARE(0xDEAD),
+      |      ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:60:6: note: (near initialization for 'gatt_char_defs')
+C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:108:5: warning: initialization of 'struct ble_gatt_chr_def *' from incompatible pointer type 'ble_uuid_t *' [-Wincompatible-pointer-types]
+  108 |     ((ble_uuid_t *) (&(ble_uuid16_t) BLE_UUID16_INIT(uuid16)))
+      |     ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:60:14: note: in expansion of macro 'BLE_UUID16_DECLARE'
+   60 |     {.uuid = BLE_UUID16_DECLARE(0xDEAD),
+      |              ^~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:108:5: note: (near initialization for 'gatt_char_defs')
+  108 |     ((ble_uuid_t *) (&(ble_uuid16_t) BLE_UUID16_INIT(uuid16)))
+      |     ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:60:14: note: in expansion of macro 'BLE_UUID16_DECLARE'
+   60 |     {.uuid = BLE_UUID16_DECLARE(0xDEAD),
+      |              ^~~~~~~~~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:61:6: error: field name not in record or union initializer
+   61 |      .flags = BLE_GATT_CHR_F_WRITE,
+      |      ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:61:6: note: (near initialization for 'gatt_char_defs')
+C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_gatt.h:69:57: warning: excess elements in scalar initializer
+   69 | #define BLE_GATT_CHR_F_WRITE                            0x0008
+      |                                                         ^~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:61:15: note: in expansion of macro 'BLE_GATT_CHR_F_WRITE'
+   61 |      .flags = BLE_GATT_CHR_F_WRITE,
+      |               ^~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_gatt.h:69:57: note: (near initialization for 'gatt_char_defs')
+   69 | #define BLE_GATT_CHR_F_WRITE                            0x0008
+      |                                                         ^~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:61:15: note: in expansion of macro 'BLE_GATT_CHR_F_WRITE'
+   61 |      .flags = BLE_GATT_CHR_F_WRITE,
+      |               ^~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:62:6: error: field name not in record or union initializer
+   62 |      .access_cb = device_write},
+      |      ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:62:6: note: (near initialization for 'gatt_char_defs')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:62:19: error: 'device_write' undeclared (first use in this function); did you mean 'device_read'?
+   62 |      .access_cb = device_write},
+      |                   ^~~~~~~~~~~~
+      |                   device_read
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:62:19: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:62:19: warning: excess elements in scalar initializer
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:62:19: note: (near initialization for 'gatt_char_defs')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:60:5: warning: excess elements in scalar initializer
+   60 |     {.uuid = BLE_UUID16_DECLARE(0xDEAD),
+      |     ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:60:5: note: (near initialization for 'gatt_char_defs')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:63:6: warning: braces around scalar initializer
+   63 |      {0}
+      |      ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:63:6: note: (near initialization for 'gatt_char_defs')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:63:6: warning: excess elements in scalar initializer
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:63:6: note: (near initialization for 'gatt_char_defs')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:66:14: error: parameter 'gatt_cfg' is initialized
+   66 | const struct ble_gatt_svc_def gatt_cfg[] = {
+      |              ^~~~~~~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:66:44: error: variable-sized object may not be initialized except with an empty initializer
+   66 | const struct ble_gatt_svc_def gatt_cfg[] = {
+      |                                            ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:67:5: warning: braces around scalar initializer
+   67 |     {.type = BLE_GATT_SVC_TYPE_PRIMARY,
+      |     ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:67:5: note: (near initialization for 'gatt_cfg')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:67:6: error: field name not in record or union initializer
+   67 |     {.type = BLE_GATT_SVC_TYPE_PRIMARY,
+      |      ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:67:6: note: (near initialization for 'gatt_cfg')
+C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_gatt.h:83:57: warning: initialization of 'const struct ble_gatt_svc_def *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   83 | #define BLE_GATT_SVC_TYPE_PRIMARY                       1
+      |                                                         ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:67:14: note: in expansion of macro 'BLE_GATT_SVC_TYPE_PRIMARY'
+   67 |     {.type = BLE_GATT_SVC_TYPE_PRIMARY,
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_gatt.h:83:57: note: (near initialization for 'gatt_cfg')
+   83 | #define BLE_GATT_SVC_TYPE_PRIMARY                       1
+      |                                                         ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:67:14: note: in expansion of macro 'BLE_GATT_SVC_TYPE_PRIMARY'
+   67 |     {.type = BLE_GATT_SVC_TYPE_PRIMARY,
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:68:6: error: field name not in record or union initializer
+   68 |      .uuid = BLE_UUID16_DECLARE(0x1800),
+      |      ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:68:6: note: (near initialization for 'gatt_cfg')
+C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:108:5: warning: excess elements in scalar initializer
+  108 |     ((ble_uuid_t *) (&(ble_uuid16_t) BLE_UUID16_INIT(uuid16)))
+      |     ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:68:14: note: in expansion of macro 'BLE_UUID16_DECLARE'
+   68 |      .uuid = BLE_UUID16_DECLARE(0x1800),
+      |              ^~~~~~~~~~~~~~~~~~
+C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:108:5: note: (near initialization for 'gatt_cfg')
+  108 |     ((ble_uuid_t *) (&(ble_uuid16_t) BLE_UUID16_INIT(uuid16)))
+      |     ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:68:14: note: in expansion of macro 'BLE_UUID16_DECLARE'
+   68 |      .uuid = BLE_UUID16_DECLARE(0x1800),
+      |              ^~~~~~~~~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:69:6: error: field name not in record or union initializer
+   69 |      .characteristics = gatt_char_defs
+      |      ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:69:6: note: (near initialization for 'gatt_cfg')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:69:25: warning: excess elements in scalar initializer
+   69 |      .characteristics = gatt_char_defs
+      |                         ^~~~~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:69:25: note: (near initialization for 'gatt_cfg')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:71:5: warning: braces around scalar initializer
+   71 |     {0}
+      |     ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:71:5: note: (near initialization for 'gatt_cfg')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:71:5: warning: excess elements in scalar initializer
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:71:5: note: (near initialization for 'gatt_cfg')
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:76:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   76 | {
+      | ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:102:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  102 | void ble_app_advertise(void){
+      |                             ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:122:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  122 | {
+      | ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:129:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  129 | {
+      | ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:134:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  134 | {
+      | ^
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:174:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  174 | {
+      | ^
+In file included from C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:15:
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/include/nimBLE.h:7:5: error: old-style parameter declarations in prototyped function definition
+    7 | int device_read (uint16_t conn_handle, uint16_t attr_handle,
+      |     ^~~~~~~~~~~
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:198: error: expected '{' at end of input
+C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:198: error: control reaches end of non-void function [-Werror=return-type]
+cc1.exe: some warnings being treated as errors
+ninja: build stopped: subcommand failed.
