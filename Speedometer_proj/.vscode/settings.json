@@ -40,7 +40,12 @@
         "sdkconfig.h": "c",
         "nimble.h": "c",
         "esp_event_base.h": "c",
-        "nimble_port_freertos.h": "c"
+        "nimble_port_freertos.h": "c",
+        "adc_cali_scheme.h": "c",
+        "bit": "c",
+        "esp_adc_cal.h": "c",
+        "adc.h": "c",
+        "esp_err.h": "c"
     },
     "idf.adapterTargetName": "esp32"
 }

@@ -13,7 +13,16 @@
                 "C:/Users/mmich/esp-idf/components/esp_common/include",
                 "${workspaceFolder}/components/nimBLE/include",
                 "C:/Users/mmich/esp-idf/components/driver/gpio/include",
-                "C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gatt/include"
+                "C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gatt/include",
+                "C:/Users/mmich/esp-idf/components/driver/deprecated",
+                "C:/Users/mmich/esp-idf/components/esp_adc/include",
+                "C:/Users/mmich/esp-idf/components/esp_adc/esp32/include",
+                "C:/Users/mmich/esp-idf/components/driver/deprecated/driver",
+                "C:/Users/mmich/esp-idf/components/log/include",
+                "C:/Users/mmich/esp-idf/components/esp_adc/deprecated/include",
+                "C:/Users/mmich/esp-idf/components/linux/include",
+                "C:/Users/mmich/esp-idf/components/linux/include",
+                "C:/Users/mmich/esp-idf/components/mqtt/esp-mqtt/host_test/mocks/include"
             ],
             "defines": [
                 "_DEBUG",
