@@ -19,6 +19,7 @@
 #define ADC_BIT_WIDTH ADC_BITWIDTH_12
 #define ADC_READ_LEN 16
 #define TAG "ADC_CONTINUOUS"
+#define ADC_THRESHOLD 2000
 
 static void continuous_adc_init(adc_continuous_handle_t *handle) {
     adc_continuous_handle_cfg_t adc_config = {
@@ -52,21 +53,49 @@ static bool IRAM_ATTR adc_conversion_done_cb(adc_continuous_handle_t handle, con
     return (mustYield == pdTRUE);
 }
 
+static void threshold_task(void *arg) {
+    TickType_t last_tick = 0;
+    while (1) {
+        // Wait indefinitely for the notification
+        ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+
+        // Get the current tick count
+        TickType_t current_tick = xTaskGetTickCount();
+        
+        if (last_tick != 0) {
+            // Calculate the time difference in milliseconds
+            TickType_t time_difference = (current_tick - last_tick) * portTICK_PERIOD_MS;
+            ESP_LOGI(TAG, "Time between threshold crossings: %lu ms", time_difference);
+        }
+        
+        // Update the last tick count
+        last_tick = current_tick;
+
+        // Delay to prevent multiple logs for the same event
+        vTaskDelay(pdMS_TO_TICKS(10));
+    }
+}
+
 void app_main(void) {
     adc_continuous_handle_t adc_handle;
     continuous_adc_init(&adc_handle);
 
     uint8_t result[ADC_READ_LEN] = {0};
     uint32_t ret_num = 0;
+    uint8_t flag = 0;
 
-    TaskHandle_t task_handle = xTaskGetCurrentTaskHandle();
+    TaskHandle_t main_task_handle = xTaskGetCurrentTaskHandle();
+    TaskHandle_t threshold_task_handle = NULL;
+
     adc_continuous_evt_cbs_t cbs = {
         .on_conv_done = adc_conversion_done_cb,
     };
-    ESP_ERROR_CHECK(adc_continuous_register_event_callbacks(adc_handle, &cbs, task_handle));
+    ESP_ERROR_CHECK(adc_continuous_register_event_callbacks(adc_handle, &cbs, main_task_handle));
     ESP_ERROR_CHECK(adc_continuous_start(adc_handle));
 
     ESP_LOGI(TAG, "ADC continuous mode started");
+
+    xTaskCreate(threshold_task, "threshold_task", 2048, NULL, 10, &threshold_task_handle);
 
     while (1) {
         ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
@@ -79,7 +108,15 @@ void app_main(void) {
                     uint32_t chan_num = (p->type1.channel);
                     uint32_t data = p->type1.data;
                     if (chan_num == ADC_CHANNEL) {
-                        ESP_LOGI(TAG, "Channel: %"PRIu32", Value: %"PRIu32, chan_num, data);
+                        // ESP_LOGI(TAG, "Channel: %"PRIu32", Value: %"PRIu32, chan_num, data);
+                        if (data > ADC_THRESHOLD && flag == 0) {
+                            // Notify the threshold task if value exceeds threshold
+                            xTaskNotifyGive(threshold_task_handle);
+                            flag = 1; 
+                        }
+                        if (data < ADC_THRESHOLD && flag == 1){
+                            flag = 0; 
+                        }
                     } else {
                         ESP_LOGW(TAG, "Invalid data [Channel: %"PRIu32", Value: %"PRIu32"]", chan_num, data);
                     }
