@@ -14,33 +14,52 @@
 #include "sdkconfig.h"
 #include "nimBLE.h"
 #include "driver/gpio.h"
+#include "driver/timer.h"
+#include "adc_sensor.h"
+
+#define TIMER_DIVIDER  80  // Hardware timer clock divider (1 µs per tick)
 
 char *TAG = "BLE_Speedometer";
 uint8_t ble_addr_type; 
 struct ble_gap_adv_params adv_params;
 bool status = false; 
-uint32_t sensor_data;
+uint64_t start_time = 0; 
+uint64_t stop_time = 0; 
+uint64_t time_diffrence = 0;
+
+void init_timer(timer_group_t group, timer_idx_t timer) {
+    timer_config_t config = {
+        .divider = TIMER_DIVIDER,
+        .counter_dir = TIMER_COUNT_UP,
+        .counter_en = TIMER_START,
+        .alarm_en = TIMER_ALARM_DIS,
+        .auto_reload = false,
+    };
+    timer_init(group, timer, &config);
+    timer_set_counter_value(group, timer, 0x00000000ULL);
+    timer_start(group, timer);
+}
+
 static int device_write(uint16_t conn_handle, uint16_t attr_handle, 
                         struct ble_gatt_access_ctxt *ctxt, void *arg){
-    char *data = (char *)ctxt->om->om_data;
-    printf("%d\n",strcmp(data, (char *)"LIGHT ON")==0);
-    if (strcmp(data, (char *)"LIGHT ON\0")==0)
-    {
-       printf("LIGHT ON\n");
-    }
-    else if (strcmp(data, (char *)"LIGHT OFF\0")==0)
-    {
-        printf("LIGHT OFF\n");
-    }
-    else if (strcmp(data, (char *)"FAN ON\0")==0)
-    {
-        printf("FAN ON\n");
-    }
-    else if (strcmp(data, (char *)"FAN OFF\0")==0)
-    {
-        printf("FAN OFF\n");
-    }
-    else{
+    char data[ctxt->om->om_len + 1];
+    memcpy(data, ctxt->om->om_data, ctxt->om->om_len);
+    data[ctxt->om->om_len] = '\0';
+
+    if (strcmp(data, "START") == 0) {
+        ESP_LOGI(TAG, "START\n");
+        init_timer(TIMER_GROUP_0, TIMER_1);
+        timer_get_counter_value(TIMER_GROUP_0, TIMER_1, &start_time);
+        start_time /= 1000; // Convert to milliseconds
+
+    } else if (strcmp(data, "STOP") == 0) {
+        timer_get_counter_value(TIMER_GROUP_0, TIMER_1, &stop_time);
+        stop_time /= 1000;
+        time_diffrence = stop_time - start_time;
+        start_time = 0;
+        ESP_LOGI(TAG, "STOP\n %llu", time_diffrence);
+        timer_pause(TIMER_GROUP_0, TIMER_1);
+    } else {
         printf("Data from the client: %.*s\n", ctxt->om->om_len, ctxt->om->om_data);
     }
     return 0; 
@@ -54,16 +73,31 @@ static int device_read (uint16_t conn_handle, uint16_t attr_handle,
     return 0; 
 }
 
+static int device_read_speed (uint16_t conn_handle, uint16_t attr_handle, 
+                        struct ble_gatt_access_ctxt *ctxt, void *arg){
+   char *data = (char*)arg; 
+
+    os_mbuf_append(ctxt->om, data, strlen(data));
+    return 0;  
+}
 
 struct ble_gatt_chr_def gatt_char_defs[] = {
     {.uuid = BLE_UUID16_DECLARE(0xFEF4),
      .flags = BLE_GATT_CHR_F_READ,
      .access_cb = device_read,
-     .arg = &sensor_data},
+     .arg = &sensor_data
+    },
+    {
+     .uuid = BLE_UUID16_DECLARE(0xFEF5),
+     .flags = BLE_GATT_CHR_F_READ,
+     .access_cb = device_read_speed,
+     .arg = sensor_speed_data
+    },
     {.uuid = BLE_UUID16_DECLARE(0xDEAD),
      .flags = BLE_GATT_CHR_F_WRITE,
-     .access_cb = device_write},
-     {0}
+     .access_cb = device_write
+    },
+    {0}
 };
 
 const struct ble_gatt_svc_def gatt_cfg[] = {

@@ -1,8 +1,8 @@
 idf_component_register(SRCS "adc_sensor.c"
                     INCLUDE_DIRS "include"
+                    REQUIRES "esp_adc"
                     PRIV_REQUIRES "esp_event"
                                   "nvs_flash"
                                   "bt"
                                   "driver"
-                                  "esp_adc"
                                   "nimBLE")

@@ -14,6 +14,7 @@
 #include "esp_task_wdt.h" 
 #include "nimBLE.h"
 #include "driver/timer.h"
+#include "inttypes.h"
 
 #define ADC_UNIT ADC_UNIT_1
 #define ADC_CHANNEL ADC_CHANNEL_4  // GPIO32
@@ -21,13 +22,18 @@
 #define ADC_BIT_WIDTH ADC_BITWIDTH_12
 #define ADC_READ_LEN 16
 #define TAG "ADC_CONTINUOUS"
-#define ADC_THRESHOLD 2500
+#define ADC_THRESHOLD 1900
+#define RPM_TIMEOUT_MS 2000
 
 // Timer configuration
 #define TIMER_DIVIDER         80           // Hardware timer clock divider
 #define TIMER_SCALE           (TIMER_BASE_CLK / TIMER_DIVIDER)  // convert counter value to seconds
 #define TIMER_INTERVAL_SEC    (1.0)        // Sample test interval for the timer
 #define TEST_WITH_RELOAD      1            // Testing will be done with auto reload
+
+static uint64_t last_update_time = 0;
+uint32_t sensor_data;
+char sensor_speed_data[8] =  "00 km/h";
 
 static void init_timer() {
     timer_config_t config = {
@@ -93,6 +99,7 @@ void threshold_task(void *arg) {
             uint64_t time_difference = current_time - last_time;
             ESP_LOGI(TAG, "Time between threshold crossings: %llu us", time_difference);
             sensor_data = (uint32_t)(time_difference / 1000); // Convert to milliseconds
+            last_update_time = current_time / 1000; // Convert to milliseconds
         }
         
         // Update the last time value
@@ -100,6 +107,34 @@ void threshold_task(void *arg) {
 
         // Delay to prevent multiple logs for the same event
         vTaskDelay(pdMS_TO_TICKS(10));
+    }
+}
+
+void rpm_calculation_task(void *arg) {
+    while (1) {
+        uint32_t current_sensor_data;
+        uint64_t current_time;
+
+        // Get the current time in milliseconds
+        timer_get_counter_value(TIMER_GROUP_0, TIMER_0, &current_time);
+        current_time /= 1000; // Convert to milliseconds
+
+        current_sensor_data = sensor_data;
+        uint64_t last_time = last_update_time;
+        uint32_t rpm = 0;
+
+        if (current_sensor_data > 0 && (current_time - last_time) < RPM_TIMEOUT_MS) {
+            // Calculate RPM (60,000 ms per minute / sensor_data in ms)
+            rpm = 60000 / current_sensor_data;
+            sprintf(sensor_speed_data, "%" PRId32, rpm);
+            ESP_LOGI(TAG, "Calculated RPM: %" PRIu32, rpm);
+        } else {
+            sprintf(sensor_speed_data, "0");
+            ESP_LOGI(TAG, "Calculated RPM: 0 (Timeout or no data)");
+        }
+
+        // Delay to control the frequency of RPM calculation
+        vTaskDelay(pdMS_TO_TICKS(1000)); // 1-second delay
     }
 }
 
@@ -124,7 +159,8 @@ void sensor_func(void){
     ESP_LOGI(TAG, "ADC continuous mode started");
 
     xTaskCreate(threshold_task, "threshold_task", 2048, NULL, 10, &threshold_task_handle);
-                    
+    xTaskCreate(rpm_calculation_task, "rpm_calculation_task", 2048, NULL, 10, NULL);
+
     while (1) {
         ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
 
@@ -142,7 +178,7 @@ void sensor_func(void){
                             xTaskNotifyGive(threshold_task_handle);
                             flag = 1; 
                         }
-                        if (data < (ADC_THRESHOLD-200) && flag == 1){
+                                if (data < (ADC_THRESHOLD - 50) && flag == 1){
                             flag = 0; 
                         }
                     } else {
@@ -162,3 +198,4 @@ void sensor_func(void){
     ESP_ERROR_CHECK(adc_continuous_stop(adc_handle));
     ESP_ERROR_CHECK(adc_continuous_deinit(adc_handle));
 }
+        

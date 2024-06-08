@@ -3,5 +3,6 @@ idf_component_register(SRCS "nimBLE.c"
                        PRIV_REQUIRES "esp_event"
                                      "nvs_flash"
                                      "bt"
-                                     "driver")
+                                     "driver"
+                                     "adc_sensor")
  

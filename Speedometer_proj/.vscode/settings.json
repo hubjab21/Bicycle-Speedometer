@@ -45,7 +45,8 @@
         "bit": "c",
         "esp_adc_cal.h": "c",
         "adc.h": "c",
-        "esp_err.h": "c"
+        "esp_err.h": "c",
+        "adc_sensor.h": "c"
     },
     "idf.adapterTargetName": "esp32"
 }
