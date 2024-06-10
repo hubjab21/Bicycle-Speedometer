@@ -30,10 +30,16 @@
 #define TIMER_SCALE           (TIMER_BASE_CLK / TIMER_DIVIDER)  // convert counter value to seconds
 #define TIMER_INTERVAL_SEC    (1.0)        // Sample test interval for the timer
 #define TEST_WITH_RELOAD      1            // Testing will be done with auto reload
+#define DISTANCE              100          // Distance needed for calibraton 
 
 static uint64_t last_update_time = 0;
 uint32_t sensor_data;
 char sensor_speed_data[8] =  "00 km/h";
+uint32_t rpm_occured = 0; 
+uint32_t sum_rpm = 0;
+uint32_t average_rpm = 0;
+float diameter = 0;
+float speed = 0;
 
 static void init_timer() {
     timer_config_t config = {
@@ -128,13 +134,34 @@ void rpm_calculation_task(void *arg) {
             rpm = 60000 / current_sensor_data;
             sprintf(sensor_speed_data, "%" PRId32, rpm);
             ESP_LOGI(TAG, "Calculated RPM: %" PRIu32, rpm);
+            if (diameter != 0){
+                speed = (float)(((rpm * 3.14 * diameter)/60)*3.6);
+                ESP_LOGI(TAG, "Calculated speed: %0.2f", speed);
+            }
         } else {
             sprintf(sensor_speed_data, "0");
-            ESP_LOGI(TAG, "Calculated RPM: 0 (Timeout or no data)");
+            speed = 0;
+            ESP_LOGI(TAG, "Calculated RPM and Speed: 0 (Timeout or no data)");
         }
-
+        if(calibration_flag == true){
+            rpm_occured += 1; 
+            sum_rpm += rpm;
+        }
+        else{
+            if (rpm_occured != 0) {
+                average_rpm = sum_rpm / rpm_occured;
+                diameter = ((DISTANCE / (time_diffrence/1000)) * 60)/(average_rpm * 3.14);
+            } else {
+                average_rpm = 0;
+            }
+            rpm_occured = 0;
+            sum_rpm = 0;
+            if(average_rpm != 0){
+                ESP_LOGI(TAG, "Average RPM: %lu, %f", average_rpm, diameter);
+            }
+        }
         // Delay to control the frequency of RPM calculation
-        vTaskDelay(pdMS_TO_TICKS(1000)); // 1-second delay
+        vTaskDelay(pdMS_TO_TICKS(500)); // 1-second delay
     }
 }
 

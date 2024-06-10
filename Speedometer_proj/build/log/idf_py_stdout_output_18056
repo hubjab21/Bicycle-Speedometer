@@ -1,0 +1,49 @@
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "Speedometer" version: af05af7-dirty
+-- Adding linker script C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Users/mmich/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: adc_sensor app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nimBLE nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor C:/Users/mmich/esp-idf/components/app_trace C:/Users/mmich/esp-idf/components/app_update C:/Users/mmich/esp-idf/components/bootloader C:/Users/mmich/esp-idf/components/bootloader_support C:/Users/mmich/esp-idf/components/bt C:/Users/mmich/esp-idf/components/cmock C:/Users/mmich/esp-idf/components/console C:/Users/mmich/esp-idf/components/cxx C:/Users/mmich/esp-idf/components/driver C:/Users/mmich/esp-idf/components/efuse C:/Users/mmich/esp-idf/components/esp-tls C:/Users/mmich/esp-idf/components/esp_adc C:/Users/mmich/esp-idf/components/esp_app_format C:/Users/mmich/esp-idf/components/esp_bootloader_format C:/Users/mmich/esp-idf/components/esp_coex C:/Users/mmich/esp-idf/components/esp_common C:/Users/mmich/esp-idf/components/esp_eth C:/Users/mmich/esp-idf/components/esp_event C:/Users/mmich/esp-idf/components/esp_gdbstub C:/Users/mmich/esp-idf/components/esp_hid C:/Users/mmich/esp-idf/components/esp_http_client C:/Users/mmich/esp-idf/components/esp_http_server C:/Users/mmich/esp-idf/components/esp_https_ota C:/Users/mmich/esp-idf/components/esp_https_server C:/Users/mmich/esp-idf/components/esp_hw_support C:/Users/mmich/esp-idf/components/esp_lcd C:/Users/mmich/esp-idf/components/esp_local_ctrl C:/Users/mmich/esp-idf/components/esp_mm C:/Users/mmich/esp-idf/components/esp_netif C:/Users/mmich/esp-idf/components/esp_netif_stack C:/Users/mmich/esp-idf/components/esp_partition C:/Users/mmich/esp-idf/components/esp_phy C:/Users/mmich/esp-idf/components/esp_pm C:/Users/mmich/esp-idf/components/esp_psram C:/Users/mmich/esp-idf/components/esp_ringbuf C:/Users/mmich/esp-idf/components/esp_rom C:/Users/mmich/esp-idf/components/esp_system C:/Users/mmich/esp-idf/components/esp_timer C:/Users/mmich/esp-idf/components/esp_wifi C:/Users/mmich/esp-idf/components/espcoredump C:/Users/mmich/esp-idf/components/esptool_py C:/Users/mmich/esp-idf/components/fatfs C:/Users/mmich/esp-idf/components/freertos C:/Users/mmich/esp-idf/components/hal C:/Users/mmich/esp-idf/components/heap C:/Users/mmich/esp-idf/components/http_parser C:/Users/mmich/esp-idf/components/idf_test C:/Users/mmich/esp-idf/components/ieee802154 C:/Users/mmich/esp-idf/components/json C:/Users/mmich/esp-idf/components/log C:/Users/mmich/esp-idf/components/lwip C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main C:/Users/mmich/esp-idf/components/mbedtls C:/Users/mmich/esp-idf/components/mqtt C:/Users/mmich/esp-idf/components/newlib C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE C:/Users/mmich/esp-idf/components/nvs_flash C:/Users/mmich/esp-idf/components/nvs_sec_provider C:/Users/mmich/esp-idf/components/openthread C:/Users/mmich/esp-idf/components/partition_table C:/Users/mmich/esp-idf/components/perfmon C:/Users/mmich/esp-idf/components/protobuf-c C:/Users/mmich/esp-idf/components/protocomm C:/Users/mmich/esp-idf/components/pthread C:/Users/mmich/esp-idf/components/sdmmc C:/Users/mmich/esp-idf/components/soc C:/Users/mmich/esp-idf/components/spi_flash C:/Users/mmich/esp-idf/components/spiffs C:/Users/mmich/esp-idf/components/tcp_transport C:/Users/mmich/esp-idf/components/ulp C:/Users/mmich/esp-idf/components/unity C:/Users/mmich/esp-idf/components/usb C:/Users/mmich/esp-idf/components/vfs C:/Users/mmich/esp-idf/components/wear_levelling C:/Users/mmich/esp-idf/components/wifi_provisioning C:/Users/mmich/esp-idf/components/wpa_supplicant C:/Users/mmich/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build
+[0/1] Re-running CMake...
+[1/15] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\mmich\Desktop\Git_repo_for_speedometer\Bicycle-Speedometer_MM\Speedometer_proj\build\bootloader\esp-idf\esptool_py && C:\Users\mmich\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/mmich/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/13] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[3/13] Linking C static library esp-idf\esp_app_format\libesp_app_format.a
+[4/13] Building C object esp-idf/adc_sensor/CMakeFiles/__idf_adc_sensor.dir/adc_sensor.c.obj
+In file included from C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/adc_sensor.c:16:
+C:/Users/mmich/esp-idf/components/driver/deprecated/driver/timer.h:16:2: warning: #warning "legacy timer group driver is deprecated, please migrate to driver/gptimer.h" [-Wcpp]
+   16 | #warning "legacy timer group driver is deprecated, please migrate to driver/gptimer.h"
+      |  ^~~~~~~
+[5/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Speedometer.c.obj
+[6/13] Linking C static library esp-idf\adc_sensor\libadc_sensor.a
+[7/13] Building C object esp-idf/nimBLE/CMakeFiles/__idf_nimBLE.dir/nimBLE.c.obj
+In file included from C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:17:
+C:/Users/mmich/esp-idf/components/driver/deprecated/driver/timer.h:16:2: warning: #warning "legacy timer group driver is deprecated, please migrate to driver/gptimer.h" [-Wcpp]
+   16 | #warning "legacy timer group driver is deprecated, please migrate to driver/gptimer.h"
+      |  ^~~~~~~
+[8/13] Linking C static library esp-idf\nimBLE\libnimBLE.a
+[9/13] Linking C static library esp-idf\main\libmain.a
+[10/13] Generating ld/sections.ld
+[11/13] Linking CXX executable Speedometer.elf
+[12/13] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/Speedometer.bin
+[13/13] cmd.exe /C "cd /D C:\Users\mmich\Desktop\Git_repo_for_speedometer\Bicycle-Speedometer_MM\Speedometer_proj\build\esp-idf\esptool_py && C:\Users\mmich\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/mmich/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/partition_table/partition-table.bin C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build/Speedometer.bin"
+Speedometer.bin binary size 0x96f20 bytes. Smallest app partition is 0x100000 bytes. 0x690e0 bytes (41%) free.

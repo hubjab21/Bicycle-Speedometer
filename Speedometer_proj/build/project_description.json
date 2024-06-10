@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "Speedometer",
-    "project_version":    "a8085f7-dirty",
+    "project_version":    "af05af7-dirty",
     "project_path":       "C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj",
     "idf_path":           "C:/Users/mmich/esp-idf",
     "build_dir":          "C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/build",

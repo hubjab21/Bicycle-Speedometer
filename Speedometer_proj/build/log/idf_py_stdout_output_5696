@@ -1,0 +1,1665 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  3 2024 15:19:52[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b878h (112760) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002b8a0 vaddr=3ffbdb60 size=04778h ( 18296) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=5ca7ch (379516) map[0m
+[0;32mI (280) esp_image: segment 3: paddr=0008caa4 vaddr=3ffc22d8 size=00470h (  1136) load[0m
+[0;32mI (281) esp_image: segment 4: paddr=0008cf1c vaddr=40080000 size=1a05ch (106588) load[0m
+[0;32mI (341) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (341) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) cpu_start: Multicore app[0m
+[0;32mI (361) cpu_start: Pro cpu start user code[0m
+[0;32mI (361) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (361) cpu_start: Application information:[0m
+[0;32mI (364) cpu_start: Project name:     Speedometer[0m
+[0;32mI (370) cpu_start: App version:      af05af7-dirty[0m
+[0;32mI (375) cpu_start: Compile time:     Jun  9 2024 21:10:03[0m
+[0;32mI (381) cpu_start: ELF file SHA256:  1bff17068...[0m
+[0;32mI (386) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (391) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (396) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (401) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (406) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (413) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (419) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (425) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (431) heap_init: At 3FFC5590 len 0001AA70 (106 KiB): DRAM[0m
+[0;32mI (437) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (444) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (450) heap_init: At 4009A05C len 00005FA4 (23 KiB): IRAM[0m
+[0;32mI (458) spi_flash: detected chip: generic[0m
+[0;32mI (461) spi_flash: flash io: dio[0m
+[0;33mW (465) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (478) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (493) main_task: Started on CPU0[0m
+[0;32mI (503) main_task: Calling app_main()[0m
+[0;32mI (513) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (523) BTDM_INIT: Bluetooth MAC: d0:ef:76:44:e4:b2[0m
+[0;32mI (523) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (853) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (863) ADC_CONTINUOUS: ADC continuous mode started[0m
+[0;32mI (863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;31mE (873) task_wdt: esp_task_wdt_reset(713): task not found[0m
+[0;32mI (893) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (1863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (2863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (3863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (4863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (5863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (6863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (7863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (8863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (9863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (10863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (11863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (12863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (13863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (14253) ADC_CONTINUOUS: Time between threshold crossings: 219992 us[0m
+[0;32mI (14633) ADC_CONTINUOUS: Time between threshold crossings: 380004 us[0m
+[0;32mI (14863) ADC_CONTINUOUS: Calculated RPM: 157[0m
+[0;32mI (14953) ADC_CONTINUOUS: Time between threshold crossings: 320010 us[0m
+[0;32mI (15673) ADC_CONTINUOUS: Time between threshold crossings: 719990 us[0m
+[0;32mI (15863) ADC_CONTINUOUS: Calculated RPM: 83[0m
+[0;32mI (15903) ADC_CONTINUOUS: Time between threshold crossings: 230001 us[0m
+[0;32mI (16073) ADC_CONTINUOUS: Time between threshold crossings: 169999 us[0m
+[0;32mI (16473) ADC_CONTINUOUS: Time between threshold crossings: 400006 us[0m
+[0;32mI (16833) ADC_CONTINUOUS: Time between threshold crossings: 359994 us[0m
+[0;32mI (16863) ADC_CONTINUOUS: Calculated RPM: 167[0m
+[0;32mI (17863) ADC_CONTINUOUS: Calculated RPM: 167[0m
+[0;32mI (18863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (19863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (20283) ADC_CONTINUOUS: Time between threshold crossings: 3450000 us[0m
+[0;32mI (20733) ADC_CONTINUOUS: Time between threshold crossings: 450000 us[0m
+[0;32mI (20863) ADC_CONTINUOUS: Calculated RPM: 133[0m
+[0;32mI (21863) ADC_CONTINUOUS: Calculated RPM: 133[0m
+[0;32mI (22003) ADC_CONTINUOUS: Time between threshold crossings: 1270000 us[0m
+[0;32mI (22303) ADC_CONTINUOUS: Time between threshold crossings: 300010 us[0m
+[0;32mI (22863) ADC_CONTINUOUS: Calculated RPM: 200[0m
+[0;32mI (23603) ADC_CONTINUOUS: Time between threshold crossings: 1299991 us[0m
+[0;32mI (23863) ADC_CONTINUOUS: Calculated RPM: 46[0m
+[0;32mI (24093) ADC_CONTINUOUS: Time between threshold crossings: 489999 us[0m
+[0;32mI (24243) ADC_CONTINUOUS: Time between threshold crossings: 150017 us[0m
+[0;32mI (24583) ADC_CONTINUOUS: Time between threshold crossings: 339983 us[0m
+[0;32mI (24813) ADC_CONTINUOUS: Time between threshold crossings: 230000 us[0m
+[0;32mI (24863) ADC_CONTINUOUS: Calculated RPM: 260[0m
+[0;32mI (24973) ADC_CONTINUOUS: Time between threshold crossings: 160001 us[0m
+[0;32mI (25243) ADC_CONTINUOUS: Time between threshold crossings: 270016 us[0m
+[0;32mI (25863) ADC_CONTINUOUS: Calculated RPM: 222[0m
+[0;32mI (26863) ADC_CONTINUOUS: Calculated RPM: 222[0m
+[0;32mI (27863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (28863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (29863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (30863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (31863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (32043) BOOT BUTTON:: Button Pressed FOR 3 SECOND
+[0m
+[0;32mI (32043) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (32043) NimBLE: disc_mode=2[0m
+[0;32mI (32043) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (32053) NimBLE: 
+[0m
+[0;32mI (32863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (33863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (34863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (35863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (36863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (37863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (38013) GAP: BLE GAP EVENT CONNECT OK![0m
+[0;32mI (38063) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (38063) NimBLE: disc_mode=2[0m
+[0;32mI (38063) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (38063) NimBLE: 
+[0m
+[0;32mI (38863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (39863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (40863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+I BOD: Brownout detector was triggered
+
+
+ets ul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 roo 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  3 2024 15:19:52[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type T Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b878h (112760) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002b8a0 vaddr=3ffbdb60 size=04778h ( 18296) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=5ca7ch (379516) map[0m
+[0;32mI (280) esp_image: segment 3: paddr=0008caa4 vaddr=3ffc22d8 size=00470h (  1136) load[0m
+[0;32mI (281) esp_image: segment 4: paddr=0008cf1c vaddr=40080000 size=1a05ch (106588) load[0m
+[0;32mI (341) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (341) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) cpu_start: Multicore app[0m
+[0;32mI (361) cpu_start: Pro cpu start user code[0m
+[0;32mI (361) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (361) cpu_start: Application information:[0m
+[0;32mI (364) cpu_start: Project name:     Speedometer[0m
+[0;32mI (369) cpu_start: App version:      af05af7-dirty[0m
+[0;32mI (375) cpu_start: Compile time:     Jun  9 2024 21:10:03[0m
+[0;32mI (381) cpu_start: ELF file SHA256:  1bff17068...[0m
+[0;32mI (386) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (391) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (396) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (401) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (406) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (413) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (419) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (425) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (431) heap_init: At 3FFC5590 len 0001AA70 (106 KiB): DRAM[0m
+[0;32mI (437) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (444) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (450) heap_init: At 4009A05C len 00005FA4 (23 KiB): IRAM[0m
+[0;32mI (458) spi_flash: detected chip: generic[0m
+[0;32mI (461) spi_flash: flash io: dio[0m
+[0;33mW (465) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (478) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (493) main_task: Started on CPU0[0m
+[0;32mI (503) main_task: Calling app_main()[0m
+[0;32mI (513) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (523) BTDM_INIT: Bluetooth MAC: d0:ef:76:44:e4:b2[0m
+[0;32mI (523) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (853) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (853) ADC_CONTINUOUS: ADC continuous mode started[0m
+[0;32mI (853) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (883) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (1863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (2863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (3863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (4863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (5863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (6863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (7863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (8863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (9863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (10863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (11863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (12863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (13863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (14863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (15863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (16863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (17863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (18863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (19863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (20863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (21863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (22863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (23863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (24863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (25863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (26863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (27863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (28863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (29863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (30093) ADC_CONTINUOUS: Time between threshold crossings: 25819996 us[0m
+[0;32mI (30863) ADC_CONTINUOUS: Calculated RPM: 2[0m
+[0;32mI (31863) ADC_CONTINUOUS: Calculated RPM: 2[0m
+[0;32mI (31963) ADC_CONTINUOUS: Time between threshold crossings: 1869999 us[0m
+[0;32mI (32253) ADC_CONTINUOUS: Time between threshold crossings: 290006 us[0m
+[0;32mI (32543) ADC_CONTINUOUS: Time between threshold crossings: 290011 us[0m
+[0;32mI (32853) ADC_CONTINUOUS: Time between threshold crossings: 309989 us[0m
+[0;32mI (32863) ADC_CONTINUOUS: Calculated RPM: 194[0m
+[0;32mI (33183) ADC_CONTINUOUS: Time between threshold crossings: 330000 us[0m
+[0;32mI (33443) ADC_CONTINUOUS: Time between threshold crossings: 260012 us[0m
+[0;32mI (33753) ADC_CONTINUOUS: Time between threshold crossings: 309982 us[0m
+[0;32mI (33863) ADC_CONTINUOUS: Calculated RPM: 194[0m
+[0;32mI (34043) ADC_CONTINUOUS: Time between threshold crossings: 290023 us[0m
+[0;32mI (34353) ADC_CONTINUOUS: Time between threshold crossings: 309977 us[0m
+[0;32mI (34643) ADC_CONTINUOUS: Time between threshold crossings: 290017 us[0m
+[0;32mI (34863) ADC_CONTINUOUS: Calculated RPM: 206[0m
+[0;32mI (34933) ADC_CONTINUOUS: Time between threshold crossings: 289983 us[0m
+[0;32mI (35223) ADC_CONTINUOUS: Time between threshold crossings: 290000 us[0m
+[0;32mI (35543) ADC_CONTINUOUS: Time between threshold crossings: 320017 us[0m
+[0;32mI (35713) ADC_CONTINUOUS: Time between threshold crossings: 169989 us[0m
+[0;32mI (35853) ADC_CONTINUOUS: Time between threshold crossings: 139994 us[0m
+[0;32mI (35863) ADC_CONTINUOUS: Calculated RPM: 431[0m
+[0;32mI (36123) ADC_CONTINUOUS: Time between threshold crossings: 270000 us[0m
+[0;32mI (36423) ADC_CONTINUOUS: Time between threshold crossings: 300000 us[0m
+[0;32mI (36723) ADC_CONTINUOUS: Time between threshold crossings: 300000 us[0m
+[0;32mI (36863) ADC_CONTINUOUS: Calculated RPM: 200[0m
+[0;32mI (37013) ADC_CONTINUOUS: Time between threshold crossings: 290006 us[0m
+[0;32mI (37303) ADC_CONTINUOUS: Time between threshold crossings: 289994 us[0m
+[0;32mI (37473) ADC_CONTINUOUS: Time between threshold crossings: 170006 us[0m
+[0;32mI (37573) ADC_CONTINUOUS: Time between threshold crossings: 99994 us[0m
+[0;32mI (37773) ADC_CONTINUOUS: Time between threshold crossings: 200000 us[0m
+[0;32mI (37863) ADC_CONTINUOUS: Calculated RPM: 300[0m
+[0;32mI (37873) ADC_CONTINUOUS: Time between threshold crossings: 100000 us[0m
+[0;32mI (38153) ADC_CONTINUOUS: Time between threshold crossings: 280000 us[0m
+[0;32mI (38303) ADC_CONTINUOUS: Time between threshold crossings: 150000 us[0m
+[0;32mI (38573) ADC_CONTINUOUS: Time between threshold crossings: 270006 us[0m
+[0;32mI (38713) ADC_CONTINUOUS: Time between threshold crossings: 139994 us[0m
+[0;32mI (38853) ADC_CONTINUOUS: Time between threshold crossings: 140000 us[0m
+[0;32mI (38863) ADC_CONTINUOUS: Calculated RPM: 428[0m
+[0;32mI (38983) ADC_CONTINUOUS: Time between threshold crossings: 130000 us[0m
+[0;32mI (39863) ADC_CONTINUOUS: Calculated RPM: 461[0m
+[0;32mI (40263) ADC_CONTINUOUS: Time between threshold crossings: 1280000 us[0m
+[0;32mI (40383) ADC_CONTINUOUS: Time between threshold crossings: 120000 us[0m
+[0;32mI (40703) ADC_CONTINUOUS: Time between threshold crossings: 320001 us[0m
+[0;32mI (40863) ADC_CONTINUOUS: Calculated RPM: 187[0m
+[0;32mI (41003) ADC_CONTINUOUS: Time between threshold crossings: 300019 us[0m
+[0;32mI (41303) ADC_CONTINUOUS: Time between threshold crossings: 299990 us[0m
+[0;32mI (41863) ADC_CONTINUOUS: Calculated RPM: 200[0m
+[0;32mI (42863) ADC_CONTINUOUS: Calculated RPM: 200[0m
+[0;32mI (43863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (44863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (45863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (46863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (47863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (48863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (49863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+I BOD: Brownout detector was triggered
+
+
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET,boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:00,w_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x0080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-DF v5.2.1 2nd stage bootloaderm
+[0;32I (31) boot: compile time Jun  3 2024 15:19:52[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b878h (112760) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002b8a0 vaddr=3ffbdb60 size=04778h ( 18296) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=5ca7ch (379516) map[0m
+[0;32mI (280) esp_image: segment 3: paddr=0008caa4 vaddr=3ffc22d8 size=00470h (  1136) load[0m
+[0;32mI (281) esp_image: segment 4: paddr=0008cf1c vaddr=40080000 size=1a05ch (106588) load[0m
+[0;32mI (341) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (341) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) cpu_start: Multicore app[0m
+[0;32mI (361) cpu_start: Pro cpu start user code[0m
+[0;32mI (361) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (361) cpu_start: Application information:[0m
+[0;32mI (364) cpu_start: Project name:     Speedometer[0m
+[0;32mI (369) cpu_start: App version:      af05af7-dirty[0m
+[0;32mI (375) cpu_start: Compile time:     Jun  9 2024 21:10:03[0m
+[0;32mI (381) cpu_start: ELF file SHA256:  1bff17068...[0m
+[0;32mI (386) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (391) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (396) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (401) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (406) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (413) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (419) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (425) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (431) heap_init: At 3FFC5590 len 0001AA70 (106 KiB): DRAM[0m
+[0;32mI (437) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (444) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (450) heap_init: At 4009A05C len 00005FA4 (23 KiB): IRAM[0m
+I BOD: Brownout detector was triggered
+
+
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  3 2024 15:19:52[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b878h (112760) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002b8a0 vaddr=3ffbdb60 size=04778h ( 18296) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=5ca7ch (379516) map[0m
+[0;32mI (280) esp_image: segment 3: paddr=0008caa4 vaddr=3ffc22d8 size=00470h (  1136) load[0m
+[0;32mI (281) esp_image: segment 4: paddr=0008cf1c vaddr=40080000 size=1a05ch (106588) load[0m
+[0;32mI (341) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (341) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) cpu_start: Multicore app[0m
+[0;32mI (361) cpu_start: Pro cpu start user code[0m
+[0;32mI (361) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (361) cpu_start: Application information:[0m
+[0;32mI (364) cpu_start: Project name:     Speedometer[0m
+[0;32mI (369) cpu_start: App version:      af05af7-dirty[0m
+[0;32mI (375) cpu_start: Compile time:     Jun  9 2024 21:10:03[0m
+[0;32mI (381) cpu_start: ELF file SHA256:  1bff17068...[0m
+[0;32mI (386) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (391) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (396) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (401) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (406) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (413) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (419) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (425) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (431) heap_init: At 3FFC5590 len 0001AA70 (106 KiB): DRAM[0m
+[0;32mI (437) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (444) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (450) heap_init: At 4009A05C len 00005FA4 (23 KiB): IRAM[0m
+[0;32mI (458) spi_flash: detected chip: generic[0m
+[0;32mI (461) spi_flash: flash io: dio[0m
+[0;33mW (465) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (478) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (493) main_task: Started on CPU0[0m
+[0;32mI (503) main_task: Calling app_main()[0m
+[0;32mI (513) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (523) BTDM_INIT: Bluetooth MAC: d0:ef:76:44:e4:b2[0m
+[0;32mI (523) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (853) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (863) ADC_CONTINUOUS: ADC continuous mode started[0m
+[0;32mI (863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (893) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (1863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (2863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (3863) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+I BOD: Brownout detector was triggered
+
+
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  3 2024 15:19:52[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b878h (112760) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002b8a0 vaddr=3ffbdb60 size=04778h ( 18296) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=5ca7ch (379516) map[0m
+[0;32mI (280) esp_image: segment 3: paddr=0008caa4 vaddr=3ffc22d8 size=00470h (  1136) load[0m
+[0;32mI (281) esp_image: segment 4: paddr=0008cf1c vaddr=40080000 size=1a05ch (106588) load[0m
+[0;32mI (341) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (341) boot: Disabling RNG early entropy source...[0m
+[0;32mI (352) cpu_start: Multicore app[0m
+[0;32mI (361) cpu_start: Pro cpu start user code[0m
+[0;32mI (361) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (361) cpu_start: Application information:[0m
+[0;32mI (364) cpu_start: Project name:     Speedometer[0m
+[0;32mI (369) cpu_start: App version:      af05af7-dirty[0m
+[0;32mI (375) cpu_start: Compile time:     Jun  9 2024 21:10:03[0m
+[0;32mI (381) cpu_start: ELF file SHA256:  1bff17068...[0m
+[0;32mI (386) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (391) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (396) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (401) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (406) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (413) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (419) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (425) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (431) heap_init: At 3FFC5590 len 0001AA70 (106 KiB): DRAM[0m
+[0;32mI (437) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (444) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (450) heap_init: At 4009A05C len 00005FA4 (23 KiB): IRAM[0m
+[0;32mI (458) spi_flash: detected chip: generic[0m
+[0;32mI (461) spi_flash: flash io: dio[0m
+[0;33mW (465) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (478) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (493) main_task: Started on CPU0[0m
+[0;32mI (503) main_task: Calling app_main()[0m
+[0;32mI (513) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (523) BTDM_INIT: Bluetooth MAC: d0:ef:76:44:e4:b2[0m
+[0;32mI (523) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (863) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (873) ADC_CONTINUOUS: ADC continuous mode started[0m
+[0;32mI (873) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (903) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (1883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (2883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (3883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (4883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (5263) BOOT BUTTON:: Button Pressed FOR 3 SECOND
+[0m
+[0;32mI (5263) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (5263) NimBLE: disc_mode=2[0m
+[0;32mI (5263) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (5273) NimBLE: 
+[0m
+[0;32mI (5283) GAP: BLE GAP EVENT CONNECT OK![0m
+[0;32mI (5883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (6383) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (6383) NimBLE: disc_mode=2[0m
+[0;32mI (6383) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (6383) NimBLE: 
+[0m
+[0;32mI (6883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (7883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (8883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (9883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (10883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (11883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (12883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (13713) ADC_CONTINUOUS: Time between threshold crossings: 309993 us[0m
+[0;32mI (13883) ADC_CONTINUOUS: Calculated RPM: 194[0m
+[0;32mI (14003) ADC_CONTINUOUS: Time between threshold crossings: 290004 us[0m
+[0;32mI (14303) ADC_CONTINUOUS: Time between threshold crossings: 300007 us[0m
+[0;32mI (14613) ADC_CONTINUOUS: Time between threshold crossings: 309993 us[0m
+[0;32mI (14883) ADC_CONTINUOUS: Calculated RPM: 194[0m
+[0;32mI (14923) ADC_CONTINUOUS: Time between threshold crossings: 310000 us[0m
+[0;32mI (15203) ADC_CONTINUOUS: Time between threshold crossings: 280000 us[0m
+[0;32mI (15503) ADC_CONTINUOUS: Time between threshold crossings: 300003 us[0m
+[0;32mI (15803) ADC_CONTINUOUS: Time between threshold crossings: 299997 us[0m
+[0;32mI (15883) ADC_CONTINUOUS: Calculated RPM: 200[0m
+[0;32mI (16113) ADC_CONTINUOUS: Time between threshold crossings: 310665 us[0m
+[0;32mI (16393) ADC_CONTINUOUS: Time between threshold crossings: 279426 us[0m
+[0;32mI (16713) ADC_CONTINUOUS: Time between threshold crossings: 319909 us[0m
+[0;32mI (16883) ADC_CONTINUOUS: Calculated RPM: 188[0m
+[0;32mI (16983) ADC_CONTINUOUS: Time between threshold crossings: 270001 us[0m
+[0;32mI (17283) ADC_CONTINUOUS: Time between threshold crossings: 299999 us[0m
+[0;32mI (17563) ADC_CONTINUOUS: Time between threshold crossings: 280007 us[0m
+[0;32mI (17883) ADC_CONTINUOUS: Calculated RPM: 214[0m
+[0;32mI (17953) ADC_CONTINUOUS: Time between threshold crossings: 389993 us[0m
+[0;32mI (18213) ADC_CONTINUOUS: Time between threshold crossings: 260000 us[0m
+[0;32mI (18583) ADC_CONTINUOUS: Time between threshold crossings: 370000 us[0m
+[0;32mI (18883) ADC_CONTINUOUS: Calculated RPM: 162[0m
+[0;32mI (18893) ADC_CONTINUOUS: Time between threshold crossings: 310097 us[0m
+[0;32mI (19223) ADC_CONTINUOUS: Time between threshold crossings: 329903 us[0m
+[0;32mI (19533) ADC_CONTINUOUS: Time between threshold crossings: 310000 us[0m
+[0;32mI (19823) ADC_CONTINUOUS: Time between threshold crossings: 290000 us[0m
+[0;32mI (19883) ADC_CONTINUOUS: Calculated RPM: 206[0m
+[0;32mI (20153) ADC_CONTINUOUS: Time between threshold crossings: 329996 us[0m
+[0;32mI (20453) ADC_CONTINUOUS: Time between threshold crossings: 300011 us[0m
+[0;32mI (20753) ADC_CONTINUOUS: Time between threshold crossings: 299993 us[0m
+[0;32mI (20883) ADC_CONTINUOUS: Calculated RPM: 200[0m
+[0;32mI (21103) ADC_CONTINUOUS: Time between threshold crossings: 350123 us[0m
+[0;32mI (21413) ADC_CONTINUOUS: Time between threshold crossings: 309877 us[0m
+[0;32mI (21883) ADC_CONTINUOUS: Calculated RPM: 194[0m
+[0;32mI (22883) ADC_CONTINUOUS: Calculated RPM: 194[0m
+[0;32mI (23883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (24883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (25883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (26883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (27883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (28883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (29883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (30883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (31853) ADC_CONTINUOUS: Time between threshold crossings: 10439996 us[0m
+[0;32mI (31883) ADC_CONTINUOUS: Calculated RPM: 5[0m
+[0;32mI (32203) ADC_CONTINUOUS: Time between threshold crossings: 350004 us[0m
+[0;32mI (32473) ADC_CONTINUOUS: Time between threshold crossings: 270003 us[0m
+[0;32mI (32743) ADC_CONTINUOUS: Time between threshold crossings: 270004 us[0m
+[0;32mI (32883) ADC_CONTINUOUS: Calculated RPM: 222[0m
+[0;32mI (33053) ADC_CONTINUOUS: Time between threshold crossings: 309993 us[0m
+[0;32mI (33363) ADC_CONTINUOUS: Time between threshold crossings: 310007 us[0m
+[0;32mI (33673) ADC_CONTINUOUS: Time between threshold crossings: 309993 us[0m
+[0;32mI (33883) ADC_CONTINUOUS: Calculated RPM: 194[0m
+[0;32mI (33993) ADC_CONTINUOUS: Time between threshold crossings: 320088 us[0m
+[0;32mI (34563) ADC_CONTINUOUS: Time between threshold crossings: 569912 us[0m
+[0;32mI (34843) ADC_CONTINUOUS: Time between threshold crossings: 280003 us[0m
+[0;32mI (34883) ADC_CONTINUOUS: Calculated RPM: 214[0m
+[0;32mI (35093) ADC_CONTINUOUS: Time between threshold crossings: 250092 us[0m
+[0;32mI (35403) ADC_CONTINUOUS: Time between threshold crossings: 309912 us[0m
+[0;32mI (35623) BLE_Speedometer: START
+[0m
+[0;32mI (35673) ADC_CONTINUOUS: Time between threshold crossings: 270008 us[0m
+[0;32mI (35883) ADC_CONTINUOUS: Calculated RPM: 222[0m
+[0;32mI (35963) ADC_CONTINUOUS: Time between threshold crossings: 289988 us[0m
+[0;32mI (36233) ADC_CONTINUOUS: Time between threshold crossings: 269998 us[0m
+[0;32mI (36523) ADC_CONTINUOUS: Time between threshold crossings: 289999 us[0m
+[0;32mI (36793) ADC_CONTINUOUS: Time between threshold crossings: 270134 us[0m
+[0;32mI (36883) ADC_CONTINUOUS: Calculated RPM: 222[0m
+[0;32mI (37073) ADC_CONTINUOUS: Time between threshold crossings: 279914 us[0m
+[0;32mI (37363) ADC_CONTINUOUS: Time between threshold crossings: 289961 us[0m
+[0;32mI (37653) ADC_CONTINUOUS: Time between threshold crossings: 289991 us[0m
+[0;32mI (37883) ADC_CONTINUOUS: Calculated RPM: 207[0m
+[0;32mI (37923) ADC_CONTINUOUS: Time between threshold crossings: 269996 us[0m
+[0;32mI (38213) ADC_CONTINUOUS: Time between threshold crossings: 290004 us[0m
+[0;32mI (38753) ADC_CONTINUOUS: Time between threshold crossings: 539996 us[0m
+[0;32mI (38883) ADC_CONTINUOUS: Calculated RPM: 111[0m
+[0;32mI (39043) ADC_CONTINUOUS: Time between threshold crossings: 290004 us[0m
+[0;32mI (39293) ADC_CONTINUOUS: Time between threshold crossings: 250088 us[0m
+[0;32mI (39533) ADC_CONTINUOUS: Time between threshold crossings: 239912 us[0m
+[0;32mI (39843) ADC_CONTINUOUS: Time between threshold crossings: 309996 us[0m
+[0;32mI (39883) ADC_CONTINUOUS: Calculated RPM: 194[0m
+[0;32mI (40153) ADC_CONTINUOUS: Time between threshold crossings: 310000 us[0m
+[0;32mI (40413) ADC_CONTINUOUS: Time between threshold crossings: 260007 us[0m
+[0;32mI (40713) ADC_CONTINUOUS: Time between threshold crossings: 299997 us[0m
+[0;32mI (40883) ADC_CONTINUOUS: Calculated RPM: 200[0m
+[0;32mI (41043) ADC_CONTINUOUS: Time between threshold crossings: 329996 us[0m
+[0;32mI (41583) ADC_CONTINUOUS: Time between threshold crossings: 540004 us[0m
+[0;32mI (41873) ADC_CONTINUOUS: Time between threshold crossings: 289996 us[0m
+[0;32mI (41883) ADC_CONTINUOUS: Calculated RPM: 207[0m
+[0;32mI (42153) ADC_CONTINUOUS: Time between threshold crossings: 280004 us[0m
+[0;32mI (42443) ADC_CONTINUOUS: Time between threshold crossings: 290003 us[0m
+[0;32mI (42753) ADC_CONTINUOUS: Time between threshold crossings: 309993 us[0m
+[0;32mI (42883) ADC_CONTINUOUS: Calculated RPM: 194[0m
+[0;32mI (42983) ADC_CONTINUOUS: Time between threshold crossings: 230000 us[0m
+[0;32mI (43293) ADC_CONTINUOUS: Time between threshold crossings: 310106 us[0m
+[0;32mI (43623) ADC_CONTINUOUS: Time between threshold crossings: 329898 us[0m
+[0;32mI (43883) ADC_CONTINUOUS: Calculated RPM: 182[0m
+[0;32mI (44113) ADC_CONTINUOUS: Time between threshold crossings: 489996 us[0m
+[0;32mI (44403) ADC_CONTINUOUS: Time between threshold crossings: 290004 us[0m
+[0;32mI (44673) ADC_CONTINUOUS: Time between threshold crossings: 270272 us[0m
+[0;32mI (44883) ADC_CONTINUOUS: Calculated RPM: 222[0m
+[0;32mI (45243) ADC_CONTINUOUS: Time between threshold crossings: 569731 us[0m
+[0;32mI (45523) ADC_CONTINUOUS: Time between threshold crossings: 279997 us[0m
+[0;32mI (45843) ADC_CONTINUOUS: Time between threshold crossings: 319996 us[0m
+[0;32mI (45883) ADC_CONTINUOUS: Calculated RPM: 188[0m
+[0;32mI (46083) ADC_CONTINUOUS: Time between threshold crossings: 240000 us[0m
+[0;32mI (46403) ADC_CONTINUOUS: Time between threshold crossings: 320004 us[0m
+[0;32mI (46823) ADC_CONTINUOUS: Time between threshold crossings: 419996 us[0m
+[0;32mI (46883) ADC_CONTINUOUS: Calculated RPM: 143[0m
+[0;32mI (47173) ADC_CONTINUOUS: Time between threshold crossings: 350004 us[0m
+[0;32mI (47483) ADC_CONTINUOUS: Time between threshold crossings: 310401 us[0m
+[0;32mI (47873) ADC_CONTINUOUS: Time between threshold crossings: 390006 us[0m
+[0;32mI (47883) ADC_CONTINUOUS: Calculated RPM: 153[0m
+[0;32mI (48873) ADC_CONTINUOUS: Time between threshold crossings: 999596 us[0m
+[0;32mI (48883) ADC_CONTINUOUS: Calculated RPM: 60[0m
+[0;32mI (49853) BLE_Speedometer: STOP
+ 14230[0m
+[0;32mI (49883) ADC_CONTINUOUS: Calculated RPM: 60[0m
+[0;32mI (49883) ADC_CONTINUOUS: Average RPM: 178[0m
+[0;32mI (50883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (51883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (52883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (53883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (54883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (55883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (56883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (57883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (58883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (59883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (60883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (61883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (62883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (63883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (64883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (65883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (66883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (67883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (68883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (69883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (70883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (71883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (72883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (73883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (74883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (75883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (76883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (77883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (78883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (79883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (80883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (81883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (82883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (83883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (84883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (85883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (86883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (87883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (88883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (89883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (90883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (91883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (92883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (93883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (94883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (95883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (96883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (97883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (98883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (99883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (100883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (101883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (102883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (103883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (104883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (105883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (106883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (107883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (108883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (109883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (110883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (111883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (112883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (113883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (114883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (115883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (116883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (117883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (118883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (119883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (120883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (121883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (122883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (123883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (124883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (125883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (126883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (127883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (128883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (129883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (130883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (131883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (132883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (133883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (134883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (135883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (136883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (137883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (138883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (139883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (140883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (141883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (142883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (143883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (144883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (145883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (146883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (147883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (148883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (149883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (150883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (151883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (152883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (153883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (154883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (155883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (156883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (157883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (158883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (159883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (160883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (161453) ADC_CONTINUOUS: Time between threshold crossings: 112579993 us[0m
+[0;32mI (161833) ADC_CONTINUOUS: Time between threshold crossings: 380011 us[0m
+[0;32mI (161883) ADC_CONTINUOUS: Calculated RPM: 157[0m
+[0;32mI (162273) ADC_CONTINUOUS: Time between threshold crossings: 439993 us[0m
+[0;32mI (162693) ADC_CONTINUOUS: Time between threshold crossings: 420095 us[0m
+[0;32mI (162883) ADC_CONTINUOUS: Calculated RPM: 142[0m
+[0;32mI (163163) ADC_CONTINUOUS: Time between threshold crossings: 469901 us[0m
+[0;32mI (163563) ADC_CONTINUOUS: Time between threshold crossings: 400004 us[0m
+[0;32mI (163883) ADC_CONTINUOUS: Calculated RPM: 150[0m
+[0;32mI (163983) ADC_CONTINUOUS: Time between threshold crossings: 419996 us[0m
+[0;32mI (164363) ADC_CONTINUOUS: Time between threshold crossings: 380004 us[0m
+[0;32mI (164733) ADC_CONTINUOUS: Time between threshold crossings: 370000 us[0m
+[0;32mI (164883) ADC_CONTINUOUS: Calculated RPM: 162[0m
+[0;32mI (165113) ADC_CONTINUOUS: Time between threshold crossings: 380003 us[0m
+[0;32mI (165523) ADC_CONTINUOUS: Time between threshold crossings: 410041 us[0m
+[0;32mI (165883) ADC_CONTINUOUS: Calculated RPM: 146[0m
+[0;32mI (165953) ADC_CONTINUOUS: Time between threshold crossings: 429952 us[0m
+[0;32mI (166333) ADC_CONTINUOUS: Time between threshold crossings: 380007 us[0m
+[0;32mI (166723) ADC_CONTINUOUS: Time between threshold crossings: 390004 us[0m
+[0;32mI (166883) ADC_CONTINUOUS: Calculated RPM: 153[0m
+[0;32mI (167123) ADC_CONTINUOUS: Time between threshold crossings: 399989 us[0m
+[0;32mI (167493) ADC_CONTINUOUS: Time between threshold crossings: 370095 us[0m
+[0;32mI (167873) ADC_CONTINUOUS: Time between threshold crossings: 379912 us[0m
+[0;32mI (167883) ADC_CONTINUOUS: Calculated RPM: 158[0m
+[0;32mI (168153) ADC_CONTINUOUS: Time between threshold crossings: 279997 us[0m
+[0;32mI (168253) ADC_CONTINUOUS: Time between threshold crossings: 100003 us[0m
+[0;32mI (168533) ADC_CONTINUOUS: Time between threshold crossings: 280000 us[0m
+[0;32mI (168883) ADC_CONTINUOUS: Calculated RPM: 214[0m
+[0;32mI (169003) ADC_CONTINUOUS: Time between threshold crossings: 469993 us[0m
+[0;32mI (169373) ADC_CONTINUOUS: Time between threshold crossings: 370007 us[0m
+[0;32mI (169783) ADC_CONTINUOUS: Time between threshold crossings: 409997 us[0m
+[0;32mI (169883) ADC_CONTINUOUS: Calculated RPM: 146[0m
+[0;32mI (170183) ADC_CONTINUOUS: Time between threshold crossings: 400000 us[0m
+[0;32mI (170473) ADC_CONTINUOUS: Time between threshold crossings: 290033 us[0m
+[0;32mI (170883) ADC_CONTINUOUS: Calculated RPM: 206[0m
+[0;32mI (170943) ADC_CONTINUOUS: Time between threshold crossings: 469963 us[0m
+[0;32mI (171783) ADC_CONTINUOUS: Time between threshold crossings: 840004 us[0m
+[0;32mI (171883) ADC_CONTINUOUS: Calculated RPM: 71[0m
+[0;32mI (172293) ADC_CONTINUOUS: Time between threshold crossings: 510091 us[0m
+[0;32mI (172703) ADC_CONTINUOUS: Time between threshold crossings: 409916 us[0m
+[0;32mI (172883) ADC_CONTINUOUS: Calculated RPM: 146[0m
+[0;32mI (173153) ADC_CONTINUOUS: Time between threshold crossings: 449993 us[0m
+[0;32mI (173523) ADC_CONTINUOUS: Time between threshold crossings: 370003 us[0m
+[0;32mI (173883) ADC_CONTINUOUS: Calculated RPM: 162[0m
+[0;32mI (173933) ADC_CONTINUOUS: Time between threshold crossings: 409993 us[0m
+[0;32mI (174293) ADC_CONTINUOUS: Time between threshold crossings: 360095 us[0m
+[0;32mI (174713) ADC_CONTINUOUS: Time between threshold crossings: 419909 us[0m
+[0;32mI (174883) ADC_CONTINUOUS: Calculated RPM: 143[0m
+[0;32mI (175113) ADC_CONTINUOUS: Time between threshold crossings: 400000 us[0m
+[0;32mI (175553) ADC_CONTINUOUS: Time between threshold crossings: 440007 us[0m
+[0;32mI (175883) ADC_CONTINUOUS: Calculated RPM: 136[0m
+[0;32mI (176003) ADC_CONTINUOUS: Time between threshold crossings: 449996 us[0m
+[0;32mI (176473) ADC_CONTINUOUS: Time between threshold crossings: 469997 us[0m
+[0;32mI (176863) ADC_CONTINUOUS: Time between threshold crossings: 390012 us[0m
+[0;32mI (176883) ADC_CONTINUOUS: Calculated RPM: 153[0m
+[0;32mI (177303) ADC_CONTINUOUS: Time between threshold crossings: 439988 us[0m
+[0;32mI (177763) ADC_CONTINUOUS: Time between threshold crossings: 460003 us[0m
+[0;32mI (177883) ADC_CONTINUOUS: Calculated RPM: 130[0m
+[0;32mI (178143) ADC_CONTINUOUS: Time between threshold crossings: 379997 us[0m
+[0;32mI (178803) ADC_CONTINUOUS: Time between threshold crossings: 660000 us[0m
+[0;32mI (178883) ADC_CONTINUOUS: Calculated RPM: 90[0m
+[0;32mI (179203) ADC_CONTINUOUS: Time between threshold crossings: 399996 us[0m
+[0;32mI (179543) ADC_CONTINUOUS: Time between threshold crossings: 340063 us[0m
+[0;32mI (179883) ADC_CONTINUOUS: Calculated RPM: 176[0m
+[0;32mI (180003) ADC_CONTINUOUS: Time between threshold crossings: 459941 us[0m
+[0;32mI (180403) ADC_CONTINUOUS: Time between threshold crossings: 400000 us[0m
+[0;32mI (180743) ADC_CONTINUOUS: Time between threshold crossings: 340003 us[0m
+[0;32mI (180883) ADC_CONTINUOUS: Calculated RPM: 176[0m
+[0;32mI (181433) ADC_CONTINUOUS: Time between threshold crossings: 689993 us[0m
+[0;32mI (181883) ADC_CONTINUOUS: Calculated RPM: 87[0m
+[0;32mI (182093) ADC_CONTINUOUS: Time between threshold crossings: 660092 us[0m
+[0;32mI (182653) ADC_CONTINUOUS: Time between threshold crossings: 559915 us[0m
+[0;32mI (182883) ADC_CONTINUOUS: Calculated RPM: 107[0m
+[0;32mI (183103) ADC_CONTINUOUS: Time between threshold crossings: 449993 us[0m
+[0;32mI (183463) ADC_CONTINUOUS: Time between threshold crossings: 360220 us[0m
+[0;32mI (183853) ADC_CONTINUOUS: Time between threshold crossings: 389784 us[0m
+[0;32mI (183883) ADC_CONTINUOUS: Calculated RPM: 154[0m
+[0;32mI (184243) ADC_CONTINUOUS: Time between threshold crossings: 389996 us[0m
+[0;32mI (184643) ADC_CONTINUOUS: Time between threshold crossings: 400004 us[0m
+[0;32mI (184883) ADC_CONTINUOUS: Calculated RPM: 150[0m
+[0;32mI (185043) ADC_CONTINUOUS: Time between threshold crossings: 400000 us[0m
+[0;32mI (185513) ADC_CONTINUOUS: Time between threshold crossings: 470000 us[0m
+[0;32mI (185773) BLE_Speedometer: START
+[0m
+[0;32mI (185793) ADC_CONTINUOUS: Time between threshold crossings: 280092 us[0m
+[0;32mI (185883) ADC_CONTINUOUS: Calculated RPM: 214[0m
+[0;32mI (186193) ADC_CONTINUOUS: Time between threshold crossings: 400003 us[0m
+[0;32mI (186503) ADC_CONTINUOUS: Time between threshold crossings: 309905 us[0m
+[0;32mI (186883) ADC_CONTINUOUS: Calculated RPM: 194[0m
+[0;32mI (186893) ADC_CONTINUOUS: Time between threshold crossings: 390095 us[0m
+[0;32mI (187333) ADC_CONTINUOUS: Time between threshold crossings: 439908 us[0m
+[0;32mI (187623) ADC_CONTINUOUS: Time between threshold crossings: 289993 us[0m
+[0;32mI (187883) ADC_CONTINUOUS: Calculated RPM: 207[0m
+[0;32mI (188023) ADC_CONTINUOUS: Time between threshold crossings: 400000 us[0m
+[0;32mI (188373) ADC_CONTINUOUS: Time between threshold crossings: 350004 us[0m
+[0;32mI (188733) ADC_CONTINUOUS: Time between threshold crossings: 359996 us[0m
+[0;32mI (188883) ADC_CONTINUOUS: Calculated RPM: 167[0m
+[0;32mI (189073) ADC_CONTINUOUS: Time between threshold crossings: 340004 us[0m
+[0;32mI (189313) ADC_CONTINUOUS: Time between threshold crossings: 240000 us[0m
+[0;32mI (189473) ADC_CONTINUOUS: Time between threshold crossings: 160000 us[0m
+[0;32mI (189733) ADC_CONTINUOUS: Time between threshold crossings: 260424 us[0m
+[0;32mI (189883) ADC_CONTINUOUS: Calculated RPM: 230[0m
+[0;32mI (190393) ADC_CONTINUOUS: Time between threshold crossings: 660110 us[0m
+[0;32mI (190683) ADC_CONTINUOUS: Time between threshold crossings: 289470 us[0m
+[0;32mI (190883) ADC_CONTINUOUS: Calculated RPM: 207[0m
+[0;32mI (190973) ADC_CONTINUOUS: Time between threshold crossings: 289996 us[0m
+[0;32mI (191803) ADC_CONTINUOUS: Time between threshold crossings: 830007 us[0m
+[0;32mI (191883) ADC_CONTINUOUS: Calculated RPM: 72[0m
+[0;32mI (192143) ADC_CONTINUOUS: Time between threshold crossings: 339993 us[0m
+[0;32mI (192543) ADC_CONTINUOUS: Time between threshold crossings: 400007 us[0m
+[0;32mI (192883) ADC_CONTINUOUS: Calculated RPM: 150[0m
+[0;32mI (193053) ADC_CONTINUOUS: Time between threshold crossings: 509993 us[0m
+[0;32mI (193793) ADC_CONTINUOUS: Time between threshold crossings: 740106 us[0m
+[0;32mI (193883) ADC_CONTINUOUS: Calculated RPM: 81[0m
+[0;32mI (194313) ADC_CONTINUOUS: Time between threshold crossings: 519894 us[0m
+[0;32mI (194883) ADC_CONTINUOUS: Calculated RPM: 115[0m
+[0;32mI (194933) ADC_CONTINUOUS: Time between threshold crossings: 620000 us[0m
+[0;32mI (195883) ADC_CONTINUOUS: Calculated RPM: 96[0m
+[0;32mI (196883) ADC_CONTINUOUS: Calculated RPM: 96[0m
+[0;32mI (197883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (198883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (199883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (200173) BLE_Speedometer: STOP
+ 14395[0m
+[0;32mI (200883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (200883) ADC_CONTINUOUS: Average RPM: 121[0m
+[0;32mI (201883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (202883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (203883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (204883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (205883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (206883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (207883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (208883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (209883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (210883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (211883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (212883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (213883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (214883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (215883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (216883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (217883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (218883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (219883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (220883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (221883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (222883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (223883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (224883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (225883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (226883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (227883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (228883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (229883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (230883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (231883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (232883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (233883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (234883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (235883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (236883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (237883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (238883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (239883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (240883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (241883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (242883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (243883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (244883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (245883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (246883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (247883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (248883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (249883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (250883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (251883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (252883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (253883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (254883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (255883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (256883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (257883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (258883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (259883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (260883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (261883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (262883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (263883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (264883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (265883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (266883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (267883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (268883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (269883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (270883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (271883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (272883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (273883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (274883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (275883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (276883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (277883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (278883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (279883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (280883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (281883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (282883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (283883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (284883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (285883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (286883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (287883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (288883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (289883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (290883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (291883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (292883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (293883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (294883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (295883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (296883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (297883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (298883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (299883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (300883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (301883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (302883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (303883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (304883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (305883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (306883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (307883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (308883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (309883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (310883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (311883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (312883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (313883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (314883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (315883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (316883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (317883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (318883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (319883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (320883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (321883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (322883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (323883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (324883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (325883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (326883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (327883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (328883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (329883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (330883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (331883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (332883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (333883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (334883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (335883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (336883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (337883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (338883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (339883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (340883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (341883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (342883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (343883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (344883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (345883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (346883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (347883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (348883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (349883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (350883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (351883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (352883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (353883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (354883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (355883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (356883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (357883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (358883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (359883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (360883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (361883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (362883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (363883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (364883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (365883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (366883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (367883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (368883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (369883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (370883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (371883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (372883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (373883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (374883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (375883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (376883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (377883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (378883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (379883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (380883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (381883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (382883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (383883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (384883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (385883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (386883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (387883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (388883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (389883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (390883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (391883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (392883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (393883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (394883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (395883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (396883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (397883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (398883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (399883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (400883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (401883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (402883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (403883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (404883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (405883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (406883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (407883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (408883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (409883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (410883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (411883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (412883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (413713) ADC_CONTINUOUS: Time between threshold crossings: 218780005 us[0m
+[0;32mI (413883) ADC_CONTINUOUS: Calculated RPM: 0[0m
+[0;32mI (414883) ADC_CONTINUOUS: Calculated RPM: 0[0m
+[0;32mI (415883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (416883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (417883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (418883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (419883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (420883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (421883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (422883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (423883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (424883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (425883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (426883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (427883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (428883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (429883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (430883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (431883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (432883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (433883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (434883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (435883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (436883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (437883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (438883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (439883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (440883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (441883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (442883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (443883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (444883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (445883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (446883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (447883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (448883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (449883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (450883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (451883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (452883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (453883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (454203) ADC_CONTINUOUS: Time between threshold crossings: 40489996 us[0m
+[0;32mI (454883) ADC_CONTINUOUS: Calculated RPM: 1[0m
+[0;32mI (455883) ADC_CONTINUOUS: Calculated RPM: 1[0m
+[0;32mI (456883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (457883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (458883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (459883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (460883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (461883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (462883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (463883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (464883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (465883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (466883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (467883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (468883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (469883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (470883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (471883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (472883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (473883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (474883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (475883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (476883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (477883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (478883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (479883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (480883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (481883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (482883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (483883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (484883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (485883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (486883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (487883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (488883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (489883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (490883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (491883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (492883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (493883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (494883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (495883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (496883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (497883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (498883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (499883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (500883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (501883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (502883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (503883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (504883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (505883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (506883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (507883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (508883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (509883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (510883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (511883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (512883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (513883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (514883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (515883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (516883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (517883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (518883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (519883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (520883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (521883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (522883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (523883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (524883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (525883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (526883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (527883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (528883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (529883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (530883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (531883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (532883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (533883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (534883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (535883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (536883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (537883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (538883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (539883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (540883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (541883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (542883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (543883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (544883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (545883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (546883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (547883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (548883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (549883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (550883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (551883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (552883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (553883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (554883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (555883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (556883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (557883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (558883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (559883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (560883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (561883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (562883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (563883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (564883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (565883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (566883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (567883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (568883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (569883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (570883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (571883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (572883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (573883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (574883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (575883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (576883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (577883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (578883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (579883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (580883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (581883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (582883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (583883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (584883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (585883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (586883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (587883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (588883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (589883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (590883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (591883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (592883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (593883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (594883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (595883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (596883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (597883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (598883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (599883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (600883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (601883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (602883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (603883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (604883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (605883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (606883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (607883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (608883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (609883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (610883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (611883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (612883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (613883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (614883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (615883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (616883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (617883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (618883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (619883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (620883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (621883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (622883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (623883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (624883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (625883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (626883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (627883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (628883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (629883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (630883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (631883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (632883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (633883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (634883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (635883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (636883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (637883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (638883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (639883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (640883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (641883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (642883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (643883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (644883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (645883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (646883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (647883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (648883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (649883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (650883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (651883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (652883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (653883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (654883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (655883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (656883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (657883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (658883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (659883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (660883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (661883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (662883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (663883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (664883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (665883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (666883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (667883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (668883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (669883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (670883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (671883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (672883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (673883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (674883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (675883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (676883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (677883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (678883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (679883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (680883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (681883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (682883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (683883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (684883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (685883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (686883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (687883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (688883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (689883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (690883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (691883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (692883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (693883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (694883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (695883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (696883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (697883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (698883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (699883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (700883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (701883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (702883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (703883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (704883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (705883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (706883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (707883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (708883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (709883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (710883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (711883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (712883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (713883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (714883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (715883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (716883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (717883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (718883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (719883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (720883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (721883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (722883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (723883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (724883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (725883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (726883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (727883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (728883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (729883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (730883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (731883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (732883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (733233) ADC_CONTINUOUS: Time between threshold crossings: 279030002 us[0m
+[0;32mI (733883) ADC_CONTINUOUS: Calculated RPM: 0[0m
+[0;32mI (734883) ADC_CONTINUOUS: Calculated RPM: 0[0m
+[0;32mI (735883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (736883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (737883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (738883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (739883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (740883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (741883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (742883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (743883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (744883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (745883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (746883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (747883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (748883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (749883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (750883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (751883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (752883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (753883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (754883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (755883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (756883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (757883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (758883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (759883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (760883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (761883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (762883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (763883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (764883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (765883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (766883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (767883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (768883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (769883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (770883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (771883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (772883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (773883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (774883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (775883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (776883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (777883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (778883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (779883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (780883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (781883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (782883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (783883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (784883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (785883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (786883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (787883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (788883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (789883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (790883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (791883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (792883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (793883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (794883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (795883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (796883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (797883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (798883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (799883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (800883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (801883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (802883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (803883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (804883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (805883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (806883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (807883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (808883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (809883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (810883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (811883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (812883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (813883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (814883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (815883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (816883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (817883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (818883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (819883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (820883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (821883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (822883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (823883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (824883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (825883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (826883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (827883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (828883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (829883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (830883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (831883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (832883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (833883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (834883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (835883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (836883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (837883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (838883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (839883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (840883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (841883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (842883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (843883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (844883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (845883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (846883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (847883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (848883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (849883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (850883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (851883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (852883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (853883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (854883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (855883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (856883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (857883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (858883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (859883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (860883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (861883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (862883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (863883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (864883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (865883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (866883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (867883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (868883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (869883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (870883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (871883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (872883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (873883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (874883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (875883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (876883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (877883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (878883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (879883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (880883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (881883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (882883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (883883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (884883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (885883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (886883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (887883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (888883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (889883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (890883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (891883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (892883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (893883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (894883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (895883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (896883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (897883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (898883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (899883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (900883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (901883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (902883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (903883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (904883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (905883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (906883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (907883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (908883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (909883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (910883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (911883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (912883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (913883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (914883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (915883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (916883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (917883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (918883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (919883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (920883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (921883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (922883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (923883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (924883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (925883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (926883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (927883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (928883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (929883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (930883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (931883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (932883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (933883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (934883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (935883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (936883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (937883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (938883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (939883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (940883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (941883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (942883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (943883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (944883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (945883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (946883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (947883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (948883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (949883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (950883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (951883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (952883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (953883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (954883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (955883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (956883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (957883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (958883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (959883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (960883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (961883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (962883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (963883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (964883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (965883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (966883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (967883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (968883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (969883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (970883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (971883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (972883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (973883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (974883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (975883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (976883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (977883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (978883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (979883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (980883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (981883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m
+[0;32mI (982883) ADC_CONTINUOUS: Calculated RPM: 0 (Timeout or no data)[0m

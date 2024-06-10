@@ -26,6 +26,7 @@ bool status = false;
 uint64_t start_time = 0; 
 uint64_t stop_time = 0; 
 uint64_t time_diffrence = 0;
+bool calibration_flag = false;
 
 void init_timer(timer_group_t group, timer_idx_t timer) {
     timer_config_t config = {
@@ -49,8 +50,11 @@ static int device_write(uint16_t conn_handle, uint16_t attr_handle,
     if (strcmp(data, "START") == 0) {
         ESP_LOGI(TAG, "START\n");
         init_timer(TIMER_GROUP_0, TIMER_1);
+        stop_time = 0;
         timer_get_counter_value(TIMER_GROUP_0, TIMER_1, &start_time);
         start_time /= 1000; // Convert to milliseconds
+        calibration_flag = true;
+
 
     } else if (strcmp(data, "STOP") == 0) {
         timer_get_counter_value(TIMER_GROUP_0, TIMER_1, &stop_time);
@@ -59,6 +63,7 @@ static int device_write(uint16_t conn_handle, uint16_t attr_handle,
         start_time = 0;
         ESP_LOGI(TAG, "STOP\n %llu", time_diffrence);
         timer_pause(TIMER_GROUP_0, TIMER_1);
+        calibration_flag = false;
     } else {
         printf("Data from the client: %.*s\n", ctxt->om->om_len, ctxt->om->om_data);
     }
@@ -75,10 +80,15 @@ static int device_read (uint16_t conn_handle, uint16_t attr_handle,
 
 static int device_read_speed (uint16_t conn_handle, uint16_t attr_handle, 
                         struct ble_gatt_access_ctxt *ctxt, void *arg){
-   char *data = (char*)arg; 
-
-    os_mbuf_append(ctxt->om, data, strlen(data));
-    return 0;  
+    static char speed_str[16]; // Buffer to hold the speed string
+    if(diameter != 0){
+        snprintf(speed_str, sizeof(speed_str), "%.2f", speed);
+    }
+    else{
+        snprintf(speed_str, sizeof(speed_str), "Calibrate");
+    }
+    os_mbuf_append(ctxt->om, speed_str, strlen(speed_str));
+    return 0;
 }
 
 struct ble_gatt_chr_def gatt_char_defs[] = {
@@ -91,7 +101,7 @@ struct ble_gatt_chr_def gatt_char_defs[] = {
      .uuid = BLE_UUID16_DECLARE(0xFEF5),
      .flags = BLE_GATT_CHR_F_READ,
      .access_cb = device_read_speed,
-     .arg = sensor_speed_data
+     .arg = NULL
     },
     {.uuid = BLE_UUID16_DECLARE(0xDEAD),
      .flags = BLE_GATT_CHR_F_WRITE,

@@ -1,0 +1,30 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM4 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d6c81: device_write at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:62
+[0m
+[0;33m0x400012e5: strcmp in ROM
+0x40001309: strcmp in ROM
+[0m
+[0;33m0x400d6c7e: device_write at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:62
+0x400dd4cd: ble_gatts_val_access at C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gatts.c:491
+0x400dd50a: ble_gatts_chr_val_access at C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gatts.c:517
+0x400e3b9d: ble_att_svr_write at C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_att_svr.c:580
+0x400e43ed: ble_att_svr_write_handle at C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_att_svr.c:611
+0x400e4c59: ble_att_svr_rx_write at C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_att_svr.c:2295
+0x400d827d: ble_att_rx at C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_att.c:516
+0x400d8112: ble_hs_hci_evt_acl_process at C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_hci_evt.c:1175
+0x400d7701: ble_hs_process_rx_data_queue at C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c:243
+0x400d7713: ble_hs_event_rx_data at C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c:540
+0x401284c7: npl_freertos_event_run at C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c:451
+0x400835a2: ble_npl_event_run at C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h:185
+ (inlined by) nimble_port_run at C:/Users/mmich/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c:279
+0x400d6aaf: host_task at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/nimBLE/nimBLE.c:172
+0x40092fd5: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m
