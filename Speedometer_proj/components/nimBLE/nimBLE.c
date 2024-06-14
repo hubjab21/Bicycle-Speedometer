@@ -112,7 +112,7 @@ struct ble_gatt_chr_def gatt_char_defs[] = {
 
 const struct ble_gatt_svc_def gatt_cfg[] = {
     {.type = BLE_GATT_SVC_TYPE_PRIMARY,
-     .uuid = BLE_UUID16_DECLARE(0x1800),
+     .uuid = BLE_UUID16_DECLARE(0x1234),
      .characteristics = gatt_char_defs
     },
     {0}

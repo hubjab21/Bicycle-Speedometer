@@ -14,14 +14,6 @@
 #include "esp_task_wdt.h"  
 #include "adc_sensor.h"
 
-void calibrate(void){
-
-}
-
-void convert_to_speed(void){
-    
-}
-
 void app_main(void) {
     Init_nimBLE_Sequence();
     sensor_func();
