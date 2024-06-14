@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "KkmARgwkXpM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mmich\\Desktop\\Ble.Client\\Ble.Client.iOS\\Ble.Client.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mmich\\.nuget\\packages\\plugin.ble\\2.1.3\\plugin.ble.2.1.3.nupkg.sha512",
+    "C:\\Users\\mmich\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\mmich\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\mmich\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
