@@ -43,6 +43,10 @@
                     <Button Text="Send" Clicked="SendCommandButton_Clicked"/>
                     <Button Text="Register" Clicked="RegisterCommandButton_Clicked"/>
                 </StackLayout>
+                <StackLayout Orientation="Horizontal" x:Name="StartStopButton">
+                    <Button Text="START" Clicked="StartButton_Clicked"/>
+                    <Button Text="STOP" Clicked="StopButton_Clicked"/>
+                </StackLayout>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iJr3ngC8cfE=",
+  "dgSpecHash": "vP5hoxgEDWg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mmich\\Desktop\\Ble.Client\\Ble.Client.Android\\Ble.Client.Android.csproj",
+  "projectFilePath": "C:\\Users\\mmich\\Desktop\\Mobile_app2\\Ble.Client.Android\\Ble.Client.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mmich\\.nuget\\packages\\plugin.ble\\2.1.3\\plugin.ble.2.1.3.nupkg.sha512",
     "C:\\Users\\mmich\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

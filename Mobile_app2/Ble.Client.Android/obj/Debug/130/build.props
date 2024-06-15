@@ -25,11 +25,11 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638539240359345120
+_nugetassetstimestamp=638540855121765764
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
 androidmanifestplaceholders=
-projectfullpath=c:\users\mmich\desktop\ble.client\ble.client.android\ble.client.android.csproj
+projectfullpath=c:\users\mmich\desktop\mobile_app2\ble.client.android\ble.client.android.csproj

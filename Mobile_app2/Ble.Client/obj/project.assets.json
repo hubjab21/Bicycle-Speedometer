@@ -602,11 +602,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mmich\\Desktop\\Ble.Client\\Ble.Client\\Ble.Client.csproj",
+      "projectUniqueName": "C:\\Users\\mmich\\Desktop\\Mobile_app2\\Ble.Client\\Ble.Client.csproj",
       "projectName": "Ble.Client",
-      "projectPath": "C:\\Users\\mmich\\Desktop\\Ble.Client\\Ble.Client\\Ble.Client.csproj",
+      "projectPath": "C:\\Users\\mmich\\Desktop\\Mobile_app2\\Ble.Client\\Ble.Client.csproj",
       "packagesPath": "C:\\Users\\mmich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mmich\\Desktop\\Ble.Client\\Ble.Client\\obj\\",
+      "outputPath": "C:\\Users\\mmich\\Desktop\\Mobile_app2\\Ble.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

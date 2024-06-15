@@ -3469,11 +3469,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mmich\\Desktop\\Ble.Client\\Ble.Client.Android\\Ble.Client.Android.csproj",
+      "projectUniqueName": "C:\\Users\\mmich\\Desktop\\Mobile_app2\\Ble.Client.Android\\Ble.Client.Android.csproj",
       "projectName": "Ble.Client.Android",
-      "projectPath": "C:\\Users\\mmich\\Desktop\\Ble.Client\\Ble.Client.Android\\Ble.Client.Android.csproj",
+      "projectPath": "C:\\Users\\mmich\\Desktop\\Mobile_app2\\Ble.Client.Android\\Ble.Client.Android.csproj",
       "packagesPath": "C:\\Users\\mmich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mmich\\Desktop\\Ble.Client\\Ble.Client.Android\\obj\\",
+      "outputPath": "C:\\Users\\mmich\\Desktop\\Mobile_app2\\Ble.Client.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3494,8 +3494,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\mmich\\Desktop\\Ble.Client\\Ble.Client\\Ble.Client.csproj": {
-              "projectPath": "C:\\Users\\mmich\\Desktop\\Ble.Client\\Ble.Client\\Ble.Client.csproj"
+            "C:\\Users\\mmich\\Desktop\\Mobile_app2\\Ble.Client\\Ble.Client.csproj": {
+              "projectPath": "C:\\Users\\mmich\\Desktop\\Mobile_app2\\Ble.Client\\Ble.Client.csproj"
             }
           }
         }

@@ -1,129 +1,168 @@
-﻿using Plugin.BLE.Abstractions;
-using Plugin.BLE.Abstractions.Contracts;
+﻿using Plugin.BLE.Abstractions.Contracts;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Reflection;
-using System.Runtime.ConstrainedExecution;
 using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamarinEssentials = Xamarin.Essentials;
+using System.Timers;
+using Plugin.BLE.Abstractions.EventArgs;
 
 namespace Ble.Client
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BtCharPage : ContentPage
     {
-        private readonly IDevice _connectedDevice;                                      // Pointer for the connected BLE Device
-        private readonly IService _selectedService;                                     // Pointer to the selected service
-        private readonly List<ICharacteristic> _charList = new List<ICharacteristic>(); // List for the available Characteristics on the BLE Device
-        private ICharacteristic _char;                                                  // Pointer to the selected characteristic
+        private readonly IDevice _connectedDevice;
+        private readonly IService _selectedService;
+        private readonly List<ICharacteristic> _charList = new List<ICharacteristic>();
+        private ICharacteristic _char;
+        private Timer _pollingTimer;
 
-        public BtCharPage(IDevice connectedDevice, IService selectedService)            // constructor (the function that is called when an instance of a class is defined)
+        public BtCharPage(IDevice connectedDevice, IService selectedService)
         {
             InitializeComponent();
 
-            _connectedDevice = connectedDevice;                                         // When the BtCharPage is called, a user has selected a BLE device (connectedDevice) and a service (selectedService). These parameters must be stored in this class for later use
+            _connectedDevice = connectedDevice;
             _selectedService = selectedService;
-            _char = null;                                                               // When the site is initialized, no Characteristic is selected yet.
+            _char = null;
 
-            bleDevice.Text = "Selected BLE device: " + _connectedDevice.Name;           // Write the selected BLE Device and Service to the GUI
+            bleDevice.Text = "Selected BLE device: " + _connectedDevice.Name;
             bleService.Text = "Selected BLE service: " + _selectedService.Name;
         }
 
-        protected async override void OnAppearing()                                     // When the page is called we would like to see the chars available. The chars can only be incquired with an asynchronous call as it takes time for the Bluetooth adapter to reply. This is not possible in the constructor as a constructor is per definition synchronous. Therefore, we need to override the OnAppearing function so that we can inquire the available chars straightaway when the page is loaded.
+        protected async override void OnAppearing()
         {
             base.OnAppearing();
             try
             {
                 if (_selectedService != null)
                 {
-                    var charListReadOnly = await _selectedService.GetCharacteristicsAsync();       // Read in available Characteristics
+                    var charListReadOnly = await _selectedService.GetCharacteristicsAsync();
 
                     _charList.Clear();
-                    var charListStr = new List<String>();
-                    for (int i = 0; i < charListReadOnly.Count; i++)                               // Cycle through available interfaces
+                    var charListStr = new List<string>();
+                    for (int i = 0; i < charListReadOnly.Count; i++)
                     {
-                        _charList.Add(charListReadOnly[i]);                                        // Write to a list of Chars
-                        // IMPORTANT: listview cannot cope with entries that have the exact same name. That is why I added "i" to the beginning of the name. If you add the UUID you can delete "i" again.
-                        charListStr.Add(i.ToString() + ": " + charListReadOnly[i].Name);           // Write to a list of Strings for the GUI
+                        _charList.Add(charListReadOnly[i]);
+                        charListStr.Add(i.ToString() + ": " + charListReadOnly[i].Name);
                     }
-                    foundBleChars.ItemsSource = charListStr;                                       // Write found Chars to the GUI
+                    foundBleChars.ItemsSource = charListStr;
                 }
                 else
                 {
                     ErrorLabel.Text = GetTimeNow() + "UART GATT service not found." + Environment.NewLine;
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                ErrorLabel.Text = GetTimeNow() + ": Error initializing UART GATT service.";
+                ErrorLabel.Text = GetTimeNow() + ": Error initializing UART GATT service. Exception: " + ex.Message;
             }
         }
 
-        private async void FoundBleChars_ItemTapped(object sender, ItemTappedEventArgs e)       // This function is run when a Characteristic is selected
+        private async void FoundBleChars_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-
-            _char = _charList[e.ItemIndex];                                                     // select Char
-            if (_char != null)                                                                  // make sure Char exists
+            _char = _charList[e.ItemIndex];
+            if (_char != null)
             {
-                bleChar.Text = _char.Name + "\n" +                                              // write information on Char to GUI
+                bleChar.Text = _char.Name + "\n" +
                     "UUID: " + _char.Uuid.ToString() + "\n" +
-                    "Read: " + _char.CanRead + "\n" +                                           // indicates whether characteristic can be read from
-                    "Write: " + _char.CanWrite + "\n" +                                         // indicates whether characteristic can be written to
-                    "Update: " + _char.CanUpdate;                                               // indicates whether characteristics can be updated (supports notify)
+                    "Read: " + _char.CanRead + "\n" +
+                    "Write: " + _char.CanWrite + "\n" +
+                    "Update: " + _char.CanUpdate;
 
-                var charDescriptors = await _char.GetDescriptorsAsync();                        // get information of Descriptors defined
-
-                bleChar.Text += "\nDescriptors (" + charDescriptors.Count + "): ";              // write Descriptor info to the GUI
+                var charDescriptors = await _char.GetDescriptorsAsync();
+                bleChar.Text += "\nDescriptors (" + charDescriptors.Count + "): ";
                 for (int i = 0; i < charDescriptors.Count; i++)
-                    bleChar.Text += charDescriptors[i].Name + ", "; 
+                    bleChar.Text += charDescriptors[i].Name + ", ";
+
+                // Unsubscribe previous characteristic if exists
+                if (_char.CanUpdate)
+                {
+                    await _char.StopUpdatesAsync();
+                    _char.ValueUpdated -= OnCharacteristicValueUpdated;
+                }
+
+                // Subscribe to the ValueUpdated event for the selected characteristic
+                if (_char.CanUpdate)
+                {
+                    _char.ValueUpdated += OnCharacteristicValueUpdated;
+                    await _char.StartUpdatesAsync();
+                }
+
+                // Start or stop the polling timer based on characteristic capability
+                if (_char.CanRead && !_char.CanUpdate)
+                {
+                    StartPollingTimer();
+                }
+                else
+                {
+                    StopPollingTimer();
+                }
             }
         }
 
-        private async void RegisterCommandButton_Clicked(object sender, EventArgs e)                    // function that is run when the "Register" button is selected. This is for Characteristics that support "Notify". A Callback function will be defined that will be triggered if the selected BLE device sends information to the phone.
+        private void OnCharacteristicValueUpdated(object sender, CharacteristicUpdatedEventArgs args)
+        {
+            var receivedBytes = args.Characteristic.Value;
+            UpdateOutput(receivedBytes);
+        }
+
+        private void UpdateOutput(byte[] receivedBytes)
+        {
+            var receivedString = Encoding.UTF8.GetString(receivedBytes, 0, receivedBytes.Length);
+            XamarinEssentials.MainThread.BeginInvokeOnMainThread(() =>
+            {
+                Output.Text = receivedString + Environment.NewLine;
+            });
+        }
+
+        private void StartPollingTimer()
+        {
+            if (_pollingTimer == null)
+            {
+                _pollingTimer = new Timer(500); // Set timer to 0.5 seconds
+                _pollingTimer.Elapsed += async (sender, e) => await PollCharacteristic();
+                _pollingTimer.AutoReset = true;
+            }
+            _pollingTimer.Start();
+        }
+
+        private void StopPollingTimer()
+        {
+            _pollingTimer?.Stop();
+        }
+
+        private async Task PollCharacteristic()
         {
             try
             {
-                if (_char != null)                                                                      // make sure the characteristic exists
+                if (_char != null && _char.CanRead)
                 {
-                    // NOTE: in the youtube video I did not check whether or not the characteristic can be updated -> I added this afterwards
-                    if (_char.CanUpdate)                                                                // check if characteristic supports notify
+                    var receivedBytes = await _char.ReadAsync();
+                    UpdateOutput(receivedBytes);
+                }
+            }
+            catch (Exception ex)
+            {
+                XamarinEssentials.MainThread.BeginInvokeOnMainThread(() =>
+                {
+                    ErrorLabel.Text = GetTimeNow() + ": Error polling characteristic. Exception: " + ex.Message;
+                });
+            }
+        }
+
+        private async void RegisterCommandButton_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                if (_char != null)
+                {
+                    if (_char.CanUpdate)
                     {
-                        _char.ValueUpdated += (o, args) =>                                              // define a callback function
-                        {
-                            var receivedBytes = args.Characteristic.Value;                              // read in received bytes
-                            Console.WriteLine("byte array: " + BitConverter.ToString(receivedBytes));   // write to the console for debugging
-
-
-                            string _charStr = "";                                                                           // in the following section the received bytes will be displayed in different ways (you can select the method you need)
-                            if (receivedBytes != null)
-                            {
-                                _charStr = "Bytes: " + BitConverter.ToString(receivedBytes);                                // by directly converting the bytes to strings we see the bytes themselves as they are received
-                                _charStr += " | UTF8: " + Encoding.UTF8.GetString(receivedBytes, 0, receivedBytes.Length);  // This code interprets the bytes received as ASCII characters
-                            }
-
-                            if (receivedBytes.Length <= 4)
-                            {                                                                                               // If only 4 or less bytes were received than it could be that an INT was sent. The code here combines the 4 bytes back to an INT
-                                int char_val = 0;
-                                for (int i = 0; i < receivedBytes.Length; i++)
-                                {
-                                    char_val |= (receivedBytes[i] << i * 8);
-                                }
-                                _charStr += " | int: " + char_val.ToString();
-                            }
-                            _charStr += Environment.NewLine;                                                                // the NewLine command is added to go to the next line
-
-                            XamarinEssentials.MainThread.BeginInvokeOnMainThread(() =>                                      // as this is a callback function, the "MainThread" needs to be invoked to update the GUI
-                            {
-                                Output.Text += _charStr;
-                            });
-
-                        };
+                        _char.ValueUpdated += OnCharacteristicValueUpdated;
                         await _char.StartUpdatesAsync();
-
                         ErrorLabel.Text = GetTimeNow() + ": Notify callback function registered successfully.";
                     }
                     else
@@ -136,23 +175,22 @@ namespace Ble.Client
                     ErrorLabel.Text = GetTimeNow() + ": No characteristic selected.";
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                ErrorLabel.Text = GetTimeNow() + ": Error initializing UART GATT service.";
+                ErrorLabel.Text = GetTimeNow() + ": Error initializing UART GATT service. Exception: " + ex.Message;
             }
         }
 
-        private async void ReceiveCommandButton_Clicked(object sender, EventArgs e)                 // This function is run when the "Receive" button is selected
+        private async void ReceiveCommandButton_Clicked(object sender, EventArgs e)
         {
             try
             {
-                if (_char != null)                                                                  // make sure a Characteristic is selected
+                if (_char != null)
                 {
-                    // NOTE: in the youtube video I did not check whether or not the characteristic can be read from -> I added this afterwards
-                    if (_char.CanRead)                                                              // check if characteristic supports read
+                    if (_char.CanRead)
                     {
-                        var receivedBytes = await _char.ReadAsync();                                                            // Receive value from Characteristic
-                        Output.Text += Encoding.UTF8.GetString(receivedBytes, 0, receivedBytes.Length) + Environment.NewLine;   // Write to GUI -> NOTE: in this example the received bytes are interpretted as ASCII. Feel free to use other interpretations similar to the RegisterCommandButton_Clicked function
+                        var receivedBytes = await _char.ReadAsync();
+                        UpdateOutput(receivedBytes);
                     }
                     else
                     {
@@ -162,22 +200,22 @@ namespace Ble.Client
                 else
                     ErrorLabel.Text = GetTimeNow() + ": No Characteristic selected.";
             }
-            catch
+            catch (Exception ex)
             {
-                ErrorLabel.Text = GetTimeNow() + ": Error receiving Characteristic.";
+                ErrorLabel.Text = GetTimeNow() + ": Error receiving Characteristic. Exception: " + ex.Message;
             }
         }
-        private async void SendCommandButton_Clicked(object sender, EventArgs e)                    // This function is called when the "Send" button is selected
+
+        private async void SendCommandButton_Clicked(object sender, EventArgs e)
         {
             try
             {
-                if (_char != null)                                                                  // Make sure a Characteristic is defined
+                if (_char != null)
                 {
-                    // NOTE: in the youtube video I did not check whether or not the characteristic can be written to -> I added this afterwards
-                    if (_char.CanWrite)                                                             // check if characteristic supports write
+                    if (_char.CanWrite)
                     {
-                        byte[] array = Encoding.UTF8.GetBytes(CommandTxt.Text);                     // Write CommandTxt.Text String to byte array in preparation of sending it over -> NOTE: the string is sent over as ASCII characters, feel free to use different coding
-                        await _char.WriteAsync(array);                                              // Send to BLE Device
+                        byte[] array = Encoding.UTF8.GetBytes(CommandTxt.Text);
+                        await _char.WriteAsync(array);
                     }
                     else
                     {
@@ -185,9 +223,43 @@ namespace Ble.Client
                     }
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                ErrorLabel.Text = GetTimeNow() + ": Error receiving Characteristic.";
+                ErrorLabel.Text = GetTimeNow() + ": Error receiving Characteristic. Exception: " + ex.Message;
+            }
+        }
+
+        private async void StartButton_Clicked(object sender, EventArgs e)
+        {
+            await SendCommand("START");
+        }
+
+        private async void StopButton_Clicked(object sender, EventArgs e)
+        {
+            await SendCommand("STOP");
+        }
+
+        private async Task SendCommand(string command)
+        {
+            try
+            {
+                if (_char != null)
+                {
+                    if (_char.CanWrite)
+                    {
+                        byte[] array = Encoding.UTF8.GetBytes(command);
+                        await _char.WriteAsync(array);
+                        Output.Text += $"{command} command sent successfully.{Environment.NewLine}";
+                    }
+                    else
+                    {
+                        ErrorLabel.Text = GetTimeNow() + ": Characteristic does not support Write";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorLabel.Text = GetTimeNow() + ": Error sending command. Exception: " + ex.Message;
             }
         }
 
