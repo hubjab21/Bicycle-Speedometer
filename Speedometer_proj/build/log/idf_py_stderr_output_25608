@@ -1,0 +1,1389 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM4 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m.[0m[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m.[0m[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m.[0m[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m.[0m[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m.[0m[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m.[0m[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m.[0m[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m.[0m[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+[0m
+[0;33m0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081776: panic_abort at C:/Users/mmich/esp-idf/components/esp_system/panic.c:472
+0x40086bdd: esp_system_abort at C:/Users/mmich/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008c611: abort at C:/Users/mmich/esp-idf/components/newlib/abort.c:38
+0x40086bd3: _esp_error_check_failed at C:/Users/mmich/esp-idf/components/esp_system/esp_err.c:50
+0x400d5879: continuous_adc_init at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:61 (discriminator 1)
+0x400d58c1: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:76
+0x400e93cc: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087585: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

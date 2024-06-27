@@ -1,0 +1,103 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM4 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e95c7: task_wdt_timeout_handling at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400e998c: task_wdt_isr at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083bf5: _xt_lowint1 at C:/Users/mmich/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x40093377: vPortClearInterruptMaskFromISR at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x400e97fa: esp_task_wdt_reset at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:721
+0x400d6f26: sensor_func at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/adc_sensor.c:159
+0x400d6a56: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:19
+0x4012a67b: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40092fd5: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400e95c7: task_wdt_timeout_handling at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400e998c: task_wdt_isr at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083bf5: _xt_lowint1 at C:/Users/mmich/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x40093377: vPortClearInterruptMaskFromISR at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x400e97fa: esp_task_wdt_reset at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:721
+0x400d6f26: sensor_func at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/adc_sensor.c:159
+0x400d6a56: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:19
+0x4012a67b: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40092fd5: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400e95c7: task_wdt_timeout_handling at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400e998c: task_wdt_isr at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083bf5: _xt_lowint1 at C:/Users/mmich/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x40093377: vPortClearInterruptMaskFromISR at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x400e97fa: esp_task_wdt_reset at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:721
+0x400d6f26: sensor_func at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/adc_sensor.c:159
+0x400d6a56: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:19
+0x4012a67b: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40092fd5: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400e95c7: task_wdt_timeout_handling at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400e998c: task_wdt_isr at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083bf5: _xt_lowint1 at C:/Users/mmich/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x40093377: vPortClearInterruptMaskFromISR at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x400e97fa: esp_task_wdt_reset at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:721
+0x400d6f26: sensor_func at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/adc_sensor.c:159
+0x400d6a56: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:19
+0x4012a67b: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40092fd5: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400e95c7: task_wdt_timeout_handling at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400e998c: task_wdt_isr at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083bf5: _xt_lowint1 at C:/Users/mmich/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x40093377: vPortClearInterruptMaskFromISR at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x400e97fa: esp_task_wdt_reset at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:721
+0x400d6f26: sensor_func at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/adc_sensor.c:159
+0x400d6a56: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:19
+0x4012a67b: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40092fd5: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400e95c7: task_wdt_timeout_handling at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400e998c: task_wdt_isr at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083bf5: _xt_lowint1 at C:/Users/mmich/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x40093377: vPortClearInterruptMaskFromISR at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x400e97fa: esp_task_wdt_reset at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:721
+0x400d6f26: sensor_func at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/adc_sensor.c:159
+0x400d6a56: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:19
+0x4012a67b: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40092fd5: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400e95c7: task_wdt_timeout_handling at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400e998c: task_wdt_isr at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083bf5: _xt_lowint1 at C:/Users/mmich/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x40093377: vPortClearInterruptMaskFromISR at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x400e97fa: esp_task_wdt_reset at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:721
+0x400d6f26: sensor_func at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/adc_sensor.c:159
+0x400d6a56: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:19
+0x4012a67b: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40092fd5: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400e95c7: task_wdt_timeout_handling at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400e998c: task_wdt_isr at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083bf5: _xt_lowint1 at C:/Users/mmich/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x40093377: vPortClearInterruptMaskFromISR at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x400e97fa: esp_task_wdt_reset at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:721
+0x400d6f26: sensor_func at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/components/adc_sensor/adc_sensor.c:159
+0x400d6a56: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:19
+0x4012a67b: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40092fd5: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

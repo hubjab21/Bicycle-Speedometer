@@ -1,0 +1,118 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM4 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d80d3: task_wdt_timeout_handling at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8498: task_wdt_isr at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083459: _xt_lowint1 at C:/Users/mmich/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d4f61: uart_tx_char at C:/Users/mmich/esp-idf/components/vfs/vfs_uart.c:163
+0x400d572b: uart_write at C:/Users/mmich/esp-idf/components/vfs/vfs_uart.c:218
+0x400d459f: console_write at C:/Users/mmich/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d412a: esp_vfs_write at C:/Users/mmich/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400daf35: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e228f: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e1c52: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400db079: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e9aed: esp_log_writev at C:/Users/mmich/esp-idf/components/log/log.c:215
+0x4008c4b9: esp_log_write at C:/Users/mmich/esp-idf/components/log/log.c:225
+0x400d5939: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:82 (discriminator 1)
+0x400e9390: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087579: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d80d3: task_wdt_timeout_handling at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8498: task_wdt_isr at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083459: _xt_lowint1 at C:/Users/mmich/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d4f61: uart_tx_char at C:/Users/mmich/esp-idf/components/vfs/vfs_uart.c:163
+0x400d572b: uart_write at C:/Users/mmich/esp-idf/components/vfs/vfs_uart.c:218
+0x400d459f: console_write at C:/Users/mmich/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d412a: esp_vfs_write at C:/Users/mmich/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400daf35: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e228f: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e1c52: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400db079: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e9aed: esp_log_writev at C:/Users/mmich/esp-idf/components/log/log.c:215
+0x4008c4b9: esp_log_write at C:/Users/mmich/esp-idf/components/log/log.c:225
+0x400d5939: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:82 (discriminator 1)
+0x400e9390: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087579: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d80d3: task_wdt_timeout_handling at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8498: task_wdt_isr at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083459: _xt_lowint1 at C:/Users/mmich/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d4f69: uart_ll_get_txfifo_len at C:/Users/mmich/esp-idf/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Users/mmich/esp-idf/components/vfs/vfs_uart.c:165
+0x400d572b: uart_write at C:/Users/mmich/esp-idf/components/vfs/vfs_uart.c:218
+0x400d459f: console_write at C:/Users/mmich/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d412a: esp_vfs_write at C:/Users/mmich/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400daf35: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e228f: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e1c52: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400db079: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e9aed: esp_log_writev at C:/Users/mmich/esp-idf/components/log/log.c:215
+0x4008c4b9: esp_log_write at C:/Users/mmich/esp-idf/components/log/log.c:225
+0x400d5939: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:82 (discriminator 1)
+0x400e9390: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087579: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d80d3: task_wdt_timeout_handling at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8498: task_wdt_isr at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083459: _xt_lowint1 at C:/Users/mmich/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d4f61: uart_tx_char at C:/Users/mmich/esp-idf/components/vfs/vfs_uart.c:163
+0x400d572b: uart_write at C:/Users/mmich/esp-idf/components/vfs/vfs_uart.c:218
+0x400d459f: console_write at C:/Users/mmich/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d412a: esp_vfs_write at C:/Users/mmich/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400daf35: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e228f: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e1c52: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400db079: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e9aed: esp_log_writev at C:/Users/mmich/esp-idf/components/log/log.c:215
+0x4008c4b9: esp_log_write at C:/Users/mmich/esp-idf/components/log/log.c:225
+0x400d5939: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:82 (discriminator 1)
+0x400e9390: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087579: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d80d3: task_wdt_timeout_handling at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8498: task_wdt_isr at C:/Users/mmich/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083459: _xt_lowint1 at C:/Users/mmich/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d4f61: uart_tx_char at C:/Users/mmich/esp-idf/components/vfs/vfs_uart.c:163
+0x400d572b: uart_write at C:/Users/mmich/esp-idf/components/vfs/vfs_uart.c:218
+0x400d459f: console_write at C:/Users/mmich/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d412a: esp_vfs_write at C:/Users/mmich/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400daf35: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400e228f: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400e1c52: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400db079: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e9aed: esp_log_writev at C:/Users/mmich/esp-idf/components/log/log.c:215
+0x4008c4b9: esp_log_write at C:/Users/mmich/esp-idf/components/log/log.c:225
+0x400d5939: app_main at C:/Users/mmich/Desktop/Git_repo_for_speedometer/Bicycle-Speedometer_MM/Speedometer_proj/main/Speedometer.c:82 (discriminator 1)
+0x400e9390: main_task at C:/Users/mmich/esp-idf/components/freertos/app_startup.c:208
+0x40087579: vPortTaskWrapper at C:/Users/mmich/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m
