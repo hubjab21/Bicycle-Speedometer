@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "q6GajCiQdm3ATWmdERS+si5tuyi0ry/g+czBn61G5fftaNSDxNNUe1MleR3yTA+FoaXOFJl4tyU4nrvTYs1sbg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hubert\\Downloads\\Bicycle-Speedometer_MM-main\\Mobile_app2\\Ble.Client.iOS\\Ble.Client.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hubert\\.nuget\\packages\\plugin.ble\\2.1.3\\plugin.ble.2.1.3.nupkg.sha512",
+    "C:\\Users\\hubert\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\hubert\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\hubert\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
